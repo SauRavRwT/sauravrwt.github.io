@@ -1,7 +1,7 @@
 <div align="center">
     <samp><br>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Ratspace&size=30&pause=1000&color=256D85&center=true&vCenter=true&width=1000&height=100&lines=Hello+World....;I+am+Saurav+Rawat)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Ratspace&size=30&pause=1000&color=256D85&center=true&vCenter=true&width=1000&height=100&lines=Hello+World....;I+am+Saurav+Rawat)](https://sauravrwt.github.io)
 <br>
     <b>IT Student, Learning React and a Android enthusiast.</b>
     </samp>
