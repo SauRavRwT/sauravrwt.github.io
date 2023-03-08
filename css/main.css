@@ -1492,7 +1492,7 @@ footer .copyright span:last-child::after {
 }
 
 .github-container img {
-    border-radius: 16px;
+    border-radius: 12px;
 }
 
 /* Auto Dark Mode */
