@@ -60,6 +60,17 @@ body {
     line-height: normal;
   }
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  border: 2px solid #f5f5f5;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
 .App {
   text-align: center;
 }
@@ -6532,4 +6543,4 @@ canvas {
 .fas {
   font-weight: 900;
 }
-/*# sourceMappingURL=main.ba328dbd.chunk.css.map */
+/*# sourceMappingURL=main.fffdc196.chunk.css.map */
