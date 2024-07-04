@@ -3,13 +3,13 @@ import "./LoaderLogo.css";
 
 class LogoLoader extends React.Component {
   render() {
-    const theme = this.props.theme;
+    const { theme } = this.props;
     return (
       <svg
-        className="raw_logo"
+        className="raw_logo logo-animation"
         width="50%"
         height="40%"
-        viewBox="0 0 440 305"
+        viewBox="0 0 440 310"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -26,20 +26,19 @@ class LogoLoader extends React.Component {
           strokeWidth="4"
         />
         <text
-          y="40%"
-          x="50%"
-          dominantBaseline="middle"
+          x="220"
+          y="124"
           textAnchor="middle"
-          fontSize="40"
+          fontSize="35"
+          fontWeight="600"
           fill={theme.body}
           fontFamily="Agustina Regular"
         >
           SR
         </text>
         <text
-          x="50%"
-          y="90%"
-          dominantBaseline="middle"
+          x="220"
+          y="279"
           textAnchor="middle"
           fontSize="60"
           fill={theme.body}

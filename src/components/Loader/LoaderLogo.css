@@ -1,4 +1,22 @@
 .raw_logo {
-  height: 305;
-  width: 440;
+  height: 305px;
+  width: 440px;
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.logo-animation {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.myHexagon {
+  transition: all 0.3s ease-in-out;
 }
