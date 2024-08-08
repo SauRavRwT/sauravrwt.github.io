@@ -1,11 +1,3 @@
-## Introduction
-
-Welcome to the project! This repository is a fork of the original project created by [ashutosh1919](https://github.com/ashutosh1919/masterPortfolio/). Below you will find information on how to set up the project and basic npm commands to get you started.
-
-## Thank You
-
-I would like to extend my sincere gratitude to [ashutosh1919](https://github.com/ashutosh1919/masterPortfolio/) for their amazing work on this project. Their dedication and expertise have provided a solid foundation upon which this fork is built. Thank you for your invaluable contributions!
-
 ## Setup Guide
 
 Follow these steps to set up the project on your local machine.
@@ -169,3 +161,7 @@ If you are stuck somewhere and want to observe the deployment process in depth, 
 - [baseui](https://github.com/uber/baseweb)
 - [react-reveal](https://www.react-reveal.com/)
 - [styled-components](https://styled-components.com/)
+
+## Thank You
+
+I would like to extend my sincere gratitude to [ashutosh1919](https://github.com/ashutosh1919/masterPortfolio/) for their amazing work on this project. Their dedication and expertise have provided a solid foundation upon which this fork is built. Thank you for your invaluable contributions!
