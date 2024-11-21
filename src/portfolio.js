@@ -1,8 +1,5 @@
-/* Change this file to get your personal Porfolio */
-
-// Website related settings
 const settings = {
-  isSplash: true, // Change this to false if you don't want Splash screen.
+  isSplash: true,
 };
 
 //SEO Related settings
@@ -11,7 +8,7 @@ const seo = {
   description:
     "Turning creativity into code, imagination into reality, and complexity into simplicity, one line at a time.",
   og: {
-    title: "Saurav Rawat Portfolio",
+    title: "Saurav Rawat",
     type: "website",
     url: "http://sauravrwt.github.io/",
   },
@@ -36,32 +33,32 @@ const socialMediaLinks = [
   {
     name: "Github",
     link: "https://github.com/SauRavRwT",
-    fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
-    backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
+    fontAwesomeIcon: "fa-github",
+    backgroundColor: "#181717",
   },
   {
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/SauRavRwT",
-    fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
-    backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
+    fontAwesomeIcon: "fa-linkedin-in",
+    backgroundColor: "#0077B5",
   },
   {
     name: "YouTube",
     link: "https://youtube.com/@balbheji",
-    fontAwesomeIcon: "fa-youtube", // Reference https://fontawesome.com/icons/youtube?style=brands
-    backgroundColor: "#FF0000", // Reference https://simpleicons.org/?q=youtube
+    fontAwesomeIcon: "fa-youtube",
+    backgroundColor: "#FF0000",
   },
   {
     name: "Gmail",
     link: "mailto:souravrawat142@gmail.com",
-    fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
-    backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
+    fontAwesomeIcon: "fa-google",
+    backgroundColor: "#D14836",
   },
   {
     name: "Instagram",
     link: "https://www.instagram.com/rawatsensei/",
-    fontAwesomeIcon: "fa-instagram", // Reference https://fontawesome.com/icons/instagram?style=brands
-    backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
+    fontAwesomeIcon: "fa-instagram",
+    backgroundColor: "#E4405F",
   },
 ];
 
@@ -114,7 +111,7 @@ const skills = {
         },
         {
           skillName: "NodeJS",
-          fontAwesomeClassname: "simple-icons:node-dot-js",
+          fontAwesomeClassname: "devicon-plain:nodejs-wordmark",
           style: {
             color: "#339933",
           },
@@ -131,6 +128,13 @@ const skills = {
           fontAwesomeClassname: "simple-icons:firebase",
           style: {
             color: "#F7DF1E",
+          },
+        },
+        {
+          skillName: "Bootstrap",
+          fontAwesomeClassname: "devicon-plain:bootstrap",
+          style: {
+            color: "#712cf9",
           },
         },
       ],
@@ -189,6 +193,14 @@ const competitiveSites = {
       },
       profileLink: "https://www.geeksforgeeks.org/user/sauravrwt/",
     },
+    {
+      siteName: "LeetCode",
+      iconifyClassname: "simple-icons:leetcode",
+      style: {
+        color: "#F79F1B",
+      },
+      profileLink: "https://leetcode.com/u/SauRavRwT/",
+    },
   ],
 };
 
@@ -226,12 +238,30 @@ const degrees = {
 const certifications = {
   certifications: [
     {
+      title: "DRDO",
+      subtitle: "- DRDO",
+      logo_path: "drdo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/10NBghFNsACk5i1oIXYa6mPzQGjMveJsi/view?usp=sharing",
+      alt_name: "Xiaomi Ode2Code 3.0",
+      color_code: "#fff",
+    },
+    {
       title: "Web Development",
       subtitle: "- codsoft",
       logo_path: "codsoft_logo.png",
       certificate_link:
         "https://drive.google.com/file/d/1F0-fBuRcgky6ZTzSctHipIaaYzCEfkeR/view?usp=sharing",
       alt_name: "Codsoft Internship",
+      color_code: "#fff",
+    },
+    {
+      title: "Xiaomi Ode2Code 3.0",
+      subtitle: "- Xiaomi",
+      logo_path: "xiaomi.png",
+      certificate_link:
+        "https://drive.google.com/file/d/12Q0O6_-XJmxd20f5U-HzWJId_QzLZdZa/view?usp=sharing",
+      alt_name: "Xiaomi Ode2Code 3.0",
       color_code: "#fff",
     },
     {
@@ -253,15 +283,6 @@ const certifications = {
       color_code: "#000",
     },
     {
-      title: "Game Deveopment",
-      subtitle: "- Sololearn",
-      logo_path: "sololearn_logo.png",
-      certificate_link:
-        "https://drive.google.com/file/d/1gQMM_GJ3krUMr4L_IS0xqUWkk_atF25n/view?usp=sharing",
-      alt_name: "Codsoft Internship",
-      color_code: "#fff",
-    },
-    {
       title: "Drone Technology IIITD",
       subtitle: "- Elight SPM",
       logo_path: "elightspm_logo.jfif",
@@ -280,30 +301,21 @@ const certifications = {
       color_code: "#fff",
     },
     {
+      title: "Game Deveopment",
+      subtitle: "- Sololearn",
+      logo_path: "sololearn_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/1gQMM_GJ3krUMr4L_IS0xqUWkk_atF25n/view?usp=sharing",
+      alt_name: "Codsoft Internship",
+      color_code: "#fff",
+    },
+    {
       title: "Tech Mahindra Foundation",
       subtitle: "- Tech Mahindra",
       logo_path: "TMF.png",
       certificate_link:
         "https://drive.google.com/file/d/10F1pdCm3MON06taBa9aGwKnMPzvOIr0T/view?usp=sharing",
       alt_name: "Tech Mahindra Foundation",
-      color_code: "#fff",
-    },
-    {
-      title: "Xiaomi Ode2Code 3.0",
-      subtitle: "- Xiaomi",
-      logo_path: "xiaomi.png",
-      certificate_link:
-        "https://drive.google.com/file/d/12Q0O6_-XJmxd20f5U-HzWJId_QzLZdZa/view?usp=sharing",
-      alt_name: "Xiaomi Ode2Code 3.0",
-      color_code: "#fff",
-    },
-    {
-      title: "Xiaomi Ode2Code 3.0",
-      subtitle: "- Xiaomi",
-      logo_path: "xiaomi.png",
-      certificate_link:
-        "https://drive.google.com/file/d/1peJMhhiXV0PXRy1fqtRmLXAnSstL8Rd0/view?usp=sharing",
-      alt_name: "Xiaomi Ode2Code 3.0",
       color_code: "#fff",
     },
   ],
@@ -338,6 +350,17 @@ const experience = {
       title: "Internships",
       experiences: [
         {
+          title: "DRDO",
+          company: "geeksforgeeks.org",
+          company_url: "https://www.drdo.gov.in/drdo/",
+          logo_path: "drdo.png",
+          duration: "july 2024 - Nov 2024",
+          location: "Vishwavidyalay",
+          description:
+            "I have successfully completed a 4-month internship at DRDO, specializing in React Development!. This incredible experience allowed me to dive deep into the world of ReactJS and further refine my skills in creating dynamic, efficient, and user-friendly web applications., I had the opportunity to learn about web security, gaining valuable insights into best practices for building secure and robust web applications. From understanding potential vulnerabilities to implementing effective security measures, this internship has been a game-changer for my development journey.",
+          color: "#0071C5",
+        },
+        {
           title: "CodeSoft Internship",
           company: "codsoft Pvt. Ltd.",
           company_url: "https://www.codsoft.in/",
@@ -347,16 +370,6 @@ const experience = {
           description:
             "I have worked on task: (1) To build a calculator. (2) A static portfolio. (3) A blog page with firebase and many more check github repo for more. I have learnt the basics of web development and how to use the tools like VS Code, Git, Github, Firebase, etc",
           color: "#ee3c26",
-        },
-        {
-          title: "Geeksforgeeks Intern",
-          company: "geeksforgeeks.org",
-          company_url: "https://www.geeksforgeeks.org/data-structures/",
-          logo_path: "gfg_logo.svg",
-          duration: "Nov 2022 - Dec 2023",
-          location: "Work From Home",
-          description: "Learn About data strutures.",
-          color: "#0071C5",
         },
       ],
     },

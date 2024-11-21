@@ -1,11 +1,11 @@
 {
   "data": [
     {
-      "id": "R_kgDOLxMOOA",
-      "name": "Wallpaper-App",
-      "createdAt": "2024-04-21T14:33:36Z",
-      "url": "https://github.com/SauRavRwT/Wallpaper-App",
-      "description": "Papers Web-App with made up of reactjs uses Pexel api to deliver high-quality wallpaper content. The website offers a wide variety of wallpapers for users to choose from, and the content is updated regularly",
+      "id": "R_kgDOMdUF6g",
+      "name": "Canteen-Management",
+      "createdAt": "2024-07-31T03:51:00Z",
+      "url": "https://github.com/SauRavRwT/Canteen-Management",
+      "description": "This Canteen Management System is a web-based application designed to streamline the process of ordering food items in a canteen or cafeteria setting. Built with React and Firebase, it offers a user-friendly interface for browsing products, adding items to a cart, and completing purchases.",
       "isFork": false,
       "languages": [
         {
@@ -23,11 +23,11 @@
       ]
     },
     {
-      "id": "R_kgDOMdUF6g",
-      "name": "Canteen-Management",
-      "createdAt": "2024-07-31T03:51:00Z",
-      "url": "https://github.com/SauRavRwT/Canteen-Management",
-      "description": "This Canteen Management System is a web-based application designed to streamline the process of ordering food items in a canteen or cafeteria setting. Built with React and Firebase, it offers a user-friendly interface for browsing products, adding items to a cart, and completing purchases.",
+      "id": "R_kgDOLxMOOA",
+      "name": "Wallpaper-App",
+      "createdAt": "2024-04-21T14:33:36Z",
+      "url": "https://github.com/SauRavRwT/Wallpaper-App",
+      "description": "Papers Web-App with made up of reactjs uses Pexel api to deliver high-quality wallpaper content. The website offers a wide variety of wallpapers for users to choose from, and the content is updated regularly",
       "isFork": false,
       "languages": [
         {
@@ -93,32 +93,10 @@
       ]
     },
     {
-      "id": "R_kgDOKyDJ0g",
-      "name": "Practicals",
-      "createdAt": "2023-11-26T04:30:57Z",
-      "url": "https://github.com/SauRavRwT/Practicals",
-      "description": "B.Tech(IT) program, students are required to complete practicals starting from the 3rd semester.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Java",
-          "iconifyClass": "logos-java"
-        },
-        {
-          "name": "HTML",
-          "iconifyClass": "logos-html-5"
-        },
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        }
-      ]
-    },
-    {
-      "id": "R_kgDOMDfdhg",
-      "name": "react-login",
-      "createdAt": "2024-06-01T09:55:52Z",
-      "url": "https://github.com/SauRavRwT/react-login",
+      "id": "R_kgDOJzYeQQ",
+      "name": "blog.io",
+      "createdAt": "2023-06-24T03:19:19Z",
+      "url": "https://github.com/SauRavRwT/blog.io",
       "description": null,
       "isFork": false,
       "languages": [
@@ -127,8 +105,8 @@
           "iconifyClass": "logos-html-5"
         },
         {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
+          "name": "Ruby",
+          "iconifyClass": "logos:ruby"
         },
         {
           "name": "JavaScript",
