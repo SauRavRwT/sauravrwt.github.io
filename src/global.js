@@ -21,6 +21,10 @@ export const GlobalStyles = createGlobalStyle`
     transition: all 0.25s linear;
   }`;
 
-  let doctitle = document.title;
-  window.addEventListener("blur", () => {document.title = "👋 Hey! come back..."});
-  window.addEventListener("focus", () => {document.title = doctitle});
+let doctitle = document.title;
+window.addEventListener("blur", () => {
+  document.title = "Hey! come back...";
+});
+window.addEventListener("focus", () => {
+  document.title = doctitle;
+});

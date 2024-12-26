@@ -201,6 +201,14 @@ const competitiveSites = {
       },
       profileLink: "https://leetcode.com/u/SauRavRwT/",
     },
+    {
+      siteName: "Linkedin",
+      iconifyClassname: "simple-icons:linkedin",
+      style: {
+        color: "#0477b6",
+      },
+      profileLink: "https://www.linkedin.com/in/sauravrwt/",
+    },
   ],
 };
 
@@ -213,10 +221,7 @@ const degrees = {
       alt_name: "GTBIT Delhi",
       duration: "2022 - 2025",
       descriptions: [
-        "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.",
-        "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.",
-        "⚡ Done 2 months DSA in java summer training from Geeksforgeeks.",
-        "⚡Done 1 month internship from CodSoft.",
+        "I have a solid foundation in software engineering, having studied core subjects such as Data Structures, Algorithms, Database Management Systems (DBMS), Operating Systems (OS), Computer Architecture (CA), and Artificial Intelligence (AI). Additionally, I have enhanced my technical skills by completing specialized courses in Deep Learning, Data Science, Cloud Computing, and Full Stack Development. These experiences have equipped me with a comprehensive understanding of both fundamental concepts and advanced technologies, enabling me to analyze problems effectively and design innovative solutions. My diverse knowledge base bridges the gap between theoretical learning and practical applications, preparing me to excel in dynamic and multidisciplinary environments.",
       ],
       website_link: "http://gtbit.ac.in",
     },
@@ -227,8 +232,7 @@ const degrees = {
       alt_name: "AIT Delhi",
       duration: "2019 - 2022",
       descriptions: [
-        "⚡ Done my Diploma in Information Technology & Enabled Services. Worked in E-Shop Website in minor project.",
-        "⚡	Worked in Web Collections (Web App) in Major Project.",
+        "I hold a Diploma in Information Technology & Enabled Services, which has provided me with a strong technical foundation. During my academic journey, I worked on an E-Shop website as part of my minor project, gaining hands-on experience in web development and e-commerce platforms. For my major project, I developed a Web Collections application, further honing my skills in designing and implementing functional web-based solutions. These projects allowed me to apply my technical knowledge in real-world scenarios, enhancing my problem-solving abilities and strengthening my expertise in web technologies.",
       ],
       website_link: "https://dseu.ac.in/",
     },
@@ -335,13 +339,13 @@ const experience = {
       experiences: [
         {
           title: "Android Developer",
-          company: "coursera",
-          company_url: "https://www.linkedin.com/company/coursera/about/",
-          logo_path: "coursera_logo.png",
-          duration: "Nov 2020",
+          company: "Freelancer",
+          company_url: "https://www.android.com/",
+          logo_path: "android.jpeg",
+          duration: "Feb 2022-Ongoing",
           location: "Delhi, India",
           description:
-            "Coursera is the Start up from Indian Institute of Management, Ahmedabad. I have changed the integration of the whole app from Google to Firebase. I learnt the efﬁcient ways of Data communications like Retroﬁt, Eventbus etc. I experienced the real time start up. I learnt the Design thinking of UI on perspective of People.",
+            "I maintained and optimized a ROM for the Redmi Note 11 Pro+ 5G, ensuring stability and implementing feature enhancements to elevate the user experience. My efforts included performance optimizations and bug resolution, which significantly improved the functionality and reliability of the Android ROM. This experience allowed me to deepen my understanding of mobile operating systems and refine my skills in system-level optimization and debugging.",
           color: "#fc1f20",
         },
       ],
@@ -350,11 +354,11 @@ const experience = {
       title: "Internships",
       experiences: [
         {
-          title: "DRDO",
-          company: "geeksforgeeks.org",
+          title: "DRDO Internship",
+          company: "DRDO",
           company_url: "https://www.drdo.gov.in/drdo/",
           logo_path: "drdo.png",
-          duration: "july 2024 - Nov 2024",
+          duration: "July 2024 - Nov 2024",
           location: "Vishwavidyalay",
           description:
             "I have successfully completed a 4-month internship at DRDO, specializing in React Development!. This incredible experience allowed me to dive deep into the world of ReactJS and further refine my skills in creating dynamic, efficient, and user-friendly web applications., I had the opportunity to learn about web security, gaining valuable insights into best practices for building secure and robust web applications. From understanding potential vulnerabilities to implementing effective security measures, this internship has been a game-changer for my development journey.",
@@ -368,8 +372,19 @@ const experience = {
           duration: "Sept 2023 - Oct 2023",
           location: "Work From Home",
           description:
-            "I have worked on task: (1) To build a calculator. (2) A static portfolio. (3) A blog page with firebase and many more check github repo for more. I have learnt the basics of web development and how to use the tools like VS Code, Git, Github, Firebase, etc",
+            "I have worked on various tasks, including building a calculator, creating a static portfolio, and developing a blog page integrated with Firebase, among others. For more projects, you can explore my GitHub repositories. Through these experiences, I have gained a solid understanding of the basics of web development and have become proficient in using tools like VS Code, Git, GitHub, Firebase, and more.",
           color: "#ee3c26",
+        },
+        {
+          title: "GeeksforGeeks Course",
+          company: "geeksforgeeks",
+          company_url: "https://www.geeksforgeeks.org/",
+          logo_path: "gfg_logo.svg",
+          duration: "july 2023 - Oct 2023",
+          location: "Work from home",
+          description:
+            "Internship on DSA in Java, I have successfully completed a 3-month internship at GeeksforGeeks, specializing in Data Structures and Algorithms in Java. This incredible experience allowed me to dive deep into the world of Java and further refine my skills in creating dynamic, efficient, and user-friendly web applications. I had the opportunity to learn about web security, gaining valuable insights into best practices for building secure and robust web applications. From understanding potential vulnerabilities to implementing effective security measures, this internship has been a game-changer for my development journey.",
+          color: "#0071C5",
         },
       ],
     },
@@ -382,9 +397,9 @@ const experience = {
           company_url: "https://sih.gov.in/",
           logo_path: "sih_logo.png",
           duration: "Aug 2023 - Oct 2023",
-          location: "delhi, India",
+          location: "Delhi, India",
           description:
-            "We worked an a project on pre trail conference and we cleared the college round in the event.We were in top 10 teams in the college.",
+            "We developed a project centered on a pre-trial conference using ReactJS, Bootstrap 5, and Firebase. This initiative was part of a competitive event where our team excelled by clearing the college round and securing a position among the top 10 teams. The experience showcased our technical proficiency and collaborative skills, contributing to the project's success.",
           color: "#4285F4",
         },
       ],
@@ -422,7 +437,7 @@ const publications = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "avatar.png",
+    profile_image_path: "avatar.svg",
     description:
       "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with Web, IT, React, Android development.",
   },
