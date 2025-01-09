@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.24a97954.css",
-    "main.js": "/static/js/main.0caf8638.js",
+    "main.js": "/static/js/main.940a5c41.js",
     "static/media/portfolio.gif": "/static/media/portfolio.ed6c89f1485f23014ebd.gif",
     "static/media/fa-solid-900.svg": "/static/media/fa-solid-900.9fa614346b4e81decc62.svg",
     "static/media/fa-brands-400.svg": "/static/media/fa-brands-400.6fcab609e2f62d5c3104.svg",
@@ -11,8 +11,8 @@
     "static/media/dsc_logo.png": "/static/media/dsc_logo.fdf993910e3f48d0cf30.png",
     "static/media/fa-solid-900.eot": "/static/media/fa-solid-900.d93bcbbb0fbfad39d905.eot",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.aae41ea25bd0dde9f796.ttf",
-    "static/media/avatar.png": "/static/media/avatar.7e29a47390b130c022ea.png",
     "static/media/ait_logo.png": "/static/media/ait_logo.da06c9d163ba77056328.png",
+    "static/media/avatar.svg": "/static/media/avatar.b3e40fadf4117460cc53.svg",
     "static/media/fa-regular-400.svg": "/static/media/fa-regular-400.4e8f9fa44f7ec7479c39.svg",
     "static/media/fa-brands-400.eot": "/static/media/fa-brands-400.b09f783b99c88d6989f7.eot",
     "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.ec7723ea62ad74c14959.ttf",
@@ -63,10 +63,10 @@
     "static/media/talksCardBackAlt.svg": "/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
     "main.24a97954.css.map": "/static/css/main.24a97954.css.map",
-    "main.0caf8638.js.map": "/static/js/main.0caf8638.js.map"
+    "main.940a5c41.js.map": "/static/js/main.940a5c41.js.map"
   },
   "entrypoints": [
     "static/css/main.24a97954.css",
-    "static/js/main.0caf8638.js"
+    "static/js/main.940a5c41.js"
   ]
 }
