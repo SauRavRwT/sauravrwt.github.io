@@ -17,7 +17,7 @@ class DegreeCard extends Component {
                   maxHeight: "100%",
                   transform: "scale(0.9)",
                 }}
-                src={require(`../../assests/images/${degree.logo_path}`)}
+                src={require(`../../assets/images/${degree.logo_path}`)}
                 alt={degree.alt_name}
               />
             </div>
@@ -49,7 +49,11 @@ class DegreeCard extends Component {
             <div className="body-content">
               {degree.descriptions.map((sentence, index) => {
                 return (
-                  <p key={index} className="content-list" style={{ color: theme.text }}>
+                  <p
+                    key={index}
+                    className="content-list"
+                    style={{ color: theme.text }}
+                  >
                     {sentence}
                   </p>
                 );

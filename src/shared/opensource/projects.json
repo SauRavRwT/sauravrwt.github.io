@@ -27,7 +27,7 @@
       "name": "Wallpaper-App",
       "createdAt": "2024-04-21T14:33:36Z",
       "url": "https://github.com/SauRavRwT/Wallpaper-App",
-      "description": "Papers Web-App with made up of reactjs uses Pexel api to deliver high-quality wallpaper content. The website offers a wide variety of wallpapers for users to choose from, and the content is updated regularly",
+      "description": "Art-Gallery Web-App with made up of reactjs uses Pexel api to deliver high-quality wallpaper content. The website offers a wide variety of wallpapers for users to choose from, and the content is updated regularly.",
       "isFork": false,
       "languages": [
         {
@@ -49,7 +49,7 @@
       "name": "Quote-App",
       "createdAt": "2024-05-18T04:52:03Z",
       "url": "https://github.com/SauRavRwT/Quote-App",
-      "description": null,
+      "description": "To generate a random quote from a text file, you can use a random number generator to select a line from the file.",
       "isFork": false,
       "languages": [
         {
@@ -93,26 +93,13 @@
       ]
     },
     {
-      "id": "R_kgDOJzYeQQ",
-      "name": "blog.io",
-      "createdAt": "2023-06-24T03:19:19Z",
-      "url": "https://github.com/SauRavRwT/blog.io",
-      "description": null,
+      "id": "R_kgDOIgsZZg",
+      "name": "Web-App",
+      "createdAt": "2022-11-27T10:45:53Z",
+      "url": "https://github.com/SauRavRwT/Web-App",
+      "description": "A webapp with kotlin",
       "isFork": false,
-      "languages": [
-        {
-          "name": "HTML",
-          "iconifyClass": "logos-html-5"
-        },
-        {
-          "name": "Ruby",
-          "iconifyClass": "logos:ruby"
-        },
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        }
-      ]
+      "languages": []
     }
   ]
 }

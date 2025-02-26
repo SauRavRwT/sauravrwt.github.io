@@ -273,7 +273,7 @@ const certifications = {
       subtitle: "- SIH",
       logo_path: "sih_logo.png",
       certificate_link:
-        "https://drive.google.com/file/d/1F0-fBuRcgky6ZTzSctHipIaaYzCEfkeR/view?usp=sharing",
+        "https://drive.google.com/file/d/1A_C9JWzbN_bJ9wPRPZrWUr275210rRWQ/view?usp=sharing",
       alt_name: "SIH",
       color_code: "#fff",
     },
