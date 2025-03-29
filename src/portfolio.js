@@ -22,7 +22,7 @@ const greeting = {
   subTitle:
     "I'm Web Developer and UI/UX Designer from Delhi, India working in web development. My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way.",
   resumeLink:
-    "https://drive.google.com/file/d/1nHA9ku9WT2xBZrooC7JAWCkIKmYkifQ6/view?usp=sharing",
+    "https://drive.google.com/file/d/1W_sMhwXlFd8ydlfoEGi3e5SvwpuLXkit/view?usp=sharing",
   portfolio_repository: "https://github.com/SauRavRwT/sauravrwt.github.io",
   githubProfile: "https://github.com/SauRavRwT",
 };
@@ -52,13 +52,13 @@ const socialMediaLinks = [
     name: "Gmail",
     link: "mailto:souravrawat142@gmail.com",
     fontAwesomeIcon: "fa-google",
-    backgroundColor: "#D14836",
+    backgroundColor: "#EA4235",
   },
   {
     name: "Instagram",
     link: "https://www.instagram.com/rawatsensei/",
     fontAwesomeIcon: "fa-instagram",
-    backgroundColor: "#E4405F",
+    backgroundColor: "#FF0E48",
   },
 ];
 
@@ -85,13 +85,6 @@ const skills = {
           fontAwesomeClassname: "fa-css3",
           style: {
             color: "#1572B6",
-          },
-        },
-        {
-          skillName: "Sass",
-          fontAwesomeClassname: "simple-icons:sass",
-          style: {
-            color: "#CC6699",
           },
         },
         {
@@ -137,6 +130,48 @@ const skills = {
             color: "#712cf9",
           },
         },
+        {
+          skillName: "MongoDB",
+          fontAwesomeClassname: "simple-icons:mongodb",
+          style: {
+            color: "#217059",
+          },
+        },
+        {
+          skillName: "Git",
+          fontAwesomeClassname: "simple-icons:git",
+          style: {
+            color: "#F05032",
+          },
+        },
+        {
+          skillName: "GitHub",
+          fontAwesomeClassname: "simple-icons:github",
+          style: {
+            color: "#ffffff",
+          },
+        },
+        {
+          skillName: "Android Studio",
+          fontAwesomeClassname: "simple-icons:androidstudio",
+          style: {
+            color: "#3DDC84",
+          },
+        },
+        {
+          skillName: "WordPress",
+          fontAwesomeClassname: "simple-icons:wordpress",
+          style: {
+            color: "#ffffff",
+          },
+        },
+        {
+          skillName: "PostMan",
+          fontAwesomeClassname: "simple-icons:postman",
+          style: {
+            color: "#ff6c38",
+          },
+        },
       ],
     },
     {
@@ -167,6 +202,13 @@ const skills = {
           fontAwesomeClassname: "simple-icons:adobeillustrator",
           style: {
             color: "#FF7C00",
+          },
+        },
+        {
+          skillName: "Canva",
+          fontAwesomeClassname: "simple-icons:canva",
+          style: {
+            color: "#00C4CC",
           },
         },
       ],
@@ -234,7 +276,7 @@ const degrees = {
       descriptions: [
         "I hold a Diploma in Information Technology & Enabled Services, which has provided me with a strong technical foundation. During my academic journey, I worked on an E-Shop website as part of my minor project, gaining hands-on experience in web development and e-commerce platforms. For my major project, I developed a Web Collections application, further honing my skills in designing and implementing functional web-based solutions. These projects allowed me to apply my technical knowledge in real-world scenarios, enhancing my problem-solving abilities and strengthening my expertise in web technologies.",
       ],
-      website_link: "https://dseu.ac.in/",
+      website_link: "https://dseu.ac.in/shakarpur-i/",
     },
   ],
 };
@@ -242,12 +284,21 @@ const degrees = {
 const certifications = {
   certifications: [
     {
-      title: "DRDO",
+      title: "React Development",
       subtitle: "- DRDO",
       logo_path: "drdo.png",
       certificate_link:
         "https://drive.google.com/file/d/10NBghFNsACk5i1oIXYa6mPzQGjMveJsi/view?usp=sharing",
       alt_name: "Xiaomi Ode2Code 3.0",
+      color_code: "#fff",
+    },
+    {
+      title: "Python Web Development",
+      subtitle: "- ICT Academy",
+      logo_path: "ICT.png",
+      certificate_link:
+        "https://drive.google.com/file/d/1VDICMEVLgxRsFJhP_88azfWulVTsAWgq/view?usp=sharing",
+      alt_name: "Tech Mahindra Foundation",
       color_code: "#fff",
     },
     {
@@ -287,8 +338,8 @@ const certifications = {
       color_code: "#000",
     },
     {
-      title: "Drone Technology IIITD",
-      subtitle: "- Elight SPM",
+      title: "Drone Technology",
+      subtitle: "- Elight SPM IIITD",
       logo_path: "elightspm_logo.jfif",
       certificate_link:
         "https://drive.google.com/file/d/1-oMluxxlZTlciML2zrOyzOEHRLbSo2J9/view?usp=sharing",
@@ -296,7 +347,7 @@ const certifications = {
       color_code: "#fff",
     },
     {
-      title: "CISCO Networking",
+      title: "Cybersecurity",
       subtitle: "- Cisco",
       logo_path: "cisco.png",
       certificate_link:
@@ -314,8 +365,8 @@ const certifications = {
       color_code: "#fff",
     },
     {
-      title: "Tech Mahindra Foundation",
-      subtitle: "- Tech Mahindra",
+      title: "Advaced IT",
+      subtitle: "- Tech Mahindra Foundation",
       logo_path: "TMF.png",
       certificate_link:
         "https://drive.google.com/file/d/10F1pdCm3MON06taBa9aGwKnMPzvOIr0T/view?usp=sharing",
@@ -425,9 +476,10 @@ const publications = {
   data: [
     {
       id: "a1s2d3f4g5h6j7k8l9",
-      name: "Nothing",
-      createdAt: "NoOneKnows",
-      description: "Nothing to show",
+      name: "TextToImage",
+      createdAt: "2025-03-26",
+      description:
+        "TextToImage is a python application that generates images from text descriptions using advanced Stable Diffusion.",
       url: "#",
     },
   ],
@@ -445,7 +497,7 @@ const contactPageData = {
     title: "Blogs",
     subtitle:
       "For individual fundamental empowerment, I like to write powerful lessons that create impact on each of the reader individually to change the core of their character.",
-    link: "https://sauravrwt.github.io/blog.io/",
+    link: "https://sauravrwt.github.io/blogPage/",
     avatar_image_path: "blogs_image.svg",
   },
   addressSection: {
@@ -460,8 +512,8 @@ const contactPageData = {
     location_map_link: "https://maps.app.goo.gl/Gvxywyv1yFEFWzn88",
   },
   phoneSection: {
-    title: "",
-    subtitle: "",
+    title: "Phone Number",
+    subtitle: "+91 0123456789",
   },
 };
 

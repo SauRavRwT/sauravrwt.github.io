@@ -1,8 +1,8 @@
 {
   "private": true,
   "name": "sauravrwt.github.io",
-  "homepage": "https://sauravrwt.github.io",
   "version": "0.1.0",
+  "homepage": "https://sauravrwt.github.io",
   "scripts": {
     "build": "react-scripts build",
     "predeploy": "npm run build",
@@ -36,10 +36,12 @@
     "styletron-react": "^5.2.7"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@iconify/icons-logos": "^1.0.9",
     "@iconify/react": "^1.1.1",
     "dotenv": "^6.2.0",
     "gh-pages": "^6.1.1",
+    "html-webpack-plugin": "^5.6.3",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "prettier": "2.0.5"

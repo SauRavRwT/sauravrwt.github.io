@@ -23,6 +23,64 @@
       ]
     },
     {
+      "id": "R_kgDON3NTVQ",
+      "name": "text-to-img",
+      "createdAt": "2025-02-10T12:23:06Z",
+      "url": "https://github.com/SauRavRwT/text-to-img",
+      "description": "A Python-based text-to-image generation tool leveraging stable diffusion models. This application provides enhanced control over image generation through optimized parameters, improved prompting, and an efficient interface.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "Jupyter Notebook",
+          "iconifyClass": "logos-jupyter"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOL9MJpg",
+      "name": "Quote-App",
+      "createdAt": "2024-05-18T04:52:03Z",
+      "url": "https://github.com/SauRavRwT/Quote-App",
+      "description": "This project is a simple Quote App built with React. It fetches quotes from an external source and displays them in a modern, user-friendly interface.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "HTML",
+          "iconifyClass": "logos-html-5"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "logos-css-3"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOOHM7NA",
+      "name": "TextGenerator",
+      "createdAt": "2025-03-12T05:41:38Z",
+      "url": "https://github.com/SauRavRwT/TextGenerator",
+      "description": "A powerful text processing tool that combines PDF summarization, text generation, and NLP analysis using state-of-the-art transformer models.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Jupyter Notebook",
+          "iconifyClass": "logos-jupyter"
+        },
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        }
+      ]
+    },
+    {
       "id": "R_kgDOLxMOOA",
       "name": "Wallpaper-App",
       "createdAt": "2024-04-21T14:33:36Z",
@@ -43,63 +101,6 @@
           "iconifyClass": "logos-javascript"
         }
       ]
-    },
-    {
-      "id": "R_kgDOL9MJpg",
-      "name": "Quote-App",
-      "createdAt": "2024-05-18T04:52:03Z",
-      "url": "https://github.com/SauRavRwT/Quote-App",
-      "description": "To generate a random quote from a text file, you can use a random number generator to select a line from the file.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "HTML",
-          "iconifyClass": "logos-html-5"
-        },
-        {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
-        },
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        }
-      ]
-    },
-    {
-      "id": "R_kgDOLNanCQ",
-      "name": "CRM",
-      "createdAt": "2024-02-03T14:23:50Z",
-      "url": "https://github.com/SauRavRwT/CRM",
-      "description": null,
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Java",
-          "iconifyClass": "logos-java"
-        },
-        {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
-        },
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        },
-        {
-          "name": "HTML",
-          "iconifyClass": "logos-html-5"
-        }
-      ]
-    },
-    {
-      "id": "R_kgDOIgsZZg",
-      "name": "Web-App",
-      "createdAt": "2022-11-27T10:45:53Z",
-      "url": "https://github.com/SauRavRwT/Web-App",
-      "description": "A webapp with kotlin",
-      "isFork": false,
-      "languages": []
     }
   ]
 }
