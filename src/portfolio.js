@@ -22,7 +22,7 @@ const greeting = {
   subTitle:
     "I'm Web Developer and UI/UX Designer from Delhi, India working in web development. My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way.",
   resumeLink:
-    "https://drive.google.com/file/d/1nHA9ku9WT2xBZrooC7JAWCkIKmYkifQ6/view?usp=sharing",
+    "https://drive.google.com/file/d/11_S5tLk8gEAwkayeHoYimPWWzNMUMi0w/view?usp=sharing",
   portfolio_repository: "https://github.com/SauRavRwT/sauravrwt.github.io",
   githubProfile: "https://github.com/SauRavRwT",
 };
@@ -52,13 +52,13 @@ const socialMediaLinks = [
     name: "Gmail",
     link: "mailto:souravrawat142@gmail.com",
     fontAwesomeIcon: "fa-google",
-    backgroundColor: "#D14836",
+    backgroundColor: "#EA4235",
   },
   {
     name: "Instagram",
     link: "https://www.instagram.com/rawatsensei/",
     fontAwesomeIcon: "fa-instagram",
-    backgroundColor: "#E4405F",
+    backgroundColor: "#FF0E48",
   },
 ];
 
@@ -85,13 +85,6 @@ const skills = {
           fontAwesomeClassname: "fa-css3",
           style: {
             color: "#1572B6",
-          },
-        },
-        {
-          skillName: "Sass",
-          fontAwesomeClassname: "simple-icons:sass",
-          style: {
-            color: "#CC6699",
           },
         },
         {
@@ -137,6 +130,48 @@ const skills = {
             color: "#712cf9",
           },
         },
+        {
+          skillName: "MongoDB",
+          fontAwesomeClassname: "simple-icons:mongodb",
+          style: {
+            color: "#217059",
+          },
+        },
+        {
+          skillName: "Git",
+          fontAwesomeClassname: "simple-icons:git",
+          style: {
+            color: "#F05032",
+          },
+        },
+        {
+          skillName: "GitHub",
+          fontAwesomeClassname: "simple-icons:github",
+          style: {
+            color: "#ffffff",
+          },
+        },
+        {
+          skillName: "Android Studio",
+          fontAwesomeClassname: "simple-icons:androidstudio",
+          style: {
+            color: "#3DDC84",
+          },
+        },
+        {
+          skillName: "WordPress",
+          fontAwesomeClassname: "simple-icons:wordpress",
+          style: {
+            color: "#ffffff",
+          },
+        },
+        {
+          skillName: "PostMan",
+          fontAwesomeClassname: "simple-icons:postman",
+          style: {
+            color: "#ff6c38",
+          },
+        },
       ],
     },
     {
@@ -167,6 +202,13 @@ const skills = {
           fontAwesomeClassname: "simple-icons:adobeillustrator",
           style: {
             color: "#FF7C00",
+          },
+        },
+        {
+          skillName: "Canva",
+          fontAwesomeClassname: "simple-icons:canva",
+          style: {
+            color: "#00C4CC",
           },
         },
       ],
@@ -425,9 +467,10 @@ const publications = {
   data: [
     {
       id: "a1s2d3f4g5h6j7k8l9",
-      name: "Nothing",
-      createdAt: "NoOneKnows",
-      description: "Nothing to show",
+      name: "TextToImage",
+      createdAt: "2025-03-26",
+      description:
+        "TextToImage is a python application that generates images from text descriptions using advanced Stable Diffusion.",
       url: "#",
     },
   ],
@@ -460,8 +503,8 @@ const contactPageData = {
     location_map_link: "https://maps.app.goo.gl/Gvxywyv1yFEFWzn88",
   },
   phoneSection: {
-    title: "",
-    subtitle: "",
+    title: "Phone Number",
+    subtitle: "+91 0123456789",
   },
 };
 
