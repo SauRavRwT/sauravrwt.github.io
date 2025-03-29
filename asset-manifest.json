@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.24a97954.css",
-    "main.js": "/static/js/main.40b18914.js",
+    "main.css": "/static/css/main.15ea29c6.css",
+    "main.js": "/static/js/main.5e208689.js",
     "static/media/portfolio.gif": "/static/media/portfolio.ed6c89f1485f23014ebd.gif",
     "static/media/fa-solid-900.svg": "/static/media/fa-solid-900.9fa614346b4e81decc62.svg",
     "static/media/fa-brands-400.svg": "/static/media/fa-brands-400.6fcab609e2f62d5c3104.svg",
@@ -12,7 +12,7 @@
     "static/media/fa-solid-900.eot": "/static/media/fa-solid-900.d93bcbbb0fbfad39d905.eot",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.aae41ea25bd0dde9f796.ttf",
     "static/media/ait_logo.png": "/static/media/ait_logo.da06c9d163ba77056328.png",
-    "static/media/avatar.svg": "/static/media/avatar.b3e40fadf4117460cc53.svg",
+    "static/media/avatar.svg": "/static/media/avatar.43b170bfa6857c31ba01.svg",
     "static/media/fa-regular-400.svg": "/static/media/fa-regular-400.4e8f9fa44f7ec7479c39.svg",
     "static/media/fa-brands-400.eot": "/static/media/fa-brands-400.b09f783b99c88d6989f7.eot",
     "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.ec7723ea62ad74c14959.ttf",
@@ -57,16 +57,16 @@
     "static/media/elightspm_logo.jfif": "/static/media/elightspm_logo.4db3c059b4f8751590c6.jfif",
     "static/media/education.svg": "/static/media/education.d5cc42f042227db12468.svg",
     "index.html": "/index.html",
-    "static/media/unstop-logo.svg": "/static/media/unstop-logo.25cef152d2b3f6370736.svg",
+    "static/media/unstop-logo.svg": "/static/media/unstop-logo.7c06ab8f05ceace84a2d.svg",
     "static/media/googleAssistant.svg": "/static/media/googleAssistant.1c2312558eb2e5f04a45.svg",
-    "static/media/gfg_logo.svg": "/static/media/gfg_logo.da26810712ce67a347c2.svg",
+    "static/media/gfg_logo.svg": "/static/media/gfg_logo.89169b2837963ab7f745.svg",
     "static/media/talksCardBackAlt.svg": "/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
-    "main.24a97954.css.map": "/static/css/main.24a97954.css.map",
-    "main.40b18914.js.map": "/static/js/main.40b18914.js.map"
+    "main.15ea29c6.css.map": "/static/css/main.15ea29c6.css.map",
+    "main.5e208689.js.map": "/static/js/main.5e208689.js.map"
   },
   "entrypoints": [
-    "static/css/main.24a97954.css",
-    "static/js/main.40b18914.js"
+    "static/css/main.15ea29c6.css",
+    "static/js/main.5e208689.js"
   ]
 }
