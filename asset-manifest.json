@@ -1,17 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.82703df9.css",
-    "main.js": "/static/js/main.9e0ee7a2.js",
-    "static/media/portfolio.gif": "/static/media/portfolio.ed6c89f1485f23014ebd.gif",
+    "main.js": "/static/js/main.fa39d688.js",
     "static/media/fa-solid-900.svg": "/static/media/fa-solid-900.9fa614346b4e81decc62.svg",
     "static/media/fa-brands-400.svg": "/static/media/fa-brands-400.6fcab609e2f62d5c3104.svg",
     "static/media/gtbit_logo.png": "/static/media/gtbit_logo.a148911534ae3cdfc5ff.png",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/codsoft_logo.png": "/static/media/codsoft_logo.d941c27be5f4fe9dd354.png",
-    "static/media/dsc_logo.png": "/static/media/dsc_logo.fdf993910e3f48d0cf30.png",
     "static/media/fa-solid-900.eot": "/static/media/fa-solid-900.d93bcbbb0fbfad39d905.eot",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.aae41ea25bd0dde9f796.ttf",
-    "static/media/ait_logo.png": "/static/media/ait_logo.da06c9d163ba77056328.png",
     "static/media/avatar.svg": "/static/media/avatar.43b170bfa6857c31ba01.svg",
     "static/media/fa-regular-400.svg": "/static/media/fa-regular-400.4e8f9fa44f7ec7479c39.svg",
     "static/media/fa-brands-400.eot": "/static/media/fa-brands-400.b09f783b99c88d6989f7.eot",
@@ -27,20 +24,16 @@
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/fa-brands-400.woff": "/static/media/fa-brands-400.dc957891d535aa198135.woff",
     "static/media/drdo.png": "/static/media/drdo.c364738f12b4e56a641d.png",
-    "static/media/animated_logo.svg": "/static/media/animated_logo.abd0b20ec83cb1f60d42.svg",
+    "static/media/ait_logo.png": "/static/media/ait_logo.b7ecbd0672d4c790babd.png",
     "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.4a83f63fd7dd55c4ca85.woff2",
     "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.1c638e5f7632ea819e77.woff2",
     "static/media/sih_logo.png": "/static/media/sih_logo.9d7d1247710e7a0cdf20.png",
     "static/media/ui_ux_design.svg": "/static/media/ui_ux_design.42a2cdaf132097cc499e.svg",
     "static/media/manOnTable.svg": "/static/media/manOnTable.f861b03b5a2d1a28c198.svg",
-    "static/media/gcp_logo.png": "/static/media/gcp_logo.63bb0649c9716d110b14.png",
     "static/media/fa-regular-400.eot": "/static/media/fa-regular-400.86ce78132c18df414d83.eot",
     "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.235a1aa30ba10c7d00d0.ttf",
     "static/media/sololearn_logo.png": "/static/media/sololearn_logo.3a987d5d9a1efb61992e.png",
     "static/media/developerActivity.svg": "/static/media/developerActivity.967f31dad3158d5be07b.svg",
-    "static/media/github_logo.png": "/static/media/github_logo.15e591a7397b9ef45656.png",
-    "static/media/logo.png": "/static/media/logo.d0ca08ad0cef747f7eba.png",
-    "static/media/googleAssistant.jpg": "/static/media/googleAssistant.547075a751cc15673246.jpg",
     "static/media/projects_image.svg": "/static/media/projects_image.0a8062569966b4888c7c.svg",
     "static/media/programmer.svg": "/static/media/programmer.d3060f7bf0527835d72e.svg",
     "static/media/jsFramework.svg": "/static/media/jsFramework.911c595a22a28c7b6f78.svg",
@@ -58,15 +51,14 @@
     "static/media/education.svg": "/static/media/education.d5cc42f042227db12468.svg",
     "index.html": "/index.html",
     "static/media/unstop-logo.svg": "/static/media/unstop-logo.7c06ab8f05ceace84a2d.svg",
-    "static/media/googleAssistant.svg": "/static/media/googleAssistant.1c2312558eb2e5f04a45.svg",
     "static/media/gfg_logo.svg": "/static/media/gfg_logo.89169b2837963ab7f745.svg",
     "static/media/talksCardBackAlt.svg": "/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
     "main.82703df9.css.map": "/static/css/main.82703df9.css.map",
-    "main.9e0ee7a2.js.map": "/static/js/main.9e0ee7a2.js.map"
+    "main.fa39d688.js.map": "/static/js/main.fa39d688.js.map"
   },
   "entrypoints": [
     "static/css/main.82703df9.css",
-    "static/js/main.9e0ee7a2.js"
+    "static/js/main.fa39d688.js"
   ]
 }
