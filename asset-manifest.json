@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.82703df9.css",
-    "main.js": "/static/js/main.fa39d688.js",
+    "main.js": "/static/js/main.469a6f89.js",
     "static/media/fa-solid-900.svg": "/static/media/fa-solid-900.9fa614346b4e81decc62.svg",
     "static/media/fa-brands-400.svg": "/static/media/fa-brands-400.6fcab609e2f62d5c3104.svg",
     "static/media/gtbit_logo.png": "/static/media/gtbit_logo.a148911534ae3cdfc5ff.png",
@@ -23,7 +23,7 @@
     "static/media/fa-solid-900.woff": "/static/media/fa-solid-900.3ef4f1acb44a2df412bf.woff",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/fa-brands-400.woff": "/static/media/fa-brands-400.dc957891d535aa198135.woff",
-    "static/media/drdo.png": "/static/media/drdo.c364738f12b4e56a641d.png",
+    "static/media/drdo_logo.png": "/static/media/drdo_logo.c364738f12b4e56a641d.png",
     "static/media/ait_logo.png": "/static/media/ait_logo.b7ecbd0672d4c790babd.png",
     "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.4a83f63fd7dd55c4ca85.woff2",
     "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.1c638e5f7632ea819e77.woff2",
@@ -41,6 +41,7 @@
     "static/media/experience.svg": "/static/media/experience.c50c576af78a4172f78d.svg",
     "static/media/TMF.png": "/static/media/TMF.c5068edcb7823d9685eb.png",
     "static/media/fa-regular-400.woff": "/static/media/fa-regular-400.2ccf005a6998d30de3d3.woff",
+    "static/media/icaisi.jpg": "/static/media/icaisi.cf368c9c74abb70f586a.jpg",
     "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.e5917ad1531005ea8c3f.woff2",
     "static/media/feelingProud.svg": "/static/media/feelingProud.288e616ff8dc11bd4713.svg",
     "static/media/cloud_infrastructure.svg": "/static/media/cloud_infrastructure.20b580f8784fe74e6e38.svg",
@@ -55,10 +56,10 @@
     "static/media/talksCardBackAlt.svg": "/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
     "main.82703df9.css.map": "/static/css/main.82703df9.css.map",
-    "main.fa39d688.js.map": "/static/js/main.fa39d688.js.map"
+    "main.469a6f89.js.map": "/static/js/main.469a6f89.js.map"
   },
   "entrypoints": [
     "static/css/main.82703df9.css",
-    "static/js/main.fa39d688.js"
+    "static/js/main.469a6f89.js"
   ]
 }
