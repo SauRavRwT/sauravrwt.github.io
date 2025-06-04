@@ -284,9 +284,18 @@ const degrees = {
 const certifications = {
   certifications: [
     {
+      title: "Text To Image",
+      subtitle: "- ICAISI 2025",
+      logo_path: "icaisi.jpg",
+      certificate_link:
+        "https://drive.google.com/file/d/1471GWkzoGmrHXknMFVaVH3VIKUWBlnxM/view?usp=sharing",
+      alt_name: "Xiaomi Ode2Code 3.0",
+      color_code: "#fff",
+    },
+    {
       title: "React Development",
       subtitle: "- DRDO",
-      logo_path: "drdo.png",
+      logo_path: "drdo_logo.png",
       certificate_link:
         "https://drive.google.com/file/d/10NBghFNsACk5i1oIXYa6mPzQGjMveJsi/view?usp=sharing",
       alt_name: "Xiaomi Ode2Code 3.0",
@@ -295,7 +304,7 @@ const certifications = {
     {
       title: "Python Web Development",
       subtitle: "- ICT Academy",
-      logo_path: "ICT.png",
+      logo_path: "ICT_logo.png",
       certificate_link:
         "https://drive.google.com/file/d/1VDICMEVLgxRsFJhP_88azfWulVTsAWgq/view?usp=sharing",
       alt_name: "Tech Mahindra Foundation",
@@ -349,7 +358,7 @@ const certifications = {
     {
       title: "Cybersecurity",
       subtitle: "- Cisco",
-      logo_path: "cisco.png",
+      logo_path: "cisco_logo.png",
       certificate_link:
         "https://drive.google.com/file/d/1-pyD1zEo_GXos6oIUdgsL8cvaZs7jUoi/view?usp=sharing",
       alt_name: "Drone Technology IIITD",
@@ -389,11 +398,22 @@ const experience = {
       work: true,
       experiences: [
         {
+          title: "Frontend Developer",
+          company: "Tradeindia",
+          company_url: "https://www.tradeindia.com/",
+          logo_path: "tradeindia_logo.png",
+          duration: "June 2025- Present",
+          location: "Delhi, India",
+          description:
+            "I had a great experience working at TradeIndia as a Frontend Developer. During my time there, I had the opportunity to work on a variety of projects that not only challenged my skills but also helped me grow professionally. I worked closely with a talented team, contributing to the development of user-friendly and responsive interfaces. It was a rewarding environment where I learned a lot about real-world web development, performance optimization, and collaboration within a fast-paced tech team. Overall, my time at TradeIndia was both productive and enriching, and I’m grateful for the knowledge and experience I gained.",
+          color: "#fc1f20",
+        },
+        {
           title: "Android Developer",
           company: "Freelancer",
           company_url: "https://www.android.com/",
-          logo_path: "android.jpeg",
-          duration: "Feb 2022-Ongoing",
+          logo_path: "android_logo.jpeg",
+          duration: "Feb 2022- March 2024",
           location: "Delhi, India",
           description:
             "I maintained and optimized a ROM for the Redmi Note 11 Pro+ 5G, ensuring stability and implementing feature enhancements to elevate the user experience. My efforts included performance optimizations and bug resolution, which significantly improved the functionality and reliability of the Android ROM. This experience allowed me to deepen my understanding of mobile operating systems and refine my skills in system-level optimization and debugging.",
@@ -408,7 +428,7 @@ const experience = {
           title: "DRDO Internship",
           company: "DRDO",
           company_url: "https://www.drdo.gov.in/drdo/",
-          logo_path: "drdo.png",
+          logo_path: "drdo_logo.png",
           duration: "July 2024 - Nov 2024",
           location: "Vishwavidyalay",
           description:
@@ -480,7 +500,8 @@ const publications = {
       createdAt: "2025-03-26",
       description:
         "TextToImage is a python application that generates images from text descriptions using advanced Stable Diffusion.",
-      url: "#",
+      url:
+        "https://drive.google.com/file/d/1471GWkzoGmrHXknMFVaVH3VIKUWBlnxM/view?usp=sharing",
     },
   ],
 };
