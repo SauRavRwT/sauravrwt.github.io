@@ -463,6 +463,17 @@ const experience = {
       title: "Volunteerships",
       experiences: [
         {
+          title: "Aavishkar 1.0",
+          company: "GTBIT",
+          company_url: "http://gtbit.ac.in/",
+          logo_path: "gtbit_logo.png",
+          duration: "23 May 225",
+          location: "Delhi, India",
+          description:
+            "Presented my research paper on 'Text To Pictures with using Stable Diffusion' at Aavishkar 1.0, an event organized by GTBIT. This event provided a platform for students to showcase their innovative ideas and research work. My paper focused on the application of Stable Diffusion models in generating images from textual descriptions, highlighting the advancements in AI and machine learning.",
+          color: "#4285F4",
+        },
+        {
           title: "SIH 2023",
           company: "Smart india Hackathon",
           company_url: "https://sih.gov.in/",
@@ -496,10 +507,10 @@ const publications = {
   data: [
     {
       id: "a1s2d3f4g5h6j7k8l9",
-      name: "TextToImage",
-      createdAt: "2025-03-26",
+      name: "Text To Pictures with using Stable Diffusion",
+      createdAt: "2025-06-13",
       description:
-        "TextToImage is a python application that generates images from text descriptions using advanced Stable Diffusion.",
+        "Published a research paper on Text To Pictures with using Stable Diffusion at ICAISI-2025. Developed a Python-based application that leverages advanced Stable Diffusion models to generate high-quality images from textual descriptions.",
       url:
         "https://drive.google.com/file/d/1471GWkzoGmrHXknMFVaVH3VIKUWBlnxM/view?usp=sharing",
     },
