@@ -9,6 +9,7 @@
 
 .contact-heading-div {
   display: flex;
+  padding-bottom: 1rem;
 }
 
 .blog-heading-div {

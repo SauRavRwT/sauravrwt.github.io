@@ -4,7 +4,7 @@ const settings = {
 
 //SEO Related settings
 const seo = {
-  title: "Saurav's Portfolio",
+  title: "stay curious👋🏻",
   description:
     "Turning creativity into code, imagination into reality, and complexity into simplicity, one line at a time.",
   og: {
@@ -65,7 +65,7 @@ const socialMediaLinks = [
 const skills = {
   data: [
     {
-      title: "Full Stack Development",
+      title: "Frontend Development",
       fileName: "FullStackImg",
       skills: [
         "⚡ Building responsive website front end using Bootstrap and React.",
@@ -148,7 +148,7 @@ const skills = {
           skillName: "GitHub",
           fontAwesomeClassname: "simple-icons:github",
           style: {
-            color: "#ffffff",
+            color: "#181717",
           },
         },
         {
@@ -162,7 +162,7 @@ const skills = {
           skillName: "WordPress",
           fontAwesomeClassname: "simple-icons:wordpress",
           style: {
-            color: "#ffffff",
+            color: "#181717",
           },
         },
         {
@@ -184,13 +184,6 @@ const skills = {
       ],
       softwareSkills: [
         {
-          skillName: "Adobe XD",
-          fontAwesomeClassname: "simple-icons:adobexd",
-          style: {
-            color: "#FF2BC2",
-          },
-        },
-        {
           skillName: "Figma",
           fontAwesomeClassname: "simple-icons:figma",
           style: {
@@ -198,10 +191,10 @@ const skills = {
           },
         },
         {
-          skillName: "Adobe Illustrator",
-          fontAwesomeClassname: "simple-icons:adobeillustrator",
+          skillName: "Framer",
+          fontAwesomeClassname: "simple-icons:framer",
           style: {
-            color: "#FF7C00",
+            color: "#000000",
           },
         },
         {
@@ -223,7 +216,7 @@ const competitiveSites = {
       siteName: "Github",
       iconifyClassname: "simple-icons:github",
       style: {
-        color: "#F79F1B",
+        color: "#181717",
       },
       profileLink: "https://github.com/SauRavRwT/",
     },
@@ -340,11 +333,11 @@ const certifications = {
     {
       title: "DSA in Java",
       subtitle: "- geeksforgeeks",
-      logo_path: "gfg_logo.svg",
+      logo_path: "gfg_logo.png",
       certificate_link:
         "https://drive.google.com/file/d/188eUekF1N11DW4TRwi0brrv0aDk_czyz/view?usp=sharing",
       alt_name: "DSA in Java",
-      color_code: "#000",
+      color_code: "#fff",
     },
     {
       title: "Drone Technology",
@@ -412,7 +405,7 @@ const experience = {
           title: "Android Developer",
           company: "Freelancer",
           company_url: "https://www.android.com/",
-          logo_path: "android_logo.jpeg",
+          logo_path: "android_logo.png",
           duration: "Feb 2022- March 2024",
           location: "Delhi, India",
           description:
@@ -450,7 +443,7 @@ const experience = {
           title: "GeeksforGeeks Course",
           company: "geeksforgeeks",
           company_url: "https://www.geeksforgeeks.org/",
-          logo_path: "gfg_logo.svg",
+          logo_path: "gfg_logo.png",
           duration: "july 2023 - Oct 2023",
           location: "Work from home",
           description:

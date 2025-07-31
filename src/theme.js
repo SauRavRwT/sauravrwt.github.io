@@ -195,4 +195,18 @@ export const materialTealTheme = {
   splashBg: "#05505E",
 };
 
-export const chosenTheme = blackTheme;
+export const pastelLightTheme = {
+  body: "#F5F7FA",
+  text: "#2A2E45",
+  expTxtColor: "#3C4251",
+  highlight: "#D0EBFF",
+  dark: "#1E2746",
+  secondaryText: "#788195",
+  imageHighlight: "#B5D5F5",
+  compImgHighlight: "#E8ECF2",
+  jacketColor: "#A9A1E1",
+  headerColor: "#B5D5F577",
+  splashBg: "#2A2E45",
+};
+
+export const chosenTheme = pastelLightTheme;
