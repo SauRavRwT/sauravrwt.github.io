@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7e3718e4.css",
-    "main.js": "/static/js/main.06d9e19c.js",
+    "main.css": "/static/css/main.47702dbf.css",
+    "main.js": "/static/js/main.52d59320.js",
     "static/media/fa-solid-900.svg": "/static/media/fa-solid-900.9fa614346b4e81decc62.svg",
     "static/media/fa-brands-400.svg": "/static/media/fa-brands-400.6fcab609e2f62d5c3104.svg",
     "static/media/gtbit_logo.png": "/static/media/gtbit_logo.a148911534ae3cdfc5ff.png",
@@ -54,11 +54,11 @@
     "static/media/unstop-logo.svg": "/static/media/unstop-logo.7c06ab8f05ceace84a2d.svg",
     "static/media/talksCardBackAlt.svg": "/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
-    "main.7e3718e4.css.map": "/static/css/main.7e3718e4.css.map",
-    "main.06d9e19c.js.map": "/static/js/main.06d9e19c.js.map"
+    "main.47702dbf.css.map": "/static/css/main.47702dbf.css.map",
+    "main.52d59320.js.map": "/static/js/main.52d59320.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e3718e4.css",
-    "static/js/main.06d9e19c.js"
+    "static/css/main.47702dbf.css",
+    "static/js/main.52d59320.js"
   ]
 }
