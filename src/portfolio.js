@@ -510,6 +510,60 @@ const publications = {
   ],
 };
 
+// Blog
+const blog = {
+  blogPosts: [
+    {
+      id: 1,
+      title: "The Science of Happiness: What Really Works?",
+      emoji: "😃",
+      excerpt:
+        "Discover the latest research on happiness, including surprising habits and mindsets that can boost your well-being. Learn practical tips you can start using today!",
+      category: "Lifestyle",
+      tags: ["Happiness", "Science", "Well-being"],
+      date: "2025-08-01",
+      readTime: "7 min read",
+      featured: true,
+    },
+    {
+      id: 2,
+      title: "How to Learn Anything Fast: Secrets from Memory Champions",
+      emoji: "🧠",
+      excerpt:
+        "Uncover the memory techniques used by world champions to learn faster and remember more. From visualization to spaced repetition, supercharge your learning!",
+      category: "Self Improvement",
+      tags: ["Learning", "Memory", "Productivity"],
+      date: "2025-07-20",
+      readTime: "9 min read",
+      featured: true,
+    },
+    {
+      id: 3,
+      title: "The Most Bizarre Facts About Space You Never Knew",
+      emoji: "🪐",
+      excerpt:
+        "Space is full of mysteries! Explore mind-blowing facts about black holes, time dilation, and the weirdest objects in our universe.",
+      category: "Science",
+      tags: ["Space", "Astronomy", "Fun Facts"],
+      date: "2025-06-15",
+      readTime: "6 min read",
+      featured: false,
+    },
+    {
+      id: 4,
+      title: "Why Do We Dream? Theories and Discoveries",
+      emoji: "�",
+      excerpt:
+        "Dreams have fascinated humans for centuries. Dive into the latest theories and scientific discoveries about why we dream and what our dreams mean.",
+      category: "Psychology",
+      tags: ["Dreams", "Sleep", "Mind"],
+      date: "2025-05-10",
+      readTime: "8 min read",
+      featured: false,
+    },
+  ],
+};
+
 // Contact Page
 const contactPageData = {
   contactSection: {
@@ -518,13 +572,13 @@ const contactPageData = {
     description:
       "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with Web, IT, React, Android development.",
   },
-  blogSection: {
-    title: "Blogs",
-    subtitle:
-      "For individual fundamental empowerment, I like to write powerful lessons that create impact on each of the reader individually to change the core of their character.",
-    link: "https://sauravrwt.github.io/blogPage/",
-    avatar_image_path: "blogs_image.svg",
-  },
+  // blogSection: {
+  //   title: "Blogs",
+  //   subtitle:
+  //     "Insights, tutorials, and thoughts on web development, AI, and technology. Join me on this journey of continuous learning and discovery.",
+  //   link: "https://sauravrwt.github.io/blogPage/",
+  //   avatar_image_path: "blogs_image.svg",
+  // },
   addressSection: {
     title: "Address",
     subtitle: "InderPuri, Delhi, India - 12",
@@ -556,4 +610,5 @@ export {
   publicationsHeader,
   publications,
   contactPageData,
+  blog,
 };
