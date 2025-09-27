@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.82de7058.css",
-    "main.js": "/static/js/main.862a60d0.js",
+    "main.css": "/static/css/main.0607b8e2.css",
+    "main.js": "/static/js/main.3bacd73d.js",
     "static/media/fa-solid-900.svg": "/static/media/fa-solid-900.9fa614346b4e81decc62.svg",
     "static/media/fa-brands-400.svg": "/static/media/fa-brands-400.6fcab609e2f62d5c3104.svg",
     "static/media/gtbit_logo.png": "/static/media/gtbit_logo.a148911534ae3cdfc5ff.png",
@@ -9,7 +9,7 @@
     "static/media/codsoft_logo.png": "/static/media/codsoft_logo.d941c27be5f4fe9dd354.png",
     "static/media/fa-solid-900.eot": "/static/media/fa-solid-900.d93bcbbb0fbfad39d905.eot",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.aae41ea25bd0dde9f796.ttf",
-    "static/media/avatar.svg": "/static/media/avatar.f06370da5dd3dfc788c9.svg",
+    "static/media/avatar.svg": "/static/media/avatar.80108163bd3ad0432cf8.svg",
     "static/media/fa-regular-400.svg": "/static/media/fa-regular-400.4e8f9fa44f7ec7479c39.svg",
     "static/media/fa-brands-400.eot": "/static/media/fa-brands-400.b09f783b99c88d6989f7.eot",
     "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.ec7723ea62ad74c14959.ttf",
@@ -54,11 +54,11 @@
     "static/media/unstop-logo.svg": "/static/media/unstop-logo.7c06ab8f05ceace84a2d.svg",
     "static/media/talksCardBackAlt.svg": "/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
-    "main.82de7058.css.map": "/static/css/main.82de7058.css.map",
-    "main.862a60d0.js.map": "/static/js/main.862a60d0.js.map"
+    "main.0607b8e2.css.map": "/static/css/main.0607b8e2.css.map",
+    "main.3bacd73d.js.map": "/static/js/main.3bacd73d.js.map"
   },
   "entrypoints": [
-    "static/css/main.82de7058.css",
-    "static/js/main.862a60d0.js"
+    "static/css/main.0607b8e2.css",
+    "static/js/main.3bacd73d.js"
   ]
 }
