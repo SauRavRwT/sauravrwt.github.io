@@ -3,8 +3,9 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import { Fade } from "react-reveal";
-import { blog } from "../../portfolio";
+import { blog, blogDesp } from "../../portfolio";
 import "./BlogComponent.css";
+import BlogImg from "./BlogsImg";
 
 class BlogComponent extends Component {
   constructor(props) {
@@ -55,8 +56,10 @@ class BlogComponent extends Component {
         <Header theme={theme} />
         <header className="blog-header">
           <Fade bottom duration={1000} distance="30px">
+            <div className="blog-header-img" aria-hidden="true">
+              <BlogImg theme={theme} />
+            </div>
             <div className="blog-header-content">
-              <div className="blog-header-img" aria-hidden="true"></div>
               <h1 className="blog-title" style={{ color: theme.text }}>
                 My Blog
               </h1>
@@ -64,9 +67,7 @@ class BlogComponent extends Component {
                 className="blog-subtitle"
                 style={{ color: theme.secondaryText }}
               >
-                Insights, tutorials, and thoughts on web development, AI, and
-                technology. Join me on this journey of continuous learning and
-                discovery.
+                {blogDesp.description}
               </p>
               <div
                 className="blog-stats"
