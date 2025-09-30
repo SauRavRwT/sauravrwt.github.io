@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.e89fdd00.css",
+    "main.css": "/static/css/main.16c35ef7.css",
     "main.js": "/static/js/main.c0d27ee3.js",
     "static/media/fa-solid-900.svg": "/static/media/fa-solid-900.9fa614346b4e81decc62.svg",
     "static/media/fa-brands-400.svg": "/static/media/fa-brands-400.6fcab609e2f62d5c3104.svg",
@@ -54,11 +54,11 @@
     "static/media/unstop-logo.svg": "/static/media/unstop-logo.7c06ab8f05ceace84a2d.svg",
     "static/media/talksCardBackAlt.svg": "/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
-    "main.e89fdd00.css.map": "/static/css/main.e89fdd00.css.map",
+    "main.16c35ef7.css.map": "/static/css/main.16c35ef7.css.map",
     "main.c0d27ee3.js.map": "/static/js/main.c0d27ee3.js.map"
   },
   "entrypoints": [
-    "static/css/main.e89fdd00.css",
+    "static/css/main.16c35ef7.css",
     "static/js/main.c0d27ee3.js"
   ]
 }
