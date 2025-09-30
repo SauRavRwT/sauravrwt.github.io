@@ -69,7 +69,7 @@ const skills = {
       fileName: "FullStackImg",
       skills: [
         "⚡ Building responsive website front end using Bootstrap and React.",
-        "⚡ Developing mobile applications using React Native and solo android apps using Kotlin",
+        "⚡ Developing mobile applications using android apps using Kotlin",
         "⚡ Creating application backend in Node-Express & Firebase",
       ],
       softwareSkills: [
@@ -175,6 +175,52 @@ const skills = {
       ],
     },
     {
+      title: "Data Analyst",
+      fileName: "DataScienceImg",
+      skills: [
+        "⚡ Analyzing data to find useful insights.",
+        "⚡ Creating visualizations using tableau and powerBI.",
+        "⚡ Building and maintaining dashboards.",
+      ],
+      softwareSkills: [
+        {
+          skillName: "Python",
+          fontAwesomeClassname: "simple-icons:python",
+          style: {
+            color: "#3776AB",
+          },
+        },
+        {
+          skillName: "PowerBI",
+          fontAwesomeClassname: "simple-icons:powerbi",
+          style: {
+            color: "#F2C811",
+          },
+        },
+        {
+          skillName: "Excel",
+          fontAwesomeClassname: "simple-icons:microsoftexcel",
+          style: {
+            color: "#217346",
+          },
+        },
+        // {
+        //   skillName: "R",
+        //   fontAwesomeClassname: "simple-icons:r",
+        //   style: {
+        //     color: "#276DC3",
+        //   },
+        // },
+        // {
+        //   skillName: "Tableau",
+        //   fontAwesomeClassname: "simple-icons:tableau",
+        //   style: {
+        //     color: "#E97627",
+        //   },
+        // },
+      ],
+    },
+    {
       title: "UI/UX Design",
       fileName: "DesignImg",
       skills: [
@@ -276,6 +322,15 @@ const degrees = {
 
 const certifications = {
   certifications: [
+    {
+      title: "JAVA",
+      subtitle: "- Linkedin Learning",
+      logo_path: "linkedin_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/1RCJ3vHJFwqfi_bVeq2Jeo2WBQ9ajrl1o/view?usp=sharing",
+      alt_name: "The Complete 2024 Web Development Bootcamp",
+      color_code: "",
+    },
     {
       title: "Text To Image",
       subtitle: "- ICAISI 2025",
@@ -391,6 +446,17 @@ const experience = {
       work: true,
       experiences: [
         {
+          title: "Data Analyst",
+          company: "GlobalLogic",
+          company_url: "https://www.globallogic.com/in/",
+          logo_path: "globallogic_logo.png",
+          duration: "Sept 2025 - Present",
+          location: "Noida, India",
+          description:
+            "Excited to announce that I've started a new chapter in my career with GlobalLogic as a Data Analyst!, Looking forward to contributing to innovative projects and collaborating with a talented team. Here's to new beginnings and exciting challenges ahead!",
+          color: "#0071C5",
+        },
+        {
           title: "Frontend Developer",
           company: "Tradeindia",
           company_url: "https://www.tradeindia.com/",
@@ -439,17 +505,17 @@ const experience = {
             "I have worked on various tasks, including building a calculator, creating a static portfolio, and developing a blog page integrated with Firebase, among others. For more projects, you can explore my GitHub repositories. Through these experiences, I have gained a solid understanding of the basics of web development and have become proficient in using tools like VS Code, Git, GitHub, Firebase, and more.",
           color: "#ee3c26",
         },
-        {
-          title: "GeeksforGeeks Course",
-          company: "geeksforgeeks",
-          company_url: "https://www.geeksforgeeks.org/",
-          logo_path: "gfg_logo.png",
-          duration: "july 2023 - Oct 2023",
-          location: "Work from home",
-          description:
-            "Internship on DSA in Java, I have successfully completed a 3-month internship at GeeksforGeeks, specializing in Data Structures and Algorithms in Java. This incredible experience allowed me to dive deep into the world of Java and further refine my skills in creating dynamic, efficient, and user-friendly web applications. I had the opportunity to learn about web security, gaining valuable insights into best practices for building secure and robust web applications. From understanding potential vulnerabilities to implementing effective security measures, this internship has been a game-changer for my development journey.",
-          color: "#0071C5",
-        },
+        // {
+        //   title: "GeeksforGeeks Course",
+        //   company: "geeksforgeeks",
+        //   company_url: "https://www.geeksforgeeks.org/",
+        //   logo_path: "gfg_logo.png",
+        //   duration: "july 2023 - Oct 2023",
+        //   location: "Work from home",
+        //   description:
+        //     "Internship on DSA in Java, I have successfully completed a 3-month internship at GeeksforGeeks, specializing in Data Structures and Algorithms in Java. This incredible experience allowed me to dive deep into the world of Java and further refine my skills in creating dynamic, efficient, and user-friendly web applications. I had the opportunity to learn about web security, gaining valuable insights into best practices for building secure and robust web applications. From understanding potential vulnerabilities to implementing effective security measures, this internship has been a game-changer for my development journey.",
+        //   color: "#0071C5",
+        // },
       ],
     },
     {
@@ -486,7 +552,7 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "These projects reflect my passion for coding and my commitment to continuous learning and improvement.",
+    "My projects are a direct reflection of my core passion for coding and my unwavering commitment to continuous learning and improvement. Each one represents not just a technical solution, but a step in my ongoing journey to refine my skills, explore new technologies, and build software that is both effective and elegantly crafted.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -510,11 +576,53 @@ const publications = {
   ],
 };
 
+const blogDesp = {
+  title: "Blogs",
+  description:
+    "A space dedicated to sharing insights, in-depth tutorials, and personal reflections on the ever-evolving landscapes of web development and artificial intelligence. Here, I document my journey of continuous learning and invite you to join me in the discovery of new technologies and ideas.",
+};
+
 // Blog
 const blog = {
   blogPosts: [
     {
+      id: 0,
+      title: "New journey with GlobalLogic",
+      emoji: "🎉",
+      excerpt:
+        "Excited to announce that I've started a new chapter in my career with GlobalLogic as a Data Analyst!, Looking forward to contributing to innovative projects and collaborating with a talented team. Here's to new beginnings and exciting challenges ahead!",
+      category: "Programming",
+      tags: ["JavaScript", "Web Development", "Programming"],
+      date: "2025-09-01",
+      readTime: "10 min read",
+      featured: true,
+    },
+    {
       id: 1,
+      title: "Understanding React Hooks",
+      emoji: "⚛️",
+      excerpt:
+        "React Hooks have revolutionized the way we build components in React. In this blog post, we'll explore the most commonly used hooks like useState, useEffect, and useContext, along with practical examples to help you get started.",
+      category: "Web Development",
+      tags: ["React", "JavaScript", "Web Development"],
+      date: "2025-08-20",
+      readTime: "8 min read",
+      featured: true,
+    },
+    {
+      id: 2,
+      title: "10 Tips to Boost Your Productivity Every Day",
+      emoji: "🚀",
+      excerpt:
+        "Struggling to stay productive? Here are 10 science-backed tips to help you get more done in less time. From time management hacks to mindset shifts, these strategies will transform your daily routine!",
+      category: "Productivity",
+      tags: ["Productivity", "Time Management", "Self Improvement"],
+      date: "2025-08-10",
+      readTime: "5 min read",
+      featured: true,
+    },
+    {
+      id: 3,
       title: "The Science of Happiness: What Really Works?",
       emoji: "😃",
       excerpt:
@@ -526,7 +634,7 @@ const blog = {
       featured: true,
     },
     {
-      id: 2,
+      id: 4,
       title: "How to Learn Anything Fast: Secrets from Memory Champions",
       emoji: "🧠",
       excerpt:
@@ -538,7 +646,7 @@ const blog = {
       featured: true,
     },
     {
-      id: 3,
+      id: 5,
       title: "The Most Bizarre Facts About Space You Never Knew",
       emoji: "🪐",
       excerpt:
@@ -550,7 +658,7 @@ const blog = {
       featured: false,
     },
     {
-      id: 4,
+      id: 6,
       title: "Why Do We Dream? Theories and Discoveries",
       emoji: "�",
       excerpt:
@@ -559,6 +667,18 @@ const blog = {
       tags: ["Dreams", "Sleep", "Mind"],
       date: "2025-05-10",
       readTime: "8 min read",
+      featured: false,
+    },
+    {
+      id: 7,
+      title: "A Beginner's Guide to Meditation: Finding Inner Peace",
+      emoji: "🧘‍♂️",
+      excerpt:
+        "Meditation can transform your life. Learn the basics of meditation, different techniques, and how to get started on your journey to inner peace.",
+      category: "Wellness",
+      tags: ["Meditation", "Mindfulness", "Self Care"],
+      date: "2025-04-05",
+      readTime: "10 min read",
       featured: false,
     },
   ],
@@ -572,13 +692,6 @@ const contactPageData = {
     description:
       "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with Web, IT, React, Android development.",
   },
-  // blogSection: {
-  //   title: "Blogs",
-  //   subtitle:
-  //     "Insights, tutorials, and thoughts on web development, AI, and technology. Join me on this journey of continuous learning and discovery.",
-  //   link: "https://sauravrwt.github.io/blogPage/",
-  //   avatar_image_path: "blogs_image.svg",
-  // },
   addressSection: {
     title: "Address",
     subtitle: "InderPuri, Delhi, India - 12",
@@ -611,4 +724,5 @@ export {
   publications,
   contactPageData,
   blog,
+  blogDesp,
 };
