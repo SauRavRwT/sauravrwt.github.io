@@ -14,7 +14,7 @@
 
 .blog-header-content {
   margin: auto;
-  padding: 2rem;
+  padding: 4rem;
   text-align: center;
   padding-bottom: 1rem;
 }
@@ -28,7 +28,7 @@
 }
 
 .blog-header-img > * {
-  max-width: 90%;
+  max-width: 80%;
   height: auto;
 }
 
