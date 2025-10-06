@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.16c35ef7.css",
-    "main.js": "/static/js/main.bbf04c25.js",
+    "main.js": "/static/js/main.0a20c741.js",
     "static/media/fa-solid-900.svg": "/static/media/fa-solid-900.9fa614346b4e81decc62.svg",
     "static/media/fa-brands-400.svg": "/static/media/fa-brands-400.6fcab609e2f62d5c3104.svg",
     "static/media/gtbit_logo.png": "/static/media/gtbit_logo.a148911534ae3cdfc5ff.png",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/ait_logo.png": "/static/media/ait_logo.34bca90d349d3e9a9e68.png",
     "static/media/codsoft_logo.png": "/static/media/codsoft_logo.d941c27be5f4fe9dd354.png",
     "static/media/fa-solid-900.eot": "/static/media/fa-solid-900.d93bcbbb0fbfad39d905.eot",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.aae41ea25bd0dde9f796.ttf",
@@ -24,7 +25,6 @@
     "static/media/fa-solid-900.woff": "/static/media/fa-solid-900.3ef4f1acb44a2df412bf.woff",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/fa-brands-400.woff": "/static/media/fa-brands-400.dc957891d535aa198135.woff",
-    "static/media/ait_logo.png": "/static/media/ait_logo.b7ecbd0672d4c790babd.png",
     "static/media/drdo_logo.png": "/static/media/drdo_logo.6ba92ce476d5ab79e897.png",
     "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.4a83f63fd7dd55c4ca85.woff2",
     "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.1c638e5f7632ea819e77.woff2",
@@ -57,10 +57,10 @@
     "static/media/talksCardBackAlt.svg": "/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
     "main.16c35ef7.css.map": "/static/css/main.16c35ef7.css.map",
-    "main.bbf04c25.js.map": "/static/js/main.bbf04c25.js.map"
+    "main.0a20c741.js.map": "/static/js/main.0a20c741.js.map"
   },
   "entrypoints": [
     "static/css/main.16c35ef7.css",
-    "static/js/main.bbf04c25.js"
+    "static/js/main.0a20c741.js"
   ]
 }
