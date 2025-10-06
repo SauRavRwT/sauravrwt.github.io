@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.16c35ef7.css",
-    "main.js": "/static/js/main.c0d27ee3.js",
+    "main.js": "/static/js/main.bbf04c25.js",
     "static/media/fa-solid-900.svg": "/static/media/fa-solid-900.9fa614346b4e81decc62.svg",
     "static/media/fa-brands-400.svg": "/static/media/fa-brands-400.6fcab609e2f62d5c3104.svg",
     "static/media/gtbit_logo.png": "/static/media/gtbit_logo.a148911534ae3cdfc5ff.png",
@@ -20,6 +20,7 @@
     "static/media/GoogleSans-Medium.ttf": "/static/media/GoogleSans-Medium.963c3e555aaada9ef8a9.ttf",
     "static/media/GoogleSans-Bold.ttf": "/static/media/GoogleSans-Bold.d907e4bf3e32637a636e.ttf",
     "static/media/contactMail.png": "/static/media/contactMail.d4c9ac42fba95158a55c.png",
+    "static/media/ICT_logo.png": "/static/media/ICT_logo.403ff46f5b4aff9d5396.png",
     "static/media/fa-solid-900.woff": "/static/media/fa-solid-900.3ef4f1acb44a2df412bf.woff",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/fa-brands-400.woff": "/static/media/fa-brands-400.dc957891d535aa198135.woff",
@@ -30,6 +31,7 @@
     "static/media/sih_logo.png": "/static/media/sih_logo.9d7d1247710e7a0cdf20.png",
     "static/media/ui_ux_design.svg": "/static/media/ui_ux_design.42a2cdaf132097cc499e.svg",
     "static/media/manOnTable.svg": "/static/media/manOnTable.f861b03b5a2d1a28c198.svg",
+    "static/media/xiaomi.png": "/static/media/xiaomi.cfb89959240d2af16fd2.png",
     "static/media/fa-regular-400.eot": "/static/media/fa-regular-400.86ce78132c18df414d83.eot",
     "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.235a1aa30ba10c7d00d0.ttf",
     "static/media/sololearn_logo.png": "/static/media/sololearn_logo.3a987d5d9a1efb61992e.png",
@@ -55,10 +57,10 @@
     "static/media/talksCardBackAlt.svg": "/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
     "main.16c35ef7.css.map": "/static/css/main.16c35ef7.css.map",
-    "main.c0d27ee3.js.map": "/static/js/main.c0d27ee3.js.map"
+    "main.bbf04c25.js.map": "/static/js/main.bbf04c25.js.map"
   },
   "entrypoints": [
     "static/css/main.16c35ef7.css",
-    "static/js/main.c0d27ee3.js"
+    "static/js/main.bbf04c25.js"
   ]
 }
