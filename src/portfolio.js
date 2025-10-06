@@ -20,7 +20,7 @@ const greeting = {
   logo_name: "SauravRawat",
   nickname: "Balbheji",
   subTitle:
-    "I'm Web Developer and UI/UX Designer from Delhi, India working in web development. My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way.",
+    "Hey there! 👋🏻 I’m a passionate Frontend Developer from Delhi, dedicated to building functional, user-friendly, and visually appealing websites.",
   resumeLink:
     "https://drive.google.com/file/d/1W_sMhwXlFd8ydlfoEGi3e5SvwpuLXkit/view?usp=sharing",
   portfolio_repository: "https://github.com/SauRavRwT/sauravrwt.github.io",
@@ -52,7 +52,7 @@ const socialMediaLinks = [
     name: "Gmail",
     link: "mailto:souravrawat142@gmail.com",
     fontAwesomeIcon: "fa-google",
-    backgroundColor: "#EA4235",
+    backgroundColor: "#D14836",
   },
   {
     name: "Instagram",
@@ -69,7 +69,7 @@ const skills = {
       fileName: "FullStackImg",
       skills: [
         "⚡ Building responsive website front end using Bootstrap and React.",
-        "⚡ Developing mobile applications using android apps using Kotlin",
+        "⚡ Developing mobile applications using Android Studio.",
         "⚡ Creating application backend in Node-Express & Firebase",
       ],
       softwareSkills: [
@@ -302,7 +302,7 @@ const degrees = {
       alt_name: "GTBIT Delhi",
       duration: "2022 - 2025",
       descriptions: [
-        "I have a solid foundation in software engineering, having studied core subjects such as Data Structures, Algorithms, Database Management Systems (DBMS), Operating Systems (OS), Computer Architecture (CA), and Artificial Intelligence (AI). Additionally, I have enhanced my technical skills by completing specialized courses in Deep Learning, Data Science, Cloud Computing, and Full Stack Development. These experiences have equipped me with a comprehensive understanding of both fundamental concepts and advanced technologies, enabling me to analyze problems effectively and design innovative solutions. My diverse knowledge base bridges the gap between theoretical learning and practical applications, preparing me to excel in dynamic and multidisciplinary environments.",
+        "I have a strong foundation in core software engineering subjects like DSA, DBMS, OS, CA, and AI, complemented by specialized training in Deep Learning, Data Science, Cloud Computing, and Full Stack Development. This blend of theory and practice enables me to analyze problems effectively and build innovative, real-world solutions.",
       ],
       website_link: "http://gtbit.ac.in",
     },
@@ -313,7 +313,7 @@ const degrees = {
       alt_name: "AIT Delhi",
       duration: "2019 - 2022",
       descriptions: [
-        "I hold a Diploma in Information Technology & Enabled Services, which has provided me with a strong technical foundation. During my academic journey, I worked on an E-Shop website as part of my minor project, gaining hands-on experience in web development and e-commerce platforms. For my major project, I developed a Web Collections application, further honing my skills in designing and implementing functional web-based solutions. These projects allowed me to apply my technical knowledge in real-world scenarios, enhancing my problem-solving abilities and strengthening my expertise in web technologies.",
+        "During my Diploma, I built a strong technical foundation. I developed an E-Shop website as my minor project and a Web Collections app as my major project, gaining hands-on experience in web development, e-commerce, and real-world problem-solving.",
       ],
       website_link: "https://dseu.ac.in/shakarpur-i/",
     },
@@ -329,7 +329,7 @@ const certifications = {
       certificate_link:
         "https://drive.google.com/file/d/1RCJ3vHJFwqfi_bVeq2Jeo2WBQ9ajrl1o/view?usp=sharing",
       alt_name: "The Complete 2024 Web Development Bootcamp",
-      color_code: "",
+      // color_code: "",
     },
     {
       title: "Text To Image",
@@ -338,7 +338,7 @@ const certifications = {
       certificate_link:
         "https://drive.google.com/file/d/1471GWkzoGmrHXknMFVaVH3VIKUWBlnxM/view?usp=sharing",
       alt_name: "Xiaomi Ode2Code 3.0",
-      color_code: "#fff",
+      // color_code: "",
     },
     {
       title: "React Development",
@@ -347,7 +347,7 @@ const certifications = {
       certificate_link:
         "https://drive.google.com/file/d/10NBghFNsACk5i1oIXYa6mPzQGjMveJsi/view?usp=sharing",
       alt_name: "Xiaomi Ode2Code 3.0",
-      color_code: "#fff",
+      // color_code: "#fff",
     },
     {
       title: "Python Web Development",
@@ -356,7 +356,7 @@ const certifications = {
       certificate_link:
         "https://drive.google.com/file/d/1VDICMEVLgxRsFJhP_88azfWulVTsAWgq/view?usp=sharing",
       alt_name: "Tech Mahindra Foundation",
-      color_code: "#fff",
+      // color_code: "#fff",
     },
     {
       title: "Web Development",
@@ -365,7 +365,7 @@ const certifications = {
       certificate_link:
         "https://drive.google.com/file/d/1F0-fBuRcgky6ZTzSctHipIaaYzCEfkeR/view?usp=sharing",
       alt_name: "Codsoft Internship",
-      color_code: "#fff",
+      // color_code: "#fff",
     },
     {
       title: "Xiaomi Ode2Code 3.0",
@@ -374,7 +374,7 @@ const certifications = {
       certificate_link:
         "https://drive.google.com/file/d/12Q0O6_-XJmxd20f5U-HzWJId_QzLZdZa/view?usp=sharing",
       alt_name: "Xiaomi Ode2Code 3.0",
-      color_code: "#fff",
+      // color_code: "#fff",
     },
     {
       title: "Smart India Hackathon",
@@ -383,7 +383,7 @@ const certifications = {
       certificate_link:
         "https://drive.google.com/file/d/1A_C9JWzbN_bJ9wPRPZrWUr275210rRWQ/view?usp=sharing",
       alt_name: "SIH",
-      color_code: "#fff",
+      // color_code: "#fff",
     },
     {
       title: "DSA in Java",
@@ -392,7 +392,7 @@ const certifications = {
       certificate_link:
         "https://drive.google.com/file/d/188eUekF1N11DW4TRwi0brrv0aDk_czyz/view?usp=sharing",
       alt_name: "DSA in Java",
-      color_code: "#fff",
+      // color_code: "#fff",
     },
     {
       title: "Drone Technology",
@@ -401,7 +401,7 @@ const certifications = {
       certificate_link:
         "https://drive.google.com/file/d/1-oMluxxlZTlciML2zrOyzOEHRLbSo2J9/view?usp=sharing",
       alt_name: "Drone Technology IIITD",
-      color_code: "#fff",
+      // color_code: "#fff",
     },
     {
       title: "Cybersecurity",
@@ -410,7 +410,7 @@ const certifications = {
       certificate_link:
         "https://drive.google.com/file/d/1-pyD1zEo_GXos6oIUdgsL8cvaZs7jUoi/view?usp=sharing",
       alt_name: "Drone Technology IIITD",
-      color_code: "#fff",
+      // color_code: "#fff",
     },
     {
       title: "Game Deveopment",
@@ -419,7 +419,7 @@ const certifications = {
       certificate_link:
         "https://drive.google.com/file/d/1gQMM_GJ3krUMr4L_IS0xqUWkk_atF25n/view?usp=sharing",
       alt_name: "Codsoft Internship",
-      color_code: "#fff",
+      // color_code: "#fff",
     },
     {
       title: "Advaced IT",
@@ -428,7 +428,7 @@ const certifications = {
       certificate_link:
         "https://drive.google.com/file/d/10F1pdCm3MON06taBa9aGwKnMPzvOIr0T/view?usp=sharing",
       alt_name: "Tech Mahindra Foundation",
-      color_code: "#fff",
+      // color_code: "#fff",
     },
   ],
 };
@@ -438,7 +438,7 @@ const experience = {
   title: "Experience",
   subtitle: "Work, Internship and Volunteership",
   description:
-    "I have worked in many evolving projects, Designer and Maintainer.I love organising events and that is why I am also involved with many opensource communities as a representative.",
+    "I’ve worked on many evolving projects as a Developer, Designer, and Maintainer. I enjoy organizing events, which has led me to actively participate in several open-source communities as a representative.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -450,8 +450,8 @@ const experience = {
           company: "GlobalLogic",
           company_url: "https://www.globallogic.com/in/",
           logo_path: "globallogic_logo.png",
-          duration: "Sept 2025 - Present",
-          location: "Noida, India",
+          duration: "Aug 2025 - Present",
+          location: "Gurugram, India",
           description:
             "Excited to announce that I've started a new chapter in my career with GlobalLogic as a Data Analyst!, Looking forward to contributing to innovative projects and collaborating with a talented team. Here's to new beginnings and exciting challenges ahead!",
           color: "#0071C5",
@@ -461,10 +461,10 @@ const experience = {
           company: "Tradeindia",
           company_url: "https://www.tradeindia.com/",
           logo_path: "tradeindia_logo.png",
-          duration: "June 2025- Present",
-          location: "Delhi, India",
+          duration: "June 2025- Aug 2025",
+          location: "Noida, India",
           description:
-            "I had a great experience working at TradeIndia as a Frontend Developer. During my time there, I had the opportunity to work on a variety of projects that not only challenged my skills but also helped me grow professionally. I worked closely with a talented team, contributing to the development of user-friendly and responsive interfaces. It was a rewarding environment where I learned a lot about real-world web development, performance optimization, and collaboration within a fast-paced tech team. Overall, my time at TradeIndia was both productive and enriching, and I’m grateful for the knowledge and experience I gained.",
+            "I had a valuable experience working at TradeIndia as a Frontend Developer, where I contributed to building user-friendly and responsive interfaces. Collaborating with a skilled team, I enhanced my expertise in real-world web development, performance optimization, and teamwork within a fast-paced environment. The experience was both enriching and instrumental in my professional growth.",
           color: "#fc1f20",
         },
         {
@@ -473,9 +473,9 @@ const experience = {
           company_url: "https://www.android.com/",
           logo_path: "android_logo.png",
           duration: "Feb 2022- March 2024",
-          location: "Delhi, India",
+          location: "work from home",
           description:
-            "I maintained and optimized a ROM for the Redmi Note 11 Pro+ 5G, ensuring stability and implementing feature enhancements to elevate the user experience. My efforts included performance optimizations and bug resolution, which significantly improved the functionality and reliability of the Android ROM. This experience allowed me to deepen my understanding of mobile operating systems and refine my skills in system-level optimization and debugging.",
+            "I maintained and optimized a custom ROM for the Redmi Note 11 Pro+ 5G, enhancing stability, performance, and user experience through targeted feature improvements and bug fixes. This project strengthened my understanding of mobile operating systems and honed my skills in system-level optimization and debugging.",
           color: "#fc1f20",
         },
       ],
@@ -489,9 +489,9 @@ const experience = {
           company_url: "https://www.drdo.gov.in/drdo/",
           logo_path: "drdo_logo.png",
           duration: "July 2024 - Nov 2024",
-          location: "Vishwavidyalay",
+          location: "Vishwavidyalay, India",
           description:
-            "I have successfully completed a 4-month internship at DRDO, specializing in React Development!. This incredible experience allowed me to dive deep into the world of ReactJS and further refine my skills in creating dynamic, efficient, and user-friendly web applications., I had the opportunity to learn about web security, gaining valuable insights into best practices for building secure and robust web applications. From understanding potential vulnerabilities to implementing effective security measures, this internship has been a game-changer for my development journey.",
+            "Intern at DRDO, specializing in React Development!. This incredible experience allowed me to dive deep into the world of ReactJS and further refine my skills in creating dynamic, efficient, and user-friendly web applications., I had the opportunity to learn about web security, gaining valuable insights into best practices for building secure and robust web applications. From understanding potential vulnerabilities to implementing effective security measures, this internship has been a game-changer for my development journey.",
           color: "#0071C5",
         },
         {
@@ -552,7 +552,7 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "My projects are a direct reflection of my core passion for coding and my unwavering commitment to continuous learning and improvement. Each one represents not just a technical solution, but a step in my ongoing journey to refine my skills, explore new technologies, and build software that is both effective and elegantly crafted.",
+    "My projects are a direct reflection of my core passion for coding and my unwavering commitment to continuous learning and improvement.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -579,7 +579,7 @@ const publications = {
 const blogDesp = {
   title: "Blogs",
   description:
-    "A space dedicated to sharing insights, in-depth tutorials, and personal reflections on the ever-evolving landscapes of web development and artificial intelligence. Here, I document my journey of continuous learning and invite you to join me in the discovery of new technologies and ideas.",
+    "A place where I share my thoughts, tutorials, and experiences in web development and artificial intelligence. It’s my space to learn, explore, and grow-while sharing that journey with others.",
 };
 
 // Blog
