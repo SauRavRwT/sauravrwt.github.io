@@ -204,20 +204,6 @@ const skills = {
             color: "#217346",
           },
         },
-        // {
-        //   skillName: "R",
-        //   fontAwesomeClassname: "simple-icons:r",
-        //   style: {
-        //     color: "#276DC3",
-        //   },
-        // },
-        // {
-        //   skillName: "Tableau",
-        //   fontAwesomeClassname: "simple-icons:tableau",
-        //   style: {
-        //     color: "#E97627",
-        //   },
-        // },
       ],
     },
     {
@@ -505,17 +491,6 @@ const experience = {
             "I have worked on various tasks, including building a calculator, creating a static portfolio, and developing a blog page integrated with Firebase, among others. For more projects, you can explore my GitHub repositories. Through these experiences, I have gained a solid understanding of the basics of web development and have become proficient in using tools like VS Code, Git, GitHub, Firebase, and more.",
           color: "#ee3c26",
         },
-        // {
-        //   title: "GeeksforGeeks Course",
-        //   company: "geeksforgeeks",
-        //   company_url: "https://www.geeksforgeeks.org/",
-        //   logo_path: "gfg_logo.png",
-        //   duration: "july 2023 - Oct 2023",
-        //   location: "Work from home",
-        //   description:
-        //     "Internship on DSA in Java, I have successfully completed a 3-month internship at GeeksforGeeks, specializing in Data Structures and Algorithms in Java. This incredible experience allowed me to dive deep into the world of Java and further refine my skills in creating dynamic, efficient, and user-friendly web applications. I had the opportunity to learn about web security, gaining valuable insights into best practices for building secure and robust web applications. From understanding potential vulnerabilities to implementing effective security measures, this internship has been a game-changer for my development journey.",
-        //   color: "#0071C5",
-        // },
       ],
     },
     {
@@ -722,7 +697,7 @@ export {
   projectsHeader,
   publicationsHeader,
   publications,
-  contactPageData,
   blog,
   blogDesp,
+  contactPageData,
 };
