@@ -23,6 +23,54 @@
       ]
     },
     {
+      "id": "R_kgDOMDfdhg",
+      "name": "ChitChat",
+      "createdAt": "2024-06-01T09:55:52Z",
+      "url": "https://github.com/SauRavRwT/ChitChat",
+      "description": "ChitChat is a React app that translates text messages into different languages instantly. It supports real-time text-to-text translation in a chat application.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "HTML",
+          "iconifyClass": "logos-html-5"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "logos-css-3"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        },
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOLxMOOA",
+      "name": "Wallpaper-App",
+      "createdAt": "2024-04-21T14:33:36Z",
+      "url": "https://github.com/SauRavRwT/Wallpaper-App",
+      "description": "Art-Gallery Web-App with made up of reactjs uses Pexel api to deliver high-quality wallpaper content. The website offers a wide variety of wallpapers for users to choose from, and the content is updated regularly.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "HTML",
+          "iconifyClass": "logos-html-5"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "logos-css-3"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        }
+      ]
+    },
+    {
       "id": "R_kgDON3NTVQ",
       "name": "text-to-img",
       "createdAt": "2025-02-10T12:23:06Z",
@@ -37,28 +85,6 @@
         {
           "name": "Jupyter Notebook",
           "iconifyClass": "logos-jupyter"
-        }
-      ]
-    },
-    {
-      "id": "R_kgDOL9MJpg",
-      "name": "Quote-App",
-      "createdAt": "2024-05-18T04:52:03Z",
-      "url": "https://github.com/SauRavRwT/Quote-App",
-      "description": "This project is a simple Quote App built with React. It fetches quotes from an external source and displays them in a modern, user-friendly interface.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "HTML",
-          "iconifyClass": "logos-html-5"
-        },
-        {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
-        },
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
         }
       ]
     },
@@ -81,11 +107,11 @@
       ]
     },
     {
-      "id": "R_kgDOLxMOOA",
-      "name": "Wallpaper-App",
-      "createdAt": "2024-04-21T14:33:36Z",
-      "url": "https://github.com/SauRavRwT/Wallpaper-App",
-      "description": "Art-Gallery Web-App with made up of reactjs uses Pexel api to deliver high-quality wallpaper content. The website offers a wide variety of wallpapers for users to choose from, and the content is updated regularly.",
+      "id": "R_kgDOL9MJpg",
+      "name": "Quote-App",
+      "createdAt": "2024-05-18T04:52:03Z",
+      "url": "https://github.com/SauRavRwT/Quote-App",
+      "description": "This project is a simple Quote App built with React. It fetches quotes from an external source and displays them in a modern, user-friendly interface.",
       "isFork": false,
       "languages": [
         {

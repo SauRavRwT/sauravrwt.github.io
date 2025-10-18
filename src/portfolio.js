@@ -309,12 +309,21 @@ const degrees = {
 const certifications = {
   certifications: [
     {
+      title: "Data Analysis",
+      subtitle: "- Linkedin Learning",
+      logo_path: "linkedin_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/1rTn1vrm1s6OevmOm4hGU7wqa_IHIBB4W/view?usp=sharing",
+      alt_name: "data_analysis",
+      // color_code: "",
+    },
+    {
       title: "JAVA",
       subtitle: "- Linkedin Learning",
       logo_path: "linkedin_logo.png",
       certificate_link:
         "https://drive.google.com/file/d/1RCJ3vHJFwqfi_bVeq2Jeo2WBQ9ajrl1o/view?usp=sharing",
-      alt_name: "The Complete 2024 Web Development Bootcamp",
+      alt_name: "JAVA",
       // color_code: "",
     },
     {
@@ -372,12 +381,12 @@ const certifications = {
       // color_code: "#fff",
     },
     {
-      title: "DSA in Java",
+      title: "Data Structures and Algorithms in Java",
       subtitle: "- geeksforgeeks",
       logo_path: "gfg_logo.png",
       certificate_link:
         "https://drive.google.com/file/d/188eUekF1N11DW4TRwi0brrv0aDk_czyz/view?usp=sharing",
-      alt_name: "DSA in Java",
+      alt_name: "DSA GeeksforGeeks",
       // color_code: "#fff",
     },
     {
