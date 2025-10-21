@@ -50,6 +50,9 @@ class BlogComponent extends Component {
       blogPosts.reduce((sum, post) => sum + parseInt(post.readTime), 0) /
         totalPosts
     );
+    const sortedPosts = Array.isArray(blogPosts)
+      ? [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date))
+      : [];
 
     return (
       <div className="blog-main">
@@ -121,7 +124,7 @@ class BlogComponent extends Component {
         </header>
         <main className="blog-posts-container">
           <div className="blog-posts-grid">
-            {blogPosts.map((post, index) => {
+            {sortedPosts.map((post, index) => {
               return (
                 <Fade
                   bottom
