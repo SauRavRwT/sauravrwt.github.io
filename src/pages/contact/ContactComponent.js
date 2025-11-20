@@ -7,7 +7,9 @@ import Button from "../../components/button/Button";
 import AddressImg from "./AddressImg";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
-import { greeting, contactPageData } from "../../portfolio.js";
+import { greeting, contactPageData, writer } from "../../portfolio.js";
+import BlogArt from "./BlogArt.js";
+import AvatarImg from "./AvatarImg.js";
 
 const ContactData = contactPageData.contactSection;
 const addressSection = contactPageData.addressSection;
@@ -23,10 +25,11 @@ class Contact extends Component {
           <Fade bottom duration={1000} distance="40px">
             <div className="contact-heading-div">
               <div className="contact-heading-img-div">
-                <img
+                {/* <img
                   src={require(`../../assets/images/${ContactData["profile_image_path"]}`)}
                   alt=""
-                />
+                /> */}
+                <AvatarImg theme={theme} />
               </div>
               <div className="contact-heading-text-div">
                 <h1
@@ -54,7 +57,36 @@ class Contact extends Component {
             </div>
           </Fade>
           <Fade bottom duration={1000} distance="40px">
+            <div className="blog-heading-div">
+              <div className="blog-heading-text-div">
+                <h1 className="blog-heading-text" style={{ color: theme.text }}>
+                  {writer["title"]}
+                </h1>
+                <p
+                  className="blog-header-detail-text subTitle"
+                  style={{ color: theme.secondaryText }}
+                >
+                  {writer["subtitle"]}
+                </p>
+                <div className="blogsite-btn-div">
+                  <Button
+                    text="Explore My Writeups"
+                    newTab={true}
+                    href={writer.link}
+                    theme={theme}
+                  />
+                </div>
+              </div>
+              <div className="blog-heading-img-div">
+                <BlogArt theme={theme} />
+              </div>
+            </div>
+          </Fade>
+          <Fade bottom duration={1000} distance="40px">
             <div className="address-heading-div">
+              <div className="contact-heading-img-div">
+                <AddressImg theme={theme} />
+              </div>
               <div className="address-heading-text-div">
                 <h1
                   className="address-heading-text"
@@ -88,9 +120,6 @@ class Contact extends Component {
                     theme={theme}
                   />
                 </div>
-              </div>
-              <div className="contact-heading-img-div">
-                <AddressImg theme={theme} />
               </div>
             </div>
           </Fade>

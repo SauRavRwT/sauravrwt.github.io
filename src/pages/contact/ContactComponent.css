@@ -14,11 +14,12 @@
 
 .blog-heading-div {
   display: flex;
+  margin-top: 40px;
 }
 
 .address-heading-div {
   display: flex;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .blog-heading-div > * {
@@ -46,14 +47,17 @@
 
 .contact-heading-text-div {
   text-align: center;
+  margin: auto;
 }
 
 .blog-heading-text-div {
   text-align: center;
+  margin: auto;
 }
 
 .address-heading-text-div {
   text-align: center;
+  margin: auto;
 }
 
 .contact-heading-img-div > * {

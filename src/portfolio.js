@@ -668,6 +668,13 @@ const blog = {
   ],
 };
 
+const writer = {
+  title: "writerfromhill",
+  subtitle:
+    "I share shayari and poems inspired by everyday thoughts. Visit my page to read short pieces and couplets that reflect life and mood.",
+  link: "https://sauravrwt.github.io/writerfromhill/",
+};
+
 // Contact Page
 const contactPageData = {
   contactSection: {
@@ -708,5 +715,6 @@ export {
   publications,
   blog,
   blogDesp,
+  writer,
   contactPageData,
 };
