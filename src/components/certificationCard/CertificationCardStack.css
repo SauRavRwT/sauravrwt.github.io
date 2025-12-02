@@ -1,0 +1,254 @@
+.cert-stack-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  max-width: 600px;
+  height: 340px;
+  width: 30%;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: pan-y;
+}
+
+.cert-stack-card-container {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  perspective: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-card1 {
+  position: absolute;
+  width: 100%;
+  max-width: 240px;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  will-change: transform, opacity;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.cert-card1 a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.cert-card-header {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.cert-card-header img {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+  user-select: none;
+  border-radius: 16px;
+}
+
+.cert-card-label {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.cert-card-label h3 {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.cert-card-body {
+  padding: 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cert-card-body h2 {
+  font-family: "Google Sans Regular";
+  margin: 10px;
+  font-size: 20px;
+  word-break: break-word;
+}
+
+.cert-card-body h3 {
+  font-family: "Google Sans Regular";
+  margin: 10px;
+  font-size: 18px;
+  color: #808080;
+  word-break: break-word;
+}
+
+.cert-counter-indicator {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.cert-counter-dot {
+  height: 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Responsive Design - Tablet (768px and below) */
+@media (max-width: 768px) {
+  .cert-stack-container {
+    gap: 0.75rem;
+    padding: 0.5rem;
+    max-width: 90vw;
+    height: 300px;
+    width: 100%;
+  }
+
+  .cert-stack-card-container {
+    height: 300px;
+  }
+
+  .cert-card1 {
+    max-width: 200px;
+  }
+
+  .cert-card-body {
+    padding: 1rem;
+  }
+
+  .cert-card-body h2 {
+    font-size: 1rem;
+    margin: 0 0 0.25rem 0;
+  }
+
+  .cert-card-body h3 {
+    font-size: 0.8rem;
+  }
+
+  .cert-card-label h3 {
+    font-size: 0.75rem;
+  }
+}
+
+/* Responsive Design - Mobile (480px and below) */
+@media (max-width: 480px) {
+  .cert-stack-container {
+    gap: 0.5rem;
+    padding: 0.25rem;
+    max-width: 100%;
+    height: 280px;
+  }
+
+  .cert-stack-card-container {
+    height: 280px;
+  }
+
+  .cert-card1 {
+    max-width: 180px;
+  }
+
+  .cert-card-body {
+    padding: 0.75rem;
+  }
+
+  .cert-card-body h2 {
+    font-size: 0.95rem;
+    margin: 0 0 0.2rem 0;
+  }
+
+  .cert-card-body h3 {
+    font-size: 0.75rem;
+  }
+
+  .cert-card-label h3 {
+    font-size: 0.7rem;
+  }
+
+  .cert-counter-indicator {
+    gap: 6px;
+    padding: 0.25rem;
+  }
+
+  .cert-counter-dot {
+    height: 6px;
+  }
+}
+
+/* Extra small devices (360px and below) */
+@media (max-width: 360px) {
+  .cert-stack-container {
+    height: 260px;
+  }
+
+  .cert-stack-card-container {
+    height: 260px;
+  }
+
+  .cert-card1 {
+    max-width: 160px;
+  }
+
+  .cert-card-header {
+    height: 55%;
+  }
+
+  .cert-card-body {
+    padding: 0.5rem;
+  }
+
+  .cert-card-body h2 {
+    font-size: 0.9rem;
+  }
+
+  .cert-card-body h3 {
+    font-size: 0.7rem;
+  }
+}
+
+/* Large screens (1200px and above) */
+@media (min-width: 1200px) {
+  .cert-stack-container {
+    max-width: 300px;
+    width: 30%;
+    height: 360px;
+  }
+
+  .cert-stack-card-container {
+    height: 360px;
+  }
+
+  .cert-card1 {
+    max-width: 280px;
+  }
+
+  .cert-card-body h2 {
+    font-size: 1.2rem;
+  }
+
+  .cert-card-body h3 {
+    font-size: 0.95rem;
+  }
+}

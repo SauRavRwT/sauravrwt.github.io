@@ -3,10 +3,24 @@ import "./Certifications.css";
 import { Fade } from "react-reveal";
 import { certifications } from "../../portfolio";
 import CertificationCard from "../../components/certificationCard/CertificationCard";
+import CertificationCardStack from "../../components/certificationCard/CertificationCardStack";
 
 class Certifications extends Component {
+  groupCertificationsBySubtitle = () => {
+    const grouped = {};
+    certifications.certifications.forEach((cert) => {
+      if (!grouped[cert.subtitle]) {
+        grouped[cert.subtitle] = [];
+      }
+      grouped[cert.subtitle].push(cert);
+    });
+    return grouped;
+  };
+
   render() {
     const theme = this.props.theme;
+    const groupedCerts = this.groupCertificationsBySubtitle();
+
     return (
       <div className="main" id="certs">
         <div className="certs-header-div">
@@ -17,9 +31,27 @@ class Certifications extends Component {
           </Fade>
         </div>
         <div className="certs-body-div">
-          {certifications.certifications.map((cert, index) => {
+          {Object.keys(groupedCerts).map((subtitle, groupIndex) => {
+            const groupCerts = groupedCerts[subtitle];
+
+            // If only one certificate in group, show as single card
+            if (groupCerts.length === 1) {
+              return (
+                <CertificationCard
+                  key={groupIndex}
+                  certificate={groupCerts[0]}
+                  theme={theme}
+                />
+              );
+            }
+
+            // If multiple certificates with same subtitle, use stack
             return (
-              <CertificationCard key={index} certificate={cert} theme={theme} />
+              <CertificationCardStack
+                key={groupIndex}
+                certificates={groupCerts}
+                theme={theme}
+              />
             );
           })}
         </div>
