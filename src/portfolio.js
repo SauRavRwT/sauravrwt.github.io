@@ -309,6 +309,24 @@ const degrees = {
 const certifications = {
   certifications: [
     {
+      title: "MySQL",
+      subtitle: "- Linkedin Learning",
+      logo_path: "linkedin_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/1cRApMI6wHpX_Yo6szYBI0OFwq4N5Nxey/view?usp=sharing",
+      alt_name: "data_science",
+      // color_code: "",
+    },
+    {
+      title: "GIT Workflow",
+      subtitle: "- Linkedin Learning",
+      logo_path: "linkedin_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/1nSPl-KckezWxsssItR6l6m_edAOSH-UV/view?usp=sharing",
+      alt_name: "data_science",
+      // color_code: "",
+    },
+    {
       title: "Data Analysis",
       subtitle: "- Linkedin Learning",
       logo_path: "linkedin_logo.png",
