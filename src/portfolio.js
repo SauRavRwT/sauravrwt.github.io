@@ -20,9 +20,9 @@ const greeting = {
   logo_name: "SauravRawat",
   nickname: "Balbheji",
   subTitle:
-    "Hey there! 👋🏻 I’m a passionate Frontend Developer from Delhi, dedicated to building functional, user-friendly, and visually appealing websites.",
+    "Hey there! 👋🏻, Building beautiful, data-driven web experiences. Combining front-end expertise with analytical insights to create impactful digital solutions.",
   resumeLink:
-    "https://drive.google.com/file/d/1W_sMhwXlFd8ydlfoEGi3e5SvwpuLXkit/view?usp=sharing",
+    "https://drive.google.com/file/d/1QcrqnVsX8sfps38ilbxAZ8wU3Dts4U17/view?usp=sharing",
   portfolio_repository: "https://github.com/SauRavRwT/sauravrwt.github.io",
   githubProfile: "https://github.com/SauRavRwT",
 };
@@ -399,7 +399,7 @@ const certifications = {
       // color_code: "#fff",
     },
     {
-      title: "Data Structures and Algorithms in Java",
+      title: "Data Structures",
       subtitle: "- geeksforgeeks",
       logo_path: "gfg_logo.png",
       certificate_link:
@@ -593,8 +593,8 @@ const blog = {
       emoji: "🎉",
       excerpt:
         "Excited to announce that I've started a new chapter in my career with GlobalLogic as a Data Analyst!, Looking forward to contributing to innovative projects and collaborating with a talented team. Here's to new beginnings and exciting challenges ahead!",
-      category: "Programming",
-      tags: ["JavaScript", "Web Development", "Programming"],
+      category: "Data Analysis",
+      tags: ["PowerBi", "MySQL", "Python", "Excel"],
       date: "2025-09-01",
       readTime: "10 min read",
       featured: true,
@@ -625,18 +625,6 @@ const blog = {
     },
     {
       id: 3,
-      title: "The Science of Happiness: What Really Works?",
-      emoji: "😃",
-      excerpt:
-        "Discover the latest research on happiness, including surprising habits and mindsets that can boost your well-being. Learn practical tips you can start using today!",
-      category: "Lifestyle",
-      tags: ["Happiness", "Science", "Well-being"],
-      date: "2025-08-01",
-      readTime: "7 min read",
-      featured: true,
-    },
-    {
-      id: 4,
       title: "How to Learn Anything Fast: Secrets from Memory Champions",
       emoji: "🧠",
       excerpt:
@@ -648,19 +636,7 @@ const blog = {
       featured: true,
     },
     {
-      id: 5,
-      title: "The Most Bizarre Facts About Space You Never Knew",
-      emoji: "🪐",
-      excerpt:
-        "Space is full of mysteries! Explore mind-blowing facts about black holes, time dilation, and the weirdest objects in our universe.",
-      category: "Science",
-      tags: ["Space", "Astronomy", "Fun Facts"],
-      date: "2025-06-15",
-      readTime: "6 min read",
-      featured: false,
-    },
-    {
-      id: 6,
+      id: 4,
       title: "Why Do We Dream? Theories and Discoveries",
       emoji: "�",
       excerpt:
@@ -672,16 +648,16 @@ const blog = {
       featured: false,
     },
     {
-      id: 7,
-      title: "A Beginner's Guide to Meditation: Finding Inner Peace",
-      emoji: "🧘‍♂️",
+      id: 5,
+      title: "Building own writing, where thoughts find a home",
+      emoji: "✍️",
       excerpt:
-        "Meditation can transform your life. Learn the basics of meditation, different techniques, and how to get started on your journey to inner peace.",
-      category: "Wellness",
-      tags: ["Meditation", "Mindfulness", "Self Care"],
-      date: "2025-04-05",
-      readTime: "10 min read",
-      featured: false,
+        "I share shayari and poems inspired by everyday thoughts. Visit my page to read short pieces and couplets that reflect life and mood.",
+      category: "Writing",
+      tags: ["Shayari", "Poems", "Creative Writing"],
+      date: "2025-11-14",
+      readTime: "4 min read",
+      featured: true,
     },
   ],
 };
@@ -690,7 +666,7 @@ const writer = {
   title: "writerfromhill",
   subtitle:
     "I share shayari and poems inspired by everyday thoughts. Visit my page to read short pieces and couplets that reflect life and mood.",
-  link: "https://sauravrwt.github.io/writerfromhill/",
+  link: "https://writerfromhill.vercel.app/",
 };
 
 // Contact Page
