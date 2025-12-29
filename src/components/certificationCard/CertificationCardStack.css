@@ -159,11 +159,11 @@
     gap: 0.5rem;
     padding: 0.25rem;
     max-width: 100%;
-    height: 280px;
+    height: 286px;
   }
 
   .cert-stack-card-container {
-    height: 280px;
+    height: 286px;
   }
 
   .cert-card1 {
@@ -189,7 +189,7 @@
 
   .cert-counter-indicator {
     gap: 6px;
-    padding: 0.25rem;
+    padding: 1rem;
   }
 
   .cert-counter-dot {
