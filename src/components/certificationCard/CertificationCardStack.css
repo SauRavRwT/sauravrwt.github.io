@@ -31,9 +31,10 @@
   left: 50%;
   transform-origin: center center;
   will-change: transform, opacity;
-  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border: 1px solid #d9dbdf;
+  border-radius: 16px;
+  box-shadow: 5px 5px 5px #d9dbdf;
 }
 
 .cert-card1 a {
