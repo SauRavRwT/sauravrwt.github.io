@@ -209,4 +209,18 @@ export const pastelLightTheme = {
   splashBg: "#2A2E45",
 };
 
-export const chosenTheme = pastelLightTheme;
+export const pastelLightThemev2 = {
+  body: "#D8E4FF",
+  splashBg: "#00120B",
+  text: "#00120B",
+  secondaryText: "#6B818C",
+  expTxtColor: "#35605A",
+  highlight: "#31E981",
+  imageHighlight: "#6B818C",
+  compImgHighlight: "#D8E4FF",
+  dark: "#00120B",
+  headerColor: "#35605A88",
+  jacketColor: "#6B818C",
+};
+
+export const chosenTheme = pastelLightThemev2;
