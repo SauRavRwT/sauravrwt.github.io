@@ -567,13 +567,13 @@ const publicationsHeader = {
 const publications = {
   data: [
     {
-      id: "a1s2d3f4g5h6j7k8l9",
+      id: "9781003654483-75",
       name: "T2I Generation Using Stable Diffusion",
       createdAt: "2025-06-13",
       description:
         "Published a research paper on T2I Generation Using Stable Diffusion at ICAISI-2025. Developed a Python-based application that leverages advanced Stable Diffusion models to generate high-quality images from textual descriptions.",
       url:
-        "https://drive.google.com/file/d/1471GWkzoGmrHXknMFVaVH3VIKUWBlnxM/view?usp=sharing",
+        "https://www.taylorfrancis.com/chapters/edit/10.1201/9781003654483-75/t2i-generation-using-stable-diffusion-kritika-verma-savneet-kaur-deepali-virmani-saurav-rawat?context=ubx",
     },
   ],
 };
