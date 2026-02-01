@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./CertificationCardStack.css";
+import { Fade } from "react-reveal";
 
 class CertificationCardStack extends Component {
   constructor(props) {
@@ -207,83 +208,103 @@ class CertificationCardStack extends Component {
     }
 
     return (
-      <div
-        className="cert-stack-container"
-        onMouseDown={this.handleMouseDown}
-        onMouseMove={this.handleMouseMove}
-        onTouchStart={this.handleTouchStart}
-        onTouchMove={this.handleTouchMove}
-        onTouchEnd={this.handleTouchEnd}
-        ref={this.containerRef}
-      >
-        <div className="cert-stack-card-container">
-          {certificates.map((cert, index) => (
-            <div
-              key={index}
-              className="cert-card1"
-              style={{
-                backgroundColor: theme?.body || "#ffffff",
-                ...this.getCardStyle(index),
-              }}
-            >
-              <a
-                href={cert.certificate_link}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={(e) => {
-                  if (this.state.isDragging || Math.abs(this.state.dragX) > 5) {
-                    e.preventDefault();
-                  }
-                }}
+      <Fade bottom duration={2000} distance="20px">
+        <div
+          className="cert-stack-container"
+          onMouseDown={this.handleMouseDown}
+          onMouseMove={this.handleMouseMove}
+          onTouchStart={this.handleTouchStart}
+          onTouchMove={this.handleTouchMove}
+          onTouchEnd={this.handleTouchEnd}
+          ref={this.containerRef}
+        >
+          <div className="cert-stack-card-container">
+            {certificates.map((cert, index) => (
+              <div
+                key={index}
+                className="cert-card1"
                 style={{
-                  pointerEvents:
-                    index === this.state.currentIndex ? "auto" : "none",
+                  backgroundColor: theme?.body || "#ffffff",
+                  ...this.getCardStyle(index),
                 }}
               >
-                <div className="cert-card-header">
-                  <img
-                    src={require(`../../assets/images/${cert.logo_path}`)}
-                    alt={cert.alt_name || cert.title}
-                    draggable={false}
-                  />
-                  <div className="cert-card-label">
-                    {/* <h3 style={{ color: theme?.body || "#ffffff" }}>
-                      Certificate
-                    </h3> */}
-                  </div>
+                <div className="cert">
+                  <a
+                    href={cert.certificate_link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => {
+                      if (
+                        this.state.isDragging ||
+                        Math.abs(this.state.dragX) > 5
+                      ) {
+                        e.preventDefault();
+                      }
+                    }}
+                    style={{
+                      pointerEvents:
+                        index === this.state.currentIndex ? "auto" : "none",
+                    }}
+                  >
+                    <div
+                      className="cert-card-header"
+                      style={{ backgroundColor: cert.color_code }}
+                    >
+                      <div className="cert-overlay"></div>
+                      <img
+                        src={require(`../../assets/images/${cert.logo_path}`)}
+                        alt={cert.alt_name || cert.title}
+                        draggable={false}
+                      />
+                      <div className="cert-details fadeIn-top">
+                        <h3
+                          className="cert-card-label-text"
+                          style={{ color: theme?.body || "#ffffff" }}
+                        >
+                          Certificate
+                        </h3>
+                      </div>
+                    </div>
+                  </a>
                 </div>
                 <div className="cert-card-body">
-                  <h2 style={{ color: theme?.text || "#000000" }}>
+                  <h2
+                    className="cert-card-title"
+                    style={{ color: theme?.text || "#000000" }}
+                  >
                     {cert.title}
                   </h2>
-                  <h3 style={{ color: theme?.secondaryText || "#666666" }}>
+                  <h3
+                    className="cert-card-subtitle"
+                    style={{ color: theme?.secondaryText || "#666666" }}
+                  >
                     {cert.subtitle}
                   </h3>
                 </div>
-              </a>
-            </div>
-          ))}
-        </div>
+              </div>
+            ))}
+          </div>
 
-        {/* Counter indicator */}
-        <div className="cert-counter-indicator">
-          {certificates.map((_, index) => (
-            <div
-              key={index}
-              className="cert-counter-dot"
-              style={{
-                width: index === this.state.currentIndex ? "24px" : "8px",
-                backgroundColor:
-                  index === this.state.currentIndex
-                    ? theme?.text || "#000000"
-                    : theme?.secondaryText || "#cccccc",
-                opacity: index === this.state.currentIndex ? 1 : 0.4,
-              }}
-              onClick={() => this.setState({ currentIndex: index })}
-            />
-          ))}
+          {/* Counter indicator */}
+          <div className="cert-counter-indicator">
+            {certificates.map((_, index) => (
+              <div
+                key={index}
+                className="cert-counter-dot"
+                style={{
+                  width: index === this.state.currentIndex ? "24px" : "8px",
+                  backgroundColor:
+                    index === this.state.currentIndex
+                      ? theme?.text || "#000000"
+                      : theme?.secondaryText || "#cccccc",
+                  opacity: index === this.state.currentIndex ? 1 : 0.4,
+                }}
+                onClick={() => this.setState({ currentIndex: index })}
+              />
+            ))}
+          </div>
         </div>
-      </div>
+      </Fade>
     );
   }
 }
