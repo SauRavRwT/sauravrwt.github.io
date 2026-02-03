@@ -64,13 +64,10 @@ body {
   }
 }
 
-::-webkit-scrollbar {
-  width: 5px;
+:root {
+  --scrollbar-color: white;
 }
-::-webkit-scrollbar-thumb {
-  background-color: #000;
-  border-radius: 10px;
-}
-::-webkit-scrollbar-track {
-  border-radius: 10px;
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-color) transparent;
 }
