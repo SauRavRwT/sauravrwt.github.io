@@ -4,8 +4,7 @@
   align-items: center;
   gap: 1rem;
   padding: 0.5rem;
-  max-width: 600px;
-  height: 340px;
+  height: 330px;
   width: 30%;
   user-select: none;
   -webkit-user-select: none;
@@ -16,16 +15,13 @@
   position: relative;
   width: 100%;
   height: 340px;
-  perspective: 1000px;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .cert-card1 {
   position: absolute;
   width: 100%;
-  max-width: 300px;
   height: 100%;
   top: 50%;
   left: 50%;
@@ -66,23 +62,17 @@
   user-select: none;
 }
 
-.cert-card-label {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  padding: 0.5rem;
-}
-
 .cert-card-label-text {
-  margin: 0;
-  font-size: 0.85rem;
-  font-weight: 600;
-  opacity: 0.9;
+  color: #fff;
+  font-weight: 500;
+  font-family: "Google Sans Regular";
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
 }
 
 .cert-card-body {
+  margin: 0;
   padding: 1.25rem;
   flex: 1;
   display: flex;
@@ -204,70 +194,12 @@
   }
 
   .cert-card-body {
-    padding: 1rem;
+    padding: 0;
     margin: 0;
     flex: 1 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-
-  .cert-card-title {
-    font-family: "Google Sans Regular";
-    font-size: 18px;
-    margin: 10px;
-    word-break: break-word;
-  }
-  .cert-card-subtitle {
-    font-family: "Google Sans Regular";
-    font-size: 16px;
-    color: #808080;
-    margin: 10px;
-    word-break: break-word;
-  }
-}
-
-/* Responsive Design - Mobile (480px and below) */
-@media (max-width: 480px) {
-  .cert-stack-container {
-    gap: 0.5rem;
-    padding: 0.25rem;
-    max-width: 100%;
-    height: 286px;
-  }
-
-  .cert-stack-card-container {
-    height: 286px;
-  }
-
-  .cert-card1 {
-    max-width: 180px;
-  }
-
-  .cert-card-body {
-    padding: 0.75rem;
-  }
-
-  .cert-card-title {
-    font-size: 1rem;
-    margin: 0 0 0.2rem 0;
-  }
-
-  .cert-card-subtitle {
-    font-size: 0.75rem;
-  }
-
-  .cert-card-label-text {
-    font-size: 0.7rem;
-  }
-
-  .cert-counter-indicator {
-    gap: 6px;
-    padding: 1rem;
-  }
-
-  .cert-counter-dot {
-    height: 6px;
   }
 }
 
@@ -285,13 +217,5 @@
 
   .cert-card1 {
     max-width: 280px;
-  }
-
-  .cert-card-title {
-    font-size: 1.2rem;
-  }
-
-  .cert-card-subtitle {
-    font-size: 0.95rem;
   }
 }
