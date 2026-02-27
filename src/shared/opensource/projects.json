@@ -89,29 +89,33 @@
       ]
     },
     {
-      "id": "R_kgDOOHM7NA",
-      "name": "TextGenerator",
-      "createdAt": "2025-03-12T05:41:38Z",
-      "url": "https://github.com/SauRavRwT/TextGenerator",
-      "description": "A powerful text processing tool that combines PDF summarization, text generation, and NLP analysis using state-of-the-art transformer models.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Jupyter Notebook",
-          "iconifyClass": "logos-jupyter"
-        },
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        }
-      ]
-    },
-    {
       "id": "R_kgDOL9MJpg",
       "name": "Quote-App",
       "createdAt": "2024-05-18T04:52:03Z",
       "url": "https://github.com/SauRavRwT/Quote-App",
       "description": "This project is a simple Quote App built with React. It fetches quotes from an external source and displays them in a modern, user-friendly interface.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "HTML",
+          "iconifyClass": "logos-html-5"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "logos-css-3"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOQ80jJQ",
+      "name": "visdata",
+      "createdAt": "2026-01-19T13:24:51Z",
+      "url": "https://github.com/SauRavRwT/visdata",
+      "description": "📊",
       "isFork": false,
       "languages": [
         {
