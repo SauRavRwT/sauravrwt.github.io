@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.924d04eb.css",
-    "main.js": "/static/js/main.d688ca37.js",
+    "main.js": "/static/js/main.3ad968a6.js",
     "static/media/fa-solid-900.svg": "/static/media/fa-solid-900.9fa614346b4e81decc62.svg",
     "static/media/fa-brands-400.svg": "/static/media/fa-brands-400.6fcab609e2f62d5c3104.svg",
     "static/media/gtbit_logo.png": "/static/media/gtbit_logo.a148911534ae3cdfc5ff.png",
@@ -14,6 +14,7 @@
     "static/media/fa-regular-400.svg": "/static/media/fa-regular-400.4e8f9fa44f7ec7479c39.svg",
     "static/media/fa-brands-400.eot": "/static/media/fa-brands-400.b09f783b99c88d6989f7.eot",
     "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.ec7723ea62ad74c14959.ttf",
+    "static/media/SAURAV_RAWAT.pdf": "/static/media/SAURAV_RAWAT.19d830915af1aa876fa2.pdf",
     "static/media/GoogleSans-Italic.ttf": "/static/media/GoogleSans-Italic.40bb50bd202405745006.ttf",
     "static/media/GoogleSans-MediumItalic.ttf": "/static/media/GoogleSans-MediumItalic.56d4f777a7997e5a10b3.ttf",
     "static/media/GoogleSans-BoldItalic.ttf": "/static/media/GoogleSans-BoldItalic.d282e9c31d0f894a7f06.ttf",
@@ -21,7 +22,6 @@
     "static/media/GoogleSans-Medium.ttf": "/static/media/GoogleSans-Medium.963c3e555aaada9ef8a9.ttf",
     "static/media/GoogleSans-Bold.ttf": "/static/media/GoogleSans-Bold.d907e4bf3e32637a636e.ttf",
     "static/media/contactMail.png": "/static/media/contactMail.d4c9ac42fba95158a55c.png",
-    "static/media/SAURAV_RAWAT.pdf": "/static/media/SAURAV_RAWAT.9c91be6d84c96d98ea9c.pdf",
     "static/media/ICT_logo.png": "/static/media/ICT_logo.403ff46f5b4aff9d5396.png",
     "static/media/fa-solid-900.woff": "/static/media/fa-solid-900.3ef4f1acb44a2df412bf.woff",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
@@ -58,10 +58,10 @@
     "static/media/talksCardBackAlt.svg": "/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
     "main.924d04eb.css.map": "/static/css/main.924d04eb.css.map",
-    "main.d688ca37.js.map": "/static/js/main.d688ca37.js.map"
+    "main.3ad968a6.js.map": "/static/js/main.3ad968a6.js.map"
   },
   "entrypoints": [
     "static/css/main.924d04eb.css",
-    "static/js/main.d688ca37.js"
+    "static/js/main.3ad968a6.js"
   ]
 }
