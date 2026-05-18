@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.924d04eb.css",
-    "main.js": "/static/js/main.3ad968a6.js",
+    "main.js": "/static/js/main.c634cfa9.js",
     "static/media/fa-solid-900.svg": "/static/media/fa-solid-900.9fa614346b4e81decc62.svg",
     "static/media/fa-brands-400.svg": "/static/media/fa-brands-400.6fcab609e2f62d5c3104.svg",
     "static/media/gtbit_logo.png": "/static/media/gtbit_logo.a148911534ae3cdfc5ff.png",
@@ -10,11 +10,10 @@
     "static/media/codsoft_logo.png": "/static/media/codsoft_logo.d941c27be5f4fe9dd354.png",
     "static/media/fa-solid-900.eot": "/static/media/fa-solid-900.d93bcbbb0fbfad39d905.eot",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.aae41ea25bd0dde9f796.ttf",
-    "static/media/avatar.svg": "/static/media/avatar.80108163bd3ad0432cf8.svg",
+    "static/media/avatar.svg": "/static/media/avatar.01b45e554295fa246933.svg",
     "static/media/fa-regular-400.svg": "/static/media/fa-regular-400.4e8f9fa44f7ec7479c39.svg",
     "static/media/fa-brands-400.eot": "/static/media/fa-brands-400.b09f783b99c88d6989f7.eot",
     "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.ec7723ea62ad74c14959.ttf",
-    "static/media/SAURAV_RAWAT.pdf": "/static/media/SAURAV_RAWAT.19d830915af1aa876fa2.pdf",
     "static/media/GoogleSans-Italic.ttf": "/static/media/GoogleSans-Italic.40bb50bd202405745006.ttf",
     "static/media/GoogleSans-MediumItalic.ttf": "/static/media/GoogleSans-MediumItalic.56d4f777a7997e5a10b3.ttf",
     "static/media/GoogleSans-BoldItalic.ttf": "/static/media/GoogleSans-BoldItalic.d282e9c31d0f894a7f06.ttf",
@@ -26,6 +25,7 @@
     "static/media/fa-solid-900.woff": "/static/media/fa-solid-900.3ef4f1acb44a2df412bf.woff",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/fa-brands-400.woff": "/static/media/fa-brands-400.dc957891d535aa198135.woff",
+    "static/media/SAURAV_RAWAT.pdf": "/static/media/SAURAV_RAWAT.8740e6f3b04cf85b92da.pdf",
     "static/media/drdo_logo.png": "/static/media/drdo_logo.6ba92ce476d5ab79e897.png",
     "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.4a83f63fd7dd55c4ca85.woff2",
     "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.1c638e5f7632ea819e77.woff2",
@@ -54,14 +54,14 @@
     "static/media/elightspm_logo.jfif": "/static/media/elightspm_logo.4db3c059b4f8751590c6.jfif",
     "static/media/education.svg": "/static/media/education.d5cc42f042227db12468.svg",
     "index.html": "/index.html",
-    "static/media/unstop-logo.svg": "/static/media/unstop-logo.7c06ab8f05ceace84a2d.svg",
+    "static/media/unstop-logo.svg": "/static/media/unstop-logo.25cef152d2b3f6370736.svg",
     "static/media/talksCardBackAlt.svg": "/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
     "main.924d04eb.css.map": "/static/css/main.924d04eb.css.map",
-    "main.3ad968a6.js.map": "/static/js/main.3ad968a6.js.map"
+    "main.c634cfa9.js.map": "/static/js/main.c634cfa9.js.map"
   },
   "entrypoints": [
     "static/css/main.924d04eb.css",
-    "static/js/main.3ad968a6.js"
+    "static/js/main.c634cfa9.js"
   ]
 }
