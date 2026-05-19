@@ -309,6 +309,15 @@ const degrees = {
 const certifications = {
   certifications: [
     {
+      title: "GSI NVIDIA Technologies",
+      subtitle: "- GSI NVIDIA",
+      logo_path: "NVIDIA.png",
+      certificate_link:
+        "https://drive.google.com/file/d/1EGFlbZH0GlKNAcsAO2CL2X97Izgtlo7u/view?usp=sharing",
+      alt_name: "GSI NVIDIA Technologies",
+      // color_code: "#fff",
+    },
+    {
       title: "MySQL",
       subtitle: "- Linkedin Learning",
       logo_path: "linkedin_logo.png",
