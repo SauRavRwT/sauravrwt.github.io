@@ -24,7 +24,7 @@ Make sure you have the following installed:
   npm install
   ```
 - Now the project is ready to use
-- You can check it using `npm start`, it will open the website locally on your browser.
+- You can check it using `npm run start`, it will open the website locally on your browser.
 
 # Customize it to make your own portfolio ✏️
 
@@ -126,7 +126,7 @@ Therefore, this part of portfolio is not customizable. But don't worry we have a
   - You need to change the name from `blueTheme` to whatever theme you want to set your website to
   - You can define new theme similarly as other themes and you can assign name of that new defined theme to `chosenTheme`
 - That's it. You just need to change the theme name and the code will take care of everything else
-- Run `npm start` to check if everything is ok.
+- Run `npm run start` to check if everything is ok.
 
 # Deployment 📦
 
@@ -156,6 +156,8 @@ If you are stuck somewhere and want to observe the deployment process in depth, 
 # Technologies used 🛠️
 
 - [React](https://reactjs.org/)
+- [React Router](https://reactrouter.com/)
+- [Vite](https://vitejs.dev/)
 - [graphql](https://graphql.org/)
 - [apollo-boost](https://www.apollographql.com/docs/react/get-started/)
 - [baseui](https://github.com/uber/baseweb)

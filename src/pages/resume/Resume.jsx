@@ -1,15 +1,20 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import { Fade } from "react-reveal";
 import "./Resume.css";
 import myResumePdf from "../../assets/docs/SAURAV_RAWAT.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
+import "react-pdf/dist/Page/AnnotationLayer.css";
+import "react-pdf/dist/Page/TextLayer.css";
+
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  'pdfjs-dist/build/pdf.worker.min.mjs',
+  import.meta.url,
+).toString();
 import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import TopButton from "../../components/topButton/TopButton";
-
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 export default class ResumePage extends Component {
   constructor(props) {

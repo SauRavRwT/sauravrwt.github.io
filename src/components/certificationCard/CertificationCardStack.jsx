@@ -252,7 +252,7 @@ class CertificationCardStack extends Component {
                     >
                       <div className="cert-overlay"></div>
                       <img
-                        src={require(`../../assets/images/${cert.logo_path}`)}
+                        src={new URL(`../../assets/images/${cert.logo_path}`, import.meta.url).href}
                         alt={cert.alt_name || cert.title}
                         draggable={false}
                       />

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Home from "../pages/home/HomeComponent";
 import Splash from "../pages/splash/Splash";
@@ -7,9 +7,9 @@ import Experience from "../pages/experience/Experience";
 import Opensource from "../pages/opensource/Opensource";
 import Contact from "../pages/contact/ContactComponent";
 import Projects from "../pages/projects/Projects";
-import { settings } from "../portfolio.js";
+import { settings } from "../portfolio";
 import Error404 from "../pages/errors/error404/Error";
-import BlogComponent from "../pages/blog/BlogComponent.js";
+import BlogComponent from "../pages/blog/BlogComponent";
 import ResumePage from "../pages/resume/Resume";
 
 export default class Main extends Component {
@@ -33,7 +33,7 @@ export default class Main extends Component {
   }
   render() {
     return (
-      <BrowserRouter basename="/">
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Switch>
           <Route
             path="/"

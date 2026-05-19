@@ -7,9 +7,9 @@ import Button from "../../components/button/Button";
 import AddressImg from "./AddressImg";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
-import { contactPageData, writer } from "../../portfolio.js";
-import BlogArt from "./BlogArt.js";
-import AvatarImg from "./AvatarImg.js";
+import { contactPageData, writer } from "../../portfolio";
+import BlogArt from "./BlogArt";
+import AvatarImg from "./AvatarImg";
 
 const ContactData = contactPageData.contactSection;
 const addressSection = contactPageData.addressSection;
@@ -26,7 +26,7 @@ class Contact extends Component {
             <div className="contact-heading-div">
               <div className="contact-heading-img-div">
                 {/* <img
-                  src={require(`../../assets/images/${ContactData["profile_image_path"]}`)}
+                  src={new URL(`../../assets/images/${ContactData["profile_image_path"]}`, import.meta.url).href}
                   alt=""
                 /> */}
                 <AvatarImg theme={theme} />

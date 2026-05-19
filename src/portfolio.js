@@ -470,18 +470,7 @@ const experience = {
           color: "#0071C5",
         },
         {
-          title: "Frontend Developer",
-          company: "Tradeindia",
-          company_url: "https://www.tradeindia.com/",
-          logo_path: "tradeindia_logo.png",
-          duration: "June 2025- Aug 2025",
-          location: "Noida, India",
-          description:
-            "I had a valuable experience working at TradeIndia as a Frontend Developer, where I contributed to building user-friendly and responsive interfaces. Collaborating with a skilled team, I enhanced my expertise in real-world web development, performance optimization, and teamwork within a fast-paced environment. The experience was both enriching and instrumental in my professional growth.",
-          color: "#fc1f20",
-        },
-        {
-          title: "Android Developer",
+          title: "Custom Android ROM Development",
           company: "Freelancer",
           company_url: "https://www.android.com/",
           logo_path: "android_logo.png",

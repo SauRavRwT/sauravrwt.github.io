@@ -17,7 +17,7 @@ class ExperienceCard extends Component {
           <div className="experience-card-logo-div">
             <img
               className="experience-card-logo"
-              src={require(`../../assets/images/${experience["logo_path"]}`)}
+              src={new URL(`../../assets/images/${experience["logo_path"]}`, import.meta.url).href}
               alt=""
             />
           </div>
