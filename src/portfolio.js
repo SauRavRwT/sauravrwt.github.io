@@ -22,7 +22,7 @@ const greeting = {
   subTitle:
     "Hey there! 👋🏻, Building beautiful, data-driven web experiences. Combining front-end expertise with analytical insights to create impactful digital solutions.",
   resumeLink:
-    "https://drive.google.com/file/d/1QcrqnVsX8sfps38ilbxAZ8wU3Dts4U17/view?usp=sharing",
+    "https://drive.google.com/file/d/1JKv0_minkKZM8ZYHFFfKe8LxfqZuhG2t/view?usp=sharing",
   portfolio_repository: "https://github.com/SauRavRwT/sauravrwt.github.io",
   githubProfile: "https://github.com/SauRavRwT",
 };
@@ -65,26 +65,20 @@ const socialMediaLinks = [
 const skills = {
   data: [
     {
-      title: "Frontend Development",
+      title: "Software Engineer",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Building responsive website front end using Bootstrap and React.",
-        "⚡ Developing mobile applications using Android Studio.",
-        "⚡ Creating application backend in Node-Express & Firebase",
+        "⚡ Building responsive website front end using ReactJS.",
+        "⚡ Developing mobile applications using Android Studio and Java.",
+        "⚡ Creating application backend in Node, Express & Firebase.",
+        "⚡ Integration of third party services such as Firebase.",
       ],
       softwareSkills: [
         {
-          skillName: "HTML5",
-          fontAwesomeClassname: "simple-icons:html5",
+          skillName: "Python",
+          fontAwesomeClassname: "simple-icons:python",
           style: {
-            color: "#E34F26",
-          },
-        },
-        {
-          skillName: "CSS3",
-          fontAwesomeClassname: "fa-css3",
-          style: {
-            color: "#1572B6",
+            color: "#3776AB",
           },
         },
         {
@@ -96,31 +90,17 @@ const skills = {
           },
         },
         {
+          skillName: "Java",
+          fontAwesomeClassname: "devicon-plain:java",
+          style: {
+            color: "#007396",
+          },
+        },
+        {
           skillName: "ReactJS",
           fontAwesomeClassname: "simple-icons:react",
           style: {
             color: "#61DAFB",
-          },
-        },
-        {
-          skillName: "NodeJS",
-          fontAwesomeClassname: "devicon-plain:nodejs-wordmark",
-          style: {
-            color: "#339933",
-          },
-        },
-        {
-          skillName: "NPM",
-          fontAwesomeClassname: "simple-icons:npm",
-          style: {
-            color: "#CB3837",
-          },
-        },
-        {
-          skillName: "Firebase",
-          fontAwesomeClassname: "simple-icons:firebase",
-          style: {
-            color: "#F7DF1E",
           },
         },
         {
@@ -131,10 +111,45 @@ const skills = {
           },
         },
         {
+          skillName: "WordPress",
+          fontAwesomeClassname: "simple-icons:wordpress",
+          style: {
+            color: "#181717",
+          },
+        },
+        {
+          skillName: "NodeJS",
+          fontAwesomeClassname: "devicon-plain:nodejs-wordmark",
+          style: {
+            color: "#339933",
+          },
+        },
+        {
+          skillName: "Firebase",
+          fontAwesomeClassname: "simple-icons:firebase",
+          style: {
+            color: "#F7DF1E",
+          },
+        },
+        {
+          skillName: "MySQL",
+          fontAwesomeClassname: "simple-icons:mysql",
+          style: {
+            color: "#00758F",
+          },
+        },
+        {
           skillName: "MongoDB",
           fontAwesomeClassname: "simple-icons:mongodb",
           style: {
             color: "#217059",
+          },
+        },
+        {
+          skillName: "PostMan",
+          fontAwesomeClassname: "simple-icons:postman",
+          style: {
+            color: "#ff6c38",
           },
         },
         {
@@ -158,20 +173,6 @@ const skills = {
             color: "#3DDC84",
           },
         },
-        {
-          skillName: "WordPress",
-          fontAwesomeClassname: "simple-icons:wordpress",
-          style: {
-            color: "#181717",
-          },
-        },
-        {
-          skillName: "PostMan",
-          fontAwesomeClassname: "simple-icons:postman",
-          style: {
-            color: "#ff6c38",
-          },
-        },
       ],
     },
     {
@@ -179,7 +180,7 @@ const skills = {
       fileName: "DataScienceImg",
       skills: [
         "⚡ Analyzing data to find useful insights.",
-        "⚡ Creating visualizations using tableau and powerBI.",
+        "⚡ Creating visualizations using pandas and powerBI.",
         "⚡ Building and maintaining dashboards.",
       ],
       softwareSkills: [
@@ -191,10 +192,45 @@ const skills = {
           },
         },
         {
+          skillName: "MySQL",
+          fontAwesomeClassname: "simple-icons:mysql",
+          style: {
+            color: "#00758F",
+          },
+        },
+        {
+          skillName: "Pandas",
+          fontAwesomeClassname: "simple-icons:pandas",
+          style: {
+            color: "#150458",
+          },
+        },
+        {
+          skillName: "Numpy",
+          fontAwesomeClassname: "simple-icons:numpy",
+          style: {
+            color: "#013243",
+          },
+        },
+        {
+          skillName: "Matplotlib",
+          fontAwesomeClassname: "devicon-plain:matplotlib",
+          style: {
+            color: "#11557C",
+          },
+        },
+        {
           skillName: "PowerBI",
           fontAwesomeClassname: "simple-icons:powerbi",
           style: {
             color: "#F2C811",
+          },
+        },
+        {
+          skillName: "Data Studio",
+          fontAwesomeClassname: "simple-icons:googleanalytics",
+          style: {
+            color: "#E37400",
           },
         },
         {
@@ -210,9 +246,9 @@ const skills = {
       title: "UI/UX Design",
       fileName: "DesignImg",
       skills: [
-        "⚡ Designing highly attractive user interface for mobile and web applications",
-        "⚡ Customizing logo designs and building logos from scratch",
-        "⚡ Creating the flow of application functionalities to optimize user experience",
+        "⚡ Designing user interfaces for websites and mobile applications.",
+        "⚡ Creating wireframes and prototypes using Figma and Framer.",
+        "⚡ Designing user experiences that are intuitive and engaging.",
       ],
       softwareSkills: [
         {
@@ -315,7 +351,7 @@ const certifications = {
       certificate_link:
         "https://drive.google.com/file/d/1EGFlbZH0GlKNAcsAO2CL2X97Izgtlo7u/view?usp=sharing",
       alt_name: "GSI NVIDIA Technologies",
-      // color_code: "#fff",
+      // color_code: "",
     },
     {
       title: "MySQL",
@@ -369,7 +405,7 @@ const certifications = {
       certificate_link:
         "https://drive.google.com/file/d/10NBghFNsACk5i1oIXYa6mPzQGjMveJsi/view?usp=sharing",
       alt_name: "Xiaomi Ode2Code 3.0",
-      // color_code: "#fff",
+      // color_code: "",
     },
     {
       title: "Python Web Development",
@@ -378,7 +414,7 @@ const certifications = {
       certificate_link:
         "https://drive.google.com/file/d/1VDICMEVLgxRsFJhP_88azfWulVTsAWgq/view?usp=sharing",
       alt_name: "Tech Mahindra Foundation",
-      // color_code: "#fff",
+      // color_code: "",
     },
     {
       title: "Web Development",
@@ -387,7 +423,7 @@ const certifications = {
       certificate_link:
         "https://drive.google.com/file/d/1F0-fBuRcgky6ZTzSctHipIaaYzCEfkeR/view?usp=sharing",
       alt_name: "Codsoft Internship",
-      // color_code: "#fff",
+      // color_code: "",
     },
     {
       title: "Xiaomi Ode2Code 3.0",
@@ -396,7 +432,7 @@ const certifications = {
       certificate_link:
         "https://drive.google.com/file/d/12Q0O6_-XJmxd20f5U-HzWJId_QzLZdZa/view?usp=sharing",
       alt_name: "Xiaomi Ode2Code 3.0",
-      // color_code: "#fff",
+      // color_code: "",
     },
     {
       title: "Smart India Hackathon",
@@ -405,7 +441,7 @@ const certifications = {
       certificate_link:
         "https://drive.google.com/file/d/1A_C9JWzbN_bJ9wPRPZrWUr275210rRWQ/view?usp=sharing",
       alt_name: "SIH",
-      // color_code: "#fff",
+      // color_code: "",
     },
     {
       title: "Data Structures",
@@ -414,7 +450,7 @@ const certifications = {
       certificate_link:
         "https://drive.google.com/file/d/188eUekF1N11DW4TRwi0brrv0aDk_czyz/view?usp=sharing",
       alt_name: "DSA GeeksforGeeks",
-      // color_code: "#fff",
+      // color_code: "",
     },
     {
       title: "Drone Technology",
@@ -423,7 +459,7 @@ const certifications = {
       certificate_link:
         "https://drive.google.com/file/d/1-oMluxxlZTlciML2zrOyzOEHRLbSo2J9/view?usp=sharing",
       alt_name: "Drone Technology IIITD",
-      // color_code: "#fff",
+      // color_code: "",
     },
     {
       title: "Cybersecurity",
@@ -432,7 +468,7 @@ const certifications = {
       certificate_link:
         "https://drive.google.com/file/d/1-pyD1zEo_GXos6oIUdgsL8cvaZs7jUoi/view?usp=sharing",
       alt_name: "Drone Technology IIITD",
-      // color_code: "#fff",
+      // color_code: "",
     },
     {
       title: "Game Deveopment",
@@ -441,7 +477,7 @@ const certifications = {
       certificate_link:
         "https://drive.google.com/file/d/1gQMM_GJ3krUMr4L_IS0xqUWkk_atF25n/view?usp=sharing",
       alt_name: "Codsoft Internship",
-      // color_code: "#fff",
+      // color_code: "",
     },
     {
       title: "Advaced IT",
@@ -450,7 +486,7 @@ const certifications = {
       certificate_link:
         "https://drive.google.com/file/d/10F1pdCm3MON06taBa9aGwKnMPzvOIr0T/view?usp=sharing",
       alt_name: "Tech Mahindra Foundation",
-      // color_code: "#fff",
+      // color_code: "",
     },
   ],
 };
