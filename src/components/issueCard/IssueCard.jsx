@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./IssueCard.css";
-import { OverlayTrigger, Tooltip } from "react-bootstrap";
-import { Fade } from "react-reveal";
+import Tooltip from "../tooltip/Tooltip";
+import { Fade } from "../motion";
 
 class IssueCard extends Component {
   render() {
@@ -28,15 +28,11 @@ class IssueCard extends Component {
     if (issue["assignees"]["nodes"].length > 0) {
       const name = issue["assignees"]["nodes"][0]["name"];
       assignee = (
-        <OverlayTrigger
+        <Tooltip
           key={name}
+          content={`Assigned to ${name}`}
           placement={"top"}
           style={{ marginBottom: "5px" }}
-          overlay={
-            <Tooltip id={`tooltip-top`}>
-              <strong>{`Assigned to ${name}`}</strong>
-            </Tooltip>
-          }
         >
           <a
             href={issue["assignees"]["nodes"][0]["url"]}
@@ -49,7 +45,7 @@ class IssueCard extends Component {
               alt=""
             />
           </a>
-        </OverlayTrigger>
+        </Tooltip>
       );
     } else {
       assignee = <noscript></noscript>;

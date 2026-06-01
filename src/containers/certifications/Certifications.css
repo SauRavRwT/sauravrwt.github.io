@@ -1,44 +1,50 @@
 .main-certs {
   width: 90%;
+  max-width: 1200px;
   padding: 20px 10px;
   margin: 0px auto;
   margin-top: 4rem;
 }
 
 .certs-header {
-  font-size: 40px;
-  line-height: 1.1;
-  font-family: "Google Sans Regular";
+  font-size: 42px;
+  line-height: 1.2;
+  font-family: "Google Sans Regular", sans-serif;
+  font-weight: 600;
   text-align: center;
+  margin-bottom: 3rem;
+  letter-spacing: -0.5px;
 }
 
 .certs-body-div {
-  display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 2rem;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2.5rem 2rem;
+  align-items: start;
+  justify-items: center;
+  width: 100%;
 }
 
 @media (max-width: 1380px) {
   .certs-header {
-    font-size: 35px;
-  }
-
-  .certs-body-div {
-    flex-direction: row;
-    width: 100%;
+    font-size: 36px;
   }
 }
 
 @media (max-width: 768px) {
-  .certs-body-div {
-    flex-direction: column;
-    width: 100%;
+  .certs-header {
+    font-size: 32px;
+    margin-bottom: 2rem;
   }
 
-  .certs-header {
-    font-size: 30px;
+  .certs-body-div {
+    gap: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .certs-body-div {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }

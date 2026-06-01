@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./CertificationCardStack.css";
-import { Fade } from "react-reveal";
+import { Fade } from "../motion";
 
 class CertificationCardStack extends Component {
   constructor(props) {
@@ -252,7 +252,12 @@ class CertificationCardStack extends Component {
                     >
                       <div className="cert-overlay"></div>
                       <img
-                        src={new URL(`../../assets/images/${cert.logo_path}`, import.meta.url).href}
+                        src={
+                          new URL(
+                            `../../assets/images/${cert.logo_path}`,
+                            import.meta.url
+                          ).href
+                        }
                         alt={cert.alt_name || cert.title}
                         draggable={false}
                       />

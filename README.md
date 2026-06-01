@@ -161,7 +161,7 @@ If you are stuck somewhere and want to observe the deployment process in depth, 
 - [graphql](https://graphql.org/)
 - [apollo-boost](https://www.apollographql.com/docs/react/get-started/)
 - [baseui](https://github.com/uber/baseweb)
-- [react-reveal](https://www.react-reveal.com/)
+- [Motion](https://motion.dev/)
 - [styled-components](https://styled-components.com/)
 
 ## Thank You

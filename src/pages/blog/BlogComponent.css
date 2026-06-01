@@ -1,11 +1,11 @@
 .blog-main {
-  width: 100vw !important;
+  width: 100%;
 }
 
 .blog-header {
   display: flex;
-  padding: 2rem;
-  margin: auto;
+  margin: auto 5% auto 5%;
+  padding: 3rem 0 4rem;
 }
 
 .blog-header > * {
@@ -13,22 +13,18 @@
 }
 
 .blog-header-content {
-  margin: auto;
-  padding: 4rem;
   text-align: center;
-  padding-bottom: 1rem;
+  padding: 0 2rem;
 }
 
 .blog-header-img {
-  margin: auto;
-  padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .blog-header-img > * {
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
 }
 

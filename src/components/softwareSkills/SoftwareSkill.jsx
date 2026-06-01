@@ -1,6 +1,6 @@
 import React from "react";
 import "./SoftwareSkill.css";
-import { OverlayTrigger, Tooltip } from "react-bootstrap";
+import Tooltip from "../tooltip/Tooltip";
 
 class SoftwareSkill extends React.Component {
   render() {
@@ -17,14 +17,10 @@ class SoftwareSkill extends React.Component {
           })} */}
             {this.props.logos.map((logo) => {
               return (
-                <OverlayTrigger
+                <Tooltip
                   key={logo.skillName}
+                  content={logo.skillName}
                   placement={"top"}
-                  overlay={
-                    <Tooltip id={`tooltip-top`}>
-                      <strong>{logo.skillName}</strong>
-                    </Tooltip>
-                  }
                 >
                   <li className="software-skill-inline" name={logo.skillName}>
                     {logo.fontAwesomeClassname && (
@@ -44,7 +40,7 @@ class SoftwareSkill extends React.Component {
                       />
                     )}
                   </li>
-                </OverlayTrigger>
+                </Tooltip>
               );
             })}
           </ul>

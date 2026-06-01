@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
-import { Fade } from "react-reveal";
+import { Fade } from "../../components/motion";
 import { blog, blogDesp } from "../../portfolio";
 import "./BlogComponent.css";
 import BlogImg from "./BlogsImg";
@@ -62,6 +62,8 @@ class BlogComponent extends Component {
             <div className="blog-header-img" aria-hidden="true">
               <BlogImg theme={theme} />
             </div>
+          </Fade>
+          <Fade bottom duration={1000} delay={200} distance="30px">
             <div className="blog-header-content">
               <h1 className="blog-title" style={{ color: theme.text }}>
                 My Blog

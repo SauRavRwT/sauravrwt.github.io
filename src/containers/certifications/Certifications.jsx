@@ -1,18 +1,25 @@
 import React, { Component } from "react";
 import "./Certifications.css";
-import { Fade } from "react-reveal";
+import { Fade } from "../../components/motion";
 import { certifications } from "../../portfolio";
 import CertificationCard from "../../components/certificationCard/CertificationCard";
 import CertificationCardStack from "../../components/certificationCard/CertificationCardStack";
 
 class Certifications extends Component {
   groupCertificationsBySubtitle = () => {
+    const normalize = (s) =>
+      (s || "")
+        .replace(/^[\s-]+/, "") // remove leading spaces/hyphens
+        .trim()
+        .toLowerCase();
+
     const grouped = {};
     certifications.certifications.forEach((cert) => {
-      if (!grouped[cert.subtitle]) {
-        grouped[cert.subtitle] = [];
+      const key = normalize(cert.subtitle);
+      if (!grouped[key]) {
+        grouped[key] = [];
       }
-      grouped[cert.subtitle].push(cert);
+      grouped[key].push(cert);
     });
     return grouped;
   };

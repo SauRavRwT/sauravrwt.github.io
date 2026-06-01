@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Header.css";
-import { Fade } from "react-reveal";
+import { Fade } from "../motion";
 import { NavLink, Link } from "react-router-dom";
 import { greeting, settings } from "../../portfolio";
 import SeoHeader from "../seoHeader/SeoHeader";

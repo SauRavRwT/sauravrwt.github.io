@@ -5,7 +5,7 @@ import TopButton from "../../components/topButton/TopButton";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import AddressImg from "./AddressImg";
-import { Fade } from "react-reveal";
+import { Fade } from "../../components/motion";
 import "./ContactComponent.css";
 import { contactPageData, writer } from "../../portfolio";
 import BlogArt from "./BlogArt";

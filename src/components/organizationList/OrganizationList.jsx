@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./OrganizationList.css";
-import { OverlayTrigger, Tooltip } from "react-bootstrap";
-import { Fade } from "react-reveal";
+import Tooltip from "../tooltip/Tooltip";
+import { Fade } from "../motion";
 
 class OrganizationList extends Component {
   render() {
@@ -10,15 +10,11 @@ class OrganizationList extends Component {
         <ul className="dev-icons-orgs">
           {this.props.logos.map((logo) => {
             return (
-              <OverlayTrigger
+              <Tooltip
                 key={logo["login"]}
+                content={logo["login"]}
                 placement={"top"}
                 style={{ marginBottom: "5px" }}
-                overlay={
-                  <Tooltip id={`tooltip-top`}>
-                    <strong>{logo["login"]}</strong>
-                  </Tooltip>
-                }
               >
                 <li className="organizations-inline" name={logo["login"]}>
                   <Fade bottom duration={2000} distance="40px">
@@ -29,7 +25,7 @@ class OrganizationList extends Component {
                     />
                   </Fade>
                 </li>
-              </OverlayTrigger>
+              </Tooltip>
             );
           })}
         </ul>

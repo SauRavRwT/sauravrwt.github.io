@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectLanguages from "../../components/projectLanguages/ProjectLanguages";
 import "./GithubRepoCard.css";
-import { Fade } from "react-reveal";
+import { Fade } from "../motion";
 
 export default function GithubRepoCard({ repo, theme }) {
   function openRepoinNewTab(url) {

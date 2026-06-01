@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./PullRequestCard.css";
-import { OverlayTrigger, Tooltip } from "react-bootstrap";
-import { Fade } from "react-reveal";
+import Tooltip from "../tooltip/Tooltip";
+import { Fade } from "../motion";
 
 class PullRequestCard extends Component {
   render() {
@@ -37,15 +37,11 @@ class PullRequestCard extends Component {
     if (pullRequest["mergedBy"] !== null) {
       const name = pullRequest["mergedBy"]["login"];
       mergedBy = (
-        <OverlayTrigger
+        <Tooltip
           key={name}
+          content={`Merged by ${name}`}
           placement={"top"}
           style={{ marginBottom: "5px" }}
-          overlay={
-            <Tooltip id={`tooltip-top`}>
-              <strong>{`Merged by ${name}`}</strong>
-            </Tooltip>
-          }
         >
           <a
             href={pullRequest["mergedBy"]["url"]}
@@ -58,7 +54,7 @@ class PullRequestCard extends Component {
               alt=""
             />
           </a>
-        </OverlayTrigger>
+        </Tooltip>
       );
     } else {
       mergedBy = <noscript></noscript>;

@@ -354,6 +354,15 @@ const certifications = {
       // color_code: "",
     },
     {
+      title: "Prompt Engineering",
+      subtitle: "- LinkedIn Learning",
+      logo_path: "linkedin_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/1nSPl-KckezWxsssItR6l6m_edAOSH-UV/view?usp=sharing",
+      alt_name: "Prompt Engineering",
+      // color_code: "",
+    },
+    {
       title: "MySQL",
       subtitle: "- Linkedin Learning",
       logo_path: "linkedin_logo.png",
