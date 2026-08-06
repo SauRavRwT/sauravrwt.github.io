@@ -48,4 +48,4 @@ jobs:
             }
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: "echo 'Pull Requests Data: ${{ steps.get_latest_release.outputs.data }}'"
+      - run: "echo 'Pull Requests Data: ${{ steps.get_pull_requests.outputs.data }}'"
