@@ -1,59 +1,33 @@
 {
   "data": [
     {
+      "id": "R_kgDOSzXPxA",
+      "name": "DevLens",
+      "createdAt": "2026-06-07T07:30:13Z",
+      "url": "https://github.com/SauRavRwT/DevLens",
+      "description": "AI GitHub Portfolio & Recruiter Assessment Dashboard",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        },
+        {
+          "name": "HTML",
+          "iconifyClass": "logos-html-5"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "logos-css-3"
+        }
+      ]
+    },
+    {
       "id": "R_kgDOMdUF6g",
       "name": "Canteen-Management",
       "createdAt": "2024-07-31T03:51:00Z",
       "url": "https://github.com/SauRavRwT/Canteen-Management",
       "description": "This Canteen Management System is a web-based application designed to streamline the process of ordering food items in a canteen or cafeteria setting. Built with React and Firebase, it offers a user-friendly interface for browsing products, adding items to a cart, and completing purchases.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "HTML",
-          "iconifyClass": "logos-html-5"
-        },
-        {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
-        },
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        }
-      ]
-    },
-    {
-      "id": "R_kgDOMDfdhg",
-      "name": "ChitChat",
-      "createdAt": "2024-06-01T09:55:52Z",
-      "url": "https://github.com/SauRavRwT/ChitChat",
-      "description": "ChitChat is a React app that translates text messages into different languages instantly. It supports real-time text-to-text translation in a chat application.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "HTML",
-          "iconifyClass": "logos-html-5"
-        },
-        {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
-        },
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        },
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        }
-      ]
-    },
-    {
-      "id": "R_kgDOLxMOOA",
-      "name": "Wallpaper-App",
-      "createdAt": "2024-04-21T14:33:36Z",
-      "url": "https://github.com/SauRavRwT/Wallpaper-App",
-      "description": "Art-Gallery Web-App with made up of reactjs uses Pexel api to deliver high-quality wallpaper content. The website offers a wide variety of wallpapers for users to choose from, and the content is updated regularly.",
       "isFork": false,
       "languages": [
         {
@@ -89,13 +63,21 @@
       ]
     },
     {
-      "id": "R_kgDOL9MJpg",
-      "name": "Quote-App",
-      "createdAt": "2024-05-18T04:52:03Z",
-      "url": "https://github.com/SauRavRwT/Quote-App",
-      "description": "This project is a simple Quote App built with React. It fetches quotes from an external source and displays them in a modern, user-friendly interface.",
+      "id": "R_kgDOMG3C8g",
+      "name": "sauravrwt.github.io",
+      "createdAt": "2024-06-09T04:22:49Z",
+      "url": "https://github.com/SauRavRwT/sauravrwt.github.io",
+      "description": "🌻",
       "isFork": false,
       "languages": [
+        {
+          "name": "Dockerfile",
+          "iconifyClass": "simple-icons:docker"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        },
         {
           "name": "HTML",
           "iconifyClass": "logos-html-5"
@@ -103,21 +85,35 @@
         {
           "name": "CSS",
           "iconifyClass": "logos-css-3"
-        },
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
         }
       ]
     },
     {
-      "id": "R_kgDOQ80jJQ",
-      "name": "visdata",
-      "createdAt": "2026-01-19T13:24:51Z",
-      "url": "https://github.com/SauRavRwT/visdata",
-      "description": "📊",
+      "id": "R_kgDOSRfTeA",
+      "name": "Resume-Analyzer",
+      "createdAt": "2026-05-01T08:05:54Z",
+      "url": "https://github.com/SauRavRwT/Resume-Analyzer",
+      "description": "Streamlit app that analyzes PDF resumes against a pasted job description and generates an ATS-friendly resume draft.",
       "isFork": false,
       "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOSTJ1Zw",
+      "name": "TeamTaskManager",
+      "createdAt": "2026-05-03T14:17:03Z",
+      "url": "https://github.com/SauRavRwT/TeamTaskManager",
+      "description": "A role-based project and task management app built with React, Firebase Authentication, and Firebase Realtime Database (RTDB). Admins create projects and assign tasks; Members track and update progress on their own tasks — all in real time, no page reload needed.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        },
         {
           "name": "HTML",
           "iconifyClass": "logos-html-5"
@@ -125,10 +121,6 @@
         {
           "name": "CSS",
           "iconifyClass": "logos-css-3"
-        },
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
         }
       ]
     }
