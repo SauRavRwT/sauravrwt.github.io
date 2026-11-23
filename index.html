@@ -5,25 +5,33 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <!-- Theme colours + saved light/dark mode, generated from src/theme.js at build time -->
+  <style id="theme-tokens">:root,:root[data-theme="dark"]{--bg:#0c0c0e;--bg-2:#141417;--bg-3:#1c1c20;--line:#2a2a30;--text:#f2f0ea;--muted:#9b9891;--faint:#5d5b57;--accent:#5cc8ff;--accent-text:#7dd3fc;--on-accent:#04131c;--glass:#0c0c0ec7;--shadow:0 30px 60px -20px rgba(0, 0, 0, 0.6);color-scheme:dark;}:root[data-theme="light"]{--bg:#f4f2ec;--bg-2:#ffffff;--bg-3:#ebe8e0;--line:#dcd8cd;--text:#121212;--muted:#66635c;--faint:#a19d93;--accent:#38bdf8;--accent-text:#0369a1;--on-accent:#04131c;--glass:#f4f2ecc7;--shadow:0 30px 60px -24px rgba(40, 35, 20, 0.25);color-scheme:light;}html,body{background:var(--bg);color:var(--text)}</style>
+  <script>(function(){var m="dark";try{var s=localStorage.getItem("theme");if(s==="dark"||s==="light")m=s}catch(e){}document.documentElement.setAttribute("data-theme",m);var c=document.querySelector('meta[name="theme-color"]');if(c)c.setAttribute("content",{"dark":"#0c0c0e","light":"#f4f2ec"}[m])})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap"
+    rel="stylesheet" />
+
   <!-- Primary SEO -->
-  <title>Saurav Rawat | Full Stack Web Developer & Software Engineer</title>
+  <title>Saurav Rawat | Data Analyst &amp; Front-end Developer</title>
   <meta name="description"
-    content="Saurav Rawat is a full stack web developer specializing in React, Firebase, and modern JavaScript. Explore projects, skills, and experience in this portfolio." />
+    content="Saurav Rawat is a Data Analyst at GlobalLogic and a front-end developer building React apps. Explore live projects, published research, experience and writing." />
   <meta name="keywords"
-    content="Saurav Rawat, Saurav Rawat portfolio, sauravrwt, full stack developer, React developer, Firebase developer, web developer portfolio, software engineer India" />
+    content="Saurav Rawat, sauravrwt, data analyst, React developer, front-end developer, portfolio, Power BI, Python, New Delhi" />
   <meta name="author" content="Saurav Rawat" />
   <meta name="application-name" content="Saurav Rawat Portfolio" />
   <meta name="robots" content="index, follow" />
   <meta name="googlebot" content="index, follow" />
-  <link rel="canonical" href="https://sauravrwt.github.io/" />
 
   <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://sauravrwt.github.io/" />
   <meta property="og:site_name" content="Saurav Rawat Portfolio" />
-  <meta property="og:title" content="Saurav Rawat | Full Stack Web Developer & Software Engineer" />
+  <meta property="og:title" content="Saurav Rawat | Data Analyst &amp; Front-end Developer" />
   <meta property="og:description"
-    content="Explore Saurav Rawat's projects, skills, and experience as a full stack web developer working with React, Firebase, and modern JavaScript." />
+    content="Live projects, published research and experience from Saurav Rawat, Data Analyst and React front-end developer based in New Delhi." />
   <meta property="og:image" content="https://sauravrwt.github.io/icons/desc.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -31,9 +39,9 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Saurav Rawat | Full Stack Web Developer & Software Engineer" />
+  <meta name="twitter:title" content="Saurav Rawat | Data Analyst &amp; Front-end Developer" />
   <meta name="twitter:description"
-    content="Explore Saurav Rawat's projects, skills, and experience as a full stack web developer working with React, Firebase, and modern JavaScript." />
+    content="Live projects, published research and experience from Saurav Rawat, Data Analyst and React front-end developer based in New Delhi." />
   <meta name="twitter:image" content="https://sauravrwt.github.io/icons/desc.png" />
 
   <!-- Icons -->
@@ -51,9 +59,9 @@
   <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
   <link rel="manifest" href="/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileColor" content="#0c0c0e">
   <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#0c0c0e">
 
   <!-- Structured data for Google rich results -->
   <script type="application/ld+json">
@@ -63,9 +71,11 @@
     "name": "Saurav Rawat",
     "url": "https://sauravrwt.github.io/",
     "image": "https://sauravrwt.github.io/icons/desc.png",
-    "jobTitle": "Software Engineer",
+    "jobTitle": "Data Analyst",
+    "worksFor": { "@type": "Organization", "name": "GlobalLogic" },
     "sameAs": [
-      "https://github.com/sauravrwt"
+      "https://github.com/SauRavRwT",
+      "https://www.linkedin.com/in/SauRavRwT"
     ]
   }
   </script>
@@ -80,9 +90,7 @@
   </script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-  <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+  <script defer src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
 
   <script type="text/javascript">
     (function (l) {
@@ -102,21 +110,13 @@
       }
     })(window.location);
   </script>
-  <script type="module" crossorigin src="/assets/index-Bq0c_y09.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-BM3Ffeng.js">
-  <link rel="modulepreload" crossorigin href="/assets/react-vendor-DQTK7tNa.js">
-  <link rel="modulepreload" crossorigin href="/assets/styling-DCporQeX.js">
-  <link rel="modulepreload" crossorigin href="/assets/charts-D-_xjAAu.js">
-  <link rel="modulepreload" crossorigin href="/assets/router-DtA4VxPN.js">
-  <link rel="modulepreload" crossorigin href="/assets/vendor-CnaaKkDX.js">
-  <link rel="modulepreload" crossorigin href="/assets/baseui-HtoGK1wr.js">
-  <link rel="stylesheet" crossorigin href="/assets/vendor-rptWOpCb.css">
-  <link rel="stylesheet" crossorigin href="/assets/index-uWdPiTMw.css">
+  <script type="module" crossorigin src="/assets/index-CIIPCTcI.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Bj44ewdI.css">
 </head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
+  <div id="root"></div>
 </body>
 
 </html>
