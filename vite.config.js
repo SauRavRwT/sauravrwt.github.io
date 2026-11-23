@@ -1,63 +1,25 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import { themeBootScript, themeCss } from "./src/site/themeCss.js";
+
+// Writes the palette from src/theme.js straight into index.html, so colours
+// and the visitor's saved light/dark choice apply before any JS loads.
+function themeTokens() {
+  return {
+    name: "theme-tokens",
+    transformIndexHtml(html) {
+      const style = `<style id="theme-tokens">${themeCss()}html,body{background:var(--bg);color:var(--text)}</style>`;
+      const script = `<script>${themeBootScript()}</script>`;
+      return html.replace("<!-- theme:inject -->", `${style}\n  ${script}`);
+    },
+  };
+}
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), themeTokens()],
   server: {
     port: 3000,
     open: true,
   },
   base: "/",
-  build: {
-    // If you are getting a strict size warning, you can lift the limit here
-    chunkSizeWarningLimit: 600,
-    rolldownOptions: {
-      output: {
-        advancedChunks: {
-          groups: [
-            {
-              name: "react-vendor",
-              test: /\/node_modules\/(react|react-dom)\//,
-            },
-            {
-              name: "bootstrap",
-              test: /\/node_modules\/bootstrap/,
-            },
-            {
-              name: "baseui",
-              test: /\/node_modules\/baseui/,
-            },
-            {
-              name: "react-bootstrap",
-              test: /\/node_modules\/react-bootstrap/,
-            },
-            {
-              name: "charts",
-              test: /\/node_modules\/(chart\.js|react-chartjs-2)/,
-            },
-            {
-              name: "animations",
-              test: /\/node_modules\/react-spring/,
-            },
-            {
-              name: "styling",
-              test: /\/node_modules\/(styled-components|radium|styletron)/,
-            },
-            {
-              name: "router",
-              test: /\/node_modules\/react-router-dom/,
-            },
-            {
-              name: "graphql",
-              test: /\/node_modules\/(apollo|graphql)/,
-            },
-            {
-              name: "vendor",
-              test: /\/node_modules\//,
-            },
-          ],
-        },
-      },
-    },
-  },
 });

@@ -1,226 +1,97 @@
-// theme.js
-export const blueTheme = {
-  body: "#EDF9FE",
-  text: "#001C55",
-  expTxtColor: "#000a12",
-  highlight: "#A6E1FA",
-  dark: "#00072D",
-  secondaryText: "#7F8DAA",
-  imageHighlight: "#0E6BA8",
-  compImgHighlight: "#E6E6E6",
-  jacketColor: "#0A2472",
-  headerColor: "#0E6BA877",
-  splashBg: "#001C55",
+// Site theme
+//
+// Change the look of the whole portfolio from this one file.
+//
+//   1. Pick a palette:        export const chosenTheme = themes.ocean;
+//   2. Pick the default mode: export const defaultMode = "light";
+//
+// Visitors can still flip dark/light with the toggle in the navbar; their
+// choice is remembered. Every colour on the site reads from these tokens.
+//
+// Token guide
+//   bg / bg2 / bg3   page background, cards, insets (darkest → lightest in dark mode)
+//   line             borders and dividers
+//   text             main text
+//   muted / faint    secondary text, placeholder-level details
+//   accent           filled highlights: buttons, pills, progress bar, the dot field
+//   accentText       accent used AS TEXT on the page background (must stay readable)
+//   onAccent         text drawn on top of an accent fill
+
+// Neutral surfaces shared by every palette
+const neutral = {
+  dark: {
+    bg: "#0c0c0e",
+    bg2: "#141417",
+    bg3: "#1c1c20",
+    line: "#2a2a30",
+    text: "#f2f0ea",
+    muted: "#9b9891",
+    faint: "#5d5b57",
+  },
+  light: {
+    bg: "#f4f2ec",
+    bg2: "#ffffff",
+    bg3: "#ebe8e0",
+    line: "#dcd8cd",
+    text: "#121212",
+    muted: "#66635c",
+    faint: "#a19d93",
+  },
 };
 
-export const brownTheme = {
-  body: "#FFFEFD",
-  text: "#5D2A42",
-  expTxtColor: "#000a12",
-  highlight: "#FFF9EC",
-  dark: "#00072D",
-  secondaryText: "#8D697A",
-  imageHighlight: "#E29F95",
-  compImgHighlight: "#E6E6E6",
-  jacketColor: "#FB6376",
-  headerColor: "#E29F9577",
-  splashBg: "#5D2A42",
+function palette(name, dark, light) {
+  return {
+    name,
+    dark: { ...neutral.dark, ...dark },
+    light: { ...neutral.light, ...light },
+  };
+}
+
+export const themes = {
+  // Electric lime on ink — the default
+  lime: palette(
+    "lime",
+    { accent: "#d7ff3c", accentText: "#d7ff3c", onAccent: "#0c0c0e" },
+    { accent: "#d7ff3c", accentText: "#4a6600", onAccent: "#121212" }
+  ),
+
+  // Cool sky blue
+  ocean: palette(
+    "ocean",
+    { accent: "#5cc8ff", accentText: "#7dd3fc", onAccent: "#04131c" },
+    { accent: "#38bdf8", accentText: "#0369a1", onAccent: "#04131c" }
+  ),
+
+  // Warm coral
+  sunset: palette(
+    "sunset",
+    { accent: "#ff7a59", accentText: "#ff9a80", onAccent: "#160a06" },
+    { accent: "#ff7a59", accentText: "#c2410c", onAccent: "#160a06" }
+  ),
+
+  // Soft violet
+  violet: palette(
+    "violet",
+    { accent: "#b69cff", accentText: "#c9b8ff", onAccent: "#120b24" },
+    { accent: "#8b5cf6", accentText: "#6d28d9", onAccent: "#ffffff" }
+  ),
+
+  // Mint green
+  mint: palette(
+    "mint",
+    { accent: "#5ef2b5", accentText: "#7af5c4", onAccent: "#04140d" },
+    { accent: "#34d399", accentText: "#047857", onAccent: "#04140d" }
+  ),
+
+  // No colour at all — pure black & white
+  mono: palette(
+    "mono",
+    { accent: "#f2f0ea", accentText: "#ffffff", onAccent: "#0c0c0e" },
+    { accent: "#121212", accentText: "#121212", onAccent: "#ffffff" }
+  ),
 };
 
-export const purpleTheme = {
-  body: "#F8EFF4",
-  text: "#231942",
-  expTxtColor: "#000a12",
-  highlight: "#E0B1CB",
-  dark: "#00072D",
-  secondaryText: "#655E7A",
-  imageHighlight: "#BE95C4",
-  compImgHighlight: "#E6E6E6",
-  jacketColor: "#5E548E",
-  headerColor: "#BE95C477",
-  splashBg: "#231942",
-};
+export const chosenTheme = themes.ocean;
 
-export const greenTheme = {
-  body: "#FFFFEB",
-  text: "#003F2F",
-  expTxtColor: "#000a12",
-  highlight: "#dddf00",
-  dark: "#00072D",
-  secondaryText: "#4CA58F",
-  imageHighlight: "#55a630",
-  compImgHighlight: "#E6E6E6",
-  jacketColor: "#007f5f",
-  headerColor: "#55a63077",
-  splashBg: "#003F2F",
-};
-
-export const redTheme = {
-  body: "#FFF8E6",
-  text: "#6a040f",
-  expTxtColor: "#000a12",
-  highlight: "#ffba08",
-  dark: "#03071e",
-  secondaryText: "#964F56",
-  imageHighlight: "#dc2f02",
-  compImgHighlight: "#E6E6E6",
-  jacketColor: "#9d0208",
-  headerColor: "#dc2f0277",
-  splashBg: "#6a040f",
-};
-
-export const blackTheme = {
-  body: "#E5E5E5",
-  text: "#14213d",
-  expTxtColor: "#000a12",
-  highlight: "#ffffff",
-  dark: "#000000",
-  secondaryText: "#5A6377",
-  imageHighlight: "#fca311",
-  compImgHighlight: "#E6E6E6",
-  jacketColor: "#8d99ae",
-  headerColor: "#fca31177",
-  splashBg: "#030303",
-};
-
-export const pinkTheme = {
-  body: "#FEE9F2",
-  text: "#620E34",
-  expTxtColor: "#000a12",
-  highlight: "#FBA7CD",
-  dark: "#31071A",
-  secondaryText: "#ef476f",
-  imageHighlight: "#ef476f",
-  compImgHighlight: "#E6E6E6",
-  jacketColor: "#8d99ae",
-  headerColor: "#ef476f77",
-  splashBg: "#620E34",
-};
-
-export const violetTheme = {
-  body: "#F4EEFC",
-  text: "#430A58",
-  expTxtColor: "#000a12",
-  highlight: "#D6BEF4",
-  dark: "#21052C",
-  secondaryText: "#875599",
-  imageHighlight: "#9b5de5",
-  compImgHighlight: "#E6E6E6",
-  jacketColor: "#763D8B",
-  headerColor: "#9b5de577",
-  splashBg: "#430A58",
-};
-
-export const tealTheme = {
-  body: "#E6FAF5",
-  text: "#084c61",
-  expTxtColor: "#000a12",
-  highlight: "#9BEED8",
-  dark: "#031E26",
-  secondaryText: "#528190",
-  imageHighlight: "#07beb8",
-  compImgHighlight: "#E6E6E6",
-  jacketColor: "#56a3a6",
-  headerColor: "#07beb877",
-  splashBg: "#084c61",
-};
-
-export const orangeTheme = {
-  body: "#FFF0EA",
-  text: "#99401F",
-  expTxtColor: "#000a12",
-  highlight: "#FFB59A",
-  dark: "#33150A",
-  secondaryText: "#CC552A",
-  imageHighlight: "#FF6B35",
-  compImgHighlight: "#E6E6E6",
-  jacketColor: "#d7263d",
-  headerColor: "#FF6B3577",
-  splashBg: "#99401F",
-};
-
-export const yellowTheme = {
-  body: "#FFD95D",
-  text: "#5f4339",
-  expTxtColor: "#000a12",
-  highlight: "#ffff73",
-  dark: "#8d6e63",
-  secondaryText: "#5f4339",
-  imageHighlight: "#ffea3d",
-  compImgHighlight: "#E6E6E6",
-  jacketColor: "#4e342e",
-  headerColor: "#FFEA3D",
-  splashBg: "#5f4339",
-};
-
-export const materialDarkTheme = {
-  body: "#263238",
-  text: "#aeaeae",
-  expTxtColor: "#000a12",
-  highlight: "#4f5b62",
-  dark: "#000a12",
-  secondaryText: "#aeaeae",
-  imageHighlight: "#607d8b",
-  compImgHighlight: "#E6E6E6",
-  jacketColor: "#8eacbb",
-  headerColor: "#34515e",
-  splashBg: "#4f5b62",
-};
-
-export const materialLightTheme = {
-  body: "#ffffff",
-  text: "#4c2b91",
-  expTxtColor: "#000000",
-  highlight: "#E9E3F5",
-  dark: "#1d0c41",
-  secondaryText: "#7d56c2",
-  imageHighlight: "#2b1958",
-  compImgHighlight: "#E1E2E1",
-  jacketColor: "#E1E2E1",
-  headerColor: "#E1E2E1",
-  splashBg: "#7d56c2",
-};
-
-export const materialTealTheme = {
-  body: "#ffffff",
-  text: "#05505E",
-  expTxtColor: "#000000",
-  highlight: "#a1dded",
-  dark: "#07292c",
-  secondaryText: "#05505E",
-  imageHighlight: "#0a343c",
-  compImgHighlight: "#E1E2E1",
-  jacketColor: "#E1E2E1",
-  headerColor: "#E1E2E1",
-  splashBg: "#05505E",
-};
-
-export const pastelLightTheme = {
-  body: "#F5F7FA",
-  text: "#2A2E45",
-  expTxtColor: "#3C4251",
-  highlight: "#D0EBFF",
-  dark: "#1E2746",
-  secondaryText: "#788195",
-  imageHighlight: "#B5D5F5",
-  compImgHighlight: "#E8ECF2",
-  jacketColor: "#A9A1E1",
-  headerColor: "#B5D5F577",
-  splashBg: "#2A2E45",
-};
-
-export const pastelLightThemev2 = {
-  body: "#D8E4FF",
-  splashBg: "#00120B",
-  text: "#00120B",
-  secondaryText: "#6B818C",
-  expTxtColor: "#35605A",
-  highlight: "#31E981",
-  imageHighlight: "#6B818C",
-  compImgHighlight: "#D8E4FF",
-  dark: "#00120B",
-  headerColor: "#35605A88",
-  jacketColor: "#6B818C",
-};
-
-export const chosenTheme = pastelLightThemev2;
+// "dark" or "light" — what a first-time visitor sees.
+export const defaultMode = "dark";
