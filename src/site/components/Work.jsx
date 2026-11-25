@@ -7,13 +7,15 @@ import {
   useScroll,
   useTransform,
 } from "motion/react";
-import { assetImage, lockScroll, spotlight } from "./hooks";
+import { assetImage, lockScroll, spotlight, useLiveStatus } from "./hooks";
 
 const EASE = [0.22, 1, 0.36, 1];
 
 // Live demo — opens the real deployed project inside the page.
 export function LiveDemo({ project, onClose }) {
   const [loaded, setLoaded] = useState(false);
+  const status = useLiveStatus(project?.live);
+  const down = status === "down";
 
   useEffect(() => {
     if (!project) return undefined;
@@ -53,14 +55,16 @@ export function LiveDemo({ project, onClose }) {
               <i />
               <i />
               <span>{project.live.replace(/^https?:\/\//, "")}</span>
-              <a
-                className="demo-open"
-                href={project.live}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Open in new tab ↗
-              </a>
+              {!down && (
+                <a
+                  className="demo-open"
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Open in new tab ↗
+                </a>
+              )}
               <button
                 type="button"
                 className="demo-close"
@@ -71,15 +75,42 @@ export function LiveDemo({ project, onClose }) {
               </button>
             </div>
             <div className="demo-frame">
-              {!loaded && (
-                <div className="demo-loading mono">Loading {project.name}…</div>
+              {down ? (
+                <div className="demo-missing" role="status">
+                  <span className="mono muted">404 · {project.name}</span>
+                  <p className="demo-missing-title">Project is not live yet.</p>
+                  <p className="muted">
+                    It's still being deployed. The code is up on GitHub in the
+                    meantime.
+                  </p>
+                  {project.code && (
+                    <a
+                      className="btn btn-primary btn-sm"
+                      href={project.code}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View the code <span className="arrow">↗</span>
+                    </a>
+                  )}
+                </div>
+              ) : (
+                <>
+                  {(!loaded || status === "checking") && (
+                    <div className="demo-loading mono">
+                      Loading {project.name}…
+                    </div>
+                  )}
+                  {status !== "checking" && (
+                    <iframe
+                      title={`${project.name} live demo`}
+                      src={project.live}
+                      onLoad={() => setLoaded(true)}
+                      loading="lazy"
+                    />
+                  )}
+                </>
               )}
-              <iframe
-                title={`${project.name} live demo`}
-                src={project.live}
-                onLoad={() => setLoaded(true)}
-                loading="lazy"
-              />
             </div>
           </motion.div>
         </motion.div>
@@ -125,7 +156,7 @@ function Visual({ project }) {
       </div>
     );
   }
-  if (project.visual === "pipeline") {
+  if (project.visual === "pipeline" && project.pipeline?.length) {
     return (
       <ol className="work-pipeline">
         {project.pipeline.map((step, i) => (
@@ -147,6 +178,7 @@ function Visual({ project }) {
 }
 
 export function ProjectCard({ project, index, total, onDemo }) {
+  const down = useLiveStatus(project.live) === "down";
   return (
     <article className="work-card card spot" onPointerMove={spotlight}>
       <div className="work-info">
@@ -159,20 +191,30 @@ export function ProjectCard({ project, index, total, onDemo }) {
         </div>
         <h3 className="work-title">{project.name}</h3>
         <p className="work-tagline serif">{project.tagline}</p>
-        <ul className="work-points">
-          {project.highlights.map((h) => (
-            <li key={h}>{h}</li>
-          ))}
-        </ul>
+        {project.highlights?.length > 0 && (
+          <ul className="work-points">
+            {project.highlights.map((h) => (
+              <li key={h}>{h}</li>
+            ))}
+          </ul>
+        )}
         <div className="chip-row">
-          {project.stack.map((s) => (
+          {(project.stack || []).map((s) => (
             <span key={s} className="chip">
               {s}
             </span>
           ))}
         </div>
         <div className="work-actions">
-          {project.live && (
+          {project.live && down && (
+            <span
+              className="btn btn-sm is-offline"
+              title="Project is not live yet."
+            >
+              Not live yet
+            </span>
+          )}
+          {project.live && !down && (
             <button
               type="button"
               className="btn btn-primary btn-sm"
@@ -286,6 +328,32 @@ export function ProjectStack({ projects }) {
   );
 }
 
+function GalleryShot({ item, onOpen }) {
+  const down = useLiveStatus(item.live) === "down";
+  return (
+    <button
+      type="button"
+      className={`gallery-shot${down ? " is-offline" : ""}`}
+      onClick={onOpen}
+      aria-label={
+        down
+          ? `${item.name}: project is not live yet`
+          : `Open ${item.name} live demo`
+      }
+    >
+      <img
+        src={assetImage(`work/${item.image}`)}
+        alt=""
+        loading="lazy"
+        draggable="false"
+      />
+      <span className="gallery-play mono">
+        {down ? "Not live yet" : "▶ Play live"}
+      </span>
+    </button>
+  );
+}
+
 // Draggable gallery of smaller shipped projects
 export function Gallery({ items }) {
   const track = useRef(null);
@@ -329,20 +397,10 @@ export function Gallery({ items }) {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ delay: i * 0.08, duration: 0.7, ease: EASE }}
             >
-              <button
-                type="button"
-                className="gallery-shot"
-                onClick={() => !dragging.current && setDemo(item)}
-                aria-label={`Open ${item.name} live demo`}
-              >
-                <img
-                  src={assetImage(`work/${item.image}`)}
-                  alt=""
-                  loading="lazy"
-                  draggable="false"
-                />
-                <span className="gallery-play mono">▶ Play live</span>
-              </button>
+              <GalleryShot
+                item={item}
+                onOpen={() => !dragging.current && setDemo(item)}
+              />
               <div className="gallery-text">
                 <div className="gallery-head">
                   <h3>{item.name}</h3>

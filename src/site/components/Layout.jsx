@@ -6,6 +6,7 @@ import "lenis/dist/lenis.css";
 import Nav from "./Nav";
 import Footer from "./Footer";
 import Seo from "./Seo";
+import ErrorBoundary from "./ErrorBoundary";
 import { greeting } from "../../portfolio";
 import { INTRO_ACTIVE } from "../introState";
 import { getLenis } from "./hooks";
@@ -123,8 +124,7 @@ function ScrollMemory() {
       window.removeEventListener("keydown", stop);
     };
     const tick = () => {
-      const max =
-        document.documentElement.scrollHeight - window.innerHeight;
+      const max = document.documentElement.scrollHeight - window.innerHeight;
       if (max >= target || performance.now() - started > 2000) {
         jumpTo(Math.min(target, Math.max(0, max)));
         stop();
@@ -233,7 +233,7 @@ export default function Layout({ children }) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       >
-        {children}
+        <ErrorBoundary resetKey={pathname}>{children}</ErrorBoundary>
       </motion.main>
       <Footer />
     </div>

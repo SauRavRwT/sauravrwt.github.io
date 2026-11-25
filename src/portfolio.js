@@ -698,12 +698,7 @@ const moreWork = [
     name: "GenAiChatbot",
     description:
       "A intelligent chatbot designed to provide mental health support, analyze medical reports, and connect users with professional help.",
-    stack: [
-      "Python",
-      "LLAMA 3.3",
-      "LangChain",
-      "Groq",
-    ],
+    stack: ["Python", "LLAMA 3.3", "LangChain", "Groq"],
     image: "genaichatbot.webp",
     live: "https://sauravrwt.github.io/GenAiChatBot/",
     code: "https://github.com/SauRavRwT/GenAiChatBot",

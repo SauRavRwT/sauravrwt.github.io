@@ -386,6 +386,62 @@
   color: var(--muted);
 }
 
+.demo-missing {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 32px;
+  text-align: center;
+  background: var(--bg-2);
+  color: var(--text);
+}
+
+.demo-missing p {
+  margin: 0;
+  max-width: 40ch;
+}
+
+.demo-missing-title {
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* the modal is portalled outside .site, so restate the primary button */
+.demo-missing .btn {
+  margin-top: 8px;
+  text-decoration: none;
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--on-accent);
+}
+
+.btn.is-offline {
+  cursor: default;
+  color: var(--muted);
+  border-style: dashed;
+}
+
+.btn.is-offline::before {
+  display: none;
+}
+
+.gallery-shot.is-offline img {
+  filter: grayscale(1);
+  opacity: 0.55;
+}
+
+.gallery-shot.is-offline .gallery-play {
+  opacity: 1;
+  transform: none;
+  background: var(--bg-2);
+  color: var(--muted);
+}
+
 @media (max-width: 600px) {
   .demo-open {
     display: none;

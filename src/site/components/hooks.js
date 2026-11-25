@@ -89,6 +89,44 @@ export function getLenis() {
   return typeof window !== "undefined" ? window.__lenis : undefined;
 }
 
+// Is a project's live demo actually deployed? GitHub Pages sends CORS
+// headers, so we can read the real status. Each URL is checked once per visit.
+// "down" only for a real 4xx/5xx; network trouble stays "unknown" so we never
+// call a working project offline just because the visitor's connection hiccuped.
+const liveChecks = new Map();
+
+function checkLive(url) {
+  if (!liveChecks.has(url)) {
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), 8000);
+    liveChecks.set(
+      url,
+      fetch(url, { method: "HEAD", signal: ctrl.signal })
+        .then((res) => (res.ok ? "live" : "down"))
+        .catch(() => "unknown")
+        .finally(() => clearTimeout(timer))
+    );
+  }
+  return liveChecks.get(url);
+}
+
+export function useLiveStatus(url) {
+  const [status, setStatus] = useState(url ? "checking" : null);
+  useEffect(() => {
+    if (!url) {
+      setStatus(null);
+      return undefined;
+    }
+    let alive = true;
+    setStatus("checking");
+    checkLive(url).then((s) => alive && setStatus(s));
+    return () => {
+      alive = false;
+    };
+  }, [url]);
+  return status;
+}
+
 // Freeze page scrolling while a menu or modal is open.
 export function lockScroll(locked) {
   document.documentElement.style.overflow = locked ? "hidden" : "";
