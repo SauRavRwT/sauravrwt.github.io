@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useHistory, useLocation } from "react-router-dom";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import Lenis from "lenis";
 import "lenis/dist/lenis.css";
@@ -32,14 +32,114 @@ function SmoothScroll() {
   return null;
 }
 
-// Every route change starts at the top of the page.
-function ScrollToTop() {
-  const { pathname } = useLocation();
+function jumpTo(y) {
+  const lenis = getLenis();
+  if (lenis) {
+    lenis.resize();
+    lenis.scrollTo(y, { immediate: true, force: true });
+  } else {
+    window.scrollTo({ top: y, left: 0, behavior: "instant" });
+  }
+}
+
+const storageKey = (location) => `scroll:${location.key || location.pathname}`;
+
+function readSaved(location) {
+  try {
+    const y = Number(sessionStorage.getItem(storageKey(location)));
+    return Number.isFinite(y) ? y : 0;
+  } catch (e) {
+    return 0;
+  }
+}
+
+// New pages start at the top. On reload or back/forward the page goes back
+// to where you left it. Each history entry's position is kept in sessionStorage.
+function ScrollMemory() {
+  const location = useLocation();
+  const history = useHistory();
+  const current = useRef(location);
+  const restoring = useRef(false);
+  const firstRun = useRef(true);
+
+  // The browser would restore before lazy content and pinned sections exist.
   useEffect(() => {
-    const lenis = getLenis();
-    if (lenis) lenis.scrollTo(0, { immediate: true, force: true });
-    else window.scrollTo({ top: 0, left: 0, behavior: "instant" });
-  }, [pathname]);
+    if (!("scrollRestoration" in window.history)) return undefined;
+    const prev = window.history.scrollRestoration;
+    window.history.scrollRestoration = "manual";
+    return () => {
+      window.history.scrollRestoration = prev;
+    };
+  }, []);
+
+  // Remember the position of whichever entry is showing.
+  useEffect(() => {
+    let raf = 0;
+    const save = () => {
+      if (restoring.current) return;
+      try {
+        sessionStorage.setItem(
+          storageKey(current.current),
+          String(Math.round(window.scrollY))
+        );
+      } catch (e) {
+        /* storage blocked: position just isn't remembered */
+      }
+    };
+    const onScroll = () => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(save);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("pagehide", save);
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("pagehide", save);
+    };
+  }, []);
+
+  useLayoutEffect(() => {
+    current.current = location;
+    const isRestore = firstRun.current || history.action === "POP";
+    firstRun.current = false;
+
+    const target = isRestore ? readSaved(location) : 0;
+    if (target <= 0) {
+      jumpTo(0);
+      return undefined;
+    }
+
+    // Wait until the page is tall enough (lazy chunks, images, pinned
+    // sections), then jump. Stop if the visitor starts scrolling.
+    restoring.current = true;
+    const started = performance.now();
+    let raf = 0;
+    const stop = () => {
+      restoring.current = false;
+      cancelAnimationFrame(raf);
+      window.removeEventListener("wheel", stop);
+      window.removeEventListener("touchstart", stop);
+      window.removeEventListener("keydown", stop);
+    };
+    const tick = () => {
+      const max =
+        document.documentElement.scrollHeight - window.innerHeight;
+      if (max >= target || performance.now() - started > 2000) {
+        jumpTo(Math.min(target, Math.max(0, max)));
+        stop();
+        return;
+      }
+      raf = requestAnimationFrame(tick);
+    };
+    window.addEventListener("wheel", stop, { passive: true });
+    window.addEventListener("touchstart", stop, { passive: true });
+    window.addEventListener("keydown", stop);
+    tick();
+    return stop;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location.key, location.pathname]);
+
   return null;
 }
 
@@ -119,7 +219,7 @@ export default function Layout({ children }) {
     <div className="site">
       <Seo />
       <SmoothScroll />
-      <ScrollToTop />
+      <ScrollMemory />
       <Intro />
       <a className="skip-link" href="#main">
         {/* Skip to content */}
