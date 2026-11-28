@@ -3,6 +3,15 @@ import { motion, useInView, useReducedMotion } from "motion/react";
 
 const EASE = [0.22, 1, 0.36, 1];
 
+// Motion only hands `transform` (not the `y` shorthand) to the browser's
+// compositor, so these keep gliding even while the page is busy loading.
+// Clearing it afterwards keeps the element from becoming a containing block.
+export const rise = (offset) => `translateY(${offset})`;
+export const RISEN = {
+  transform: "translateY(0px)",
+  transitionEnd: { transform: "none" },
+};
+
 // Fade + rise into view, once.
 export function Reveal({
   children,
@@ -28,8 +37,8 @@ export function Reveal({
     <Tag
       className={className}
       style={style}
-      initial={{ opacity: 0, y }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, transform: rise(`${y}px`) }}
+      whileInView={{ opacity: 1, ...RISEN }}
       viewport={{ once: true, amount }}
       transition={{ duration: 0.8, delay, ease: EASE }}
       {...rest}
@@ -69,8 +78,8 @@ export function SplitWords({
             <motion.span
               className={part.serif ? "serif" : undefined}
               style={{ display: "inline-block" }}
-              initial={reduce ? false : { y: "110%" }}
-              animate={show || reduce ? { y: "0%" } : { y: "110%" }}
+              initial={reduce ? false : { transform: rise("110%") }}
+              animate={show || reduce ? RISEN : { transform: rise("110%") }}
               transition={{
                 duration: 0.9,
                 delay: delay + i * 0.045,

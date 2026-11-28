@@ -13,6 +13,7 @@ import {
   useVelocity,
 } from "motion/react";
 import { assetImage, useMediaQuery } from "./hooks";
+import { RISEN, rise } from "./Reveal";
 
 const EASE = [0.22, 1, 0.36, 1];
 
@@ -101,8 +102,8 @@ export function StatsRow({ stats }) {
       {stats.map((s, i) => (
         <motion.li
           key={s.label}
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, transform: rise("30px") }}
+          whileInView={{ opacity: 1, ...RISEN }}
           viewport={{ once: true, amount: 0.4 }}
           transition={{ delay: i * 0.07, duration: 0.7, ease: EASE }}
         >

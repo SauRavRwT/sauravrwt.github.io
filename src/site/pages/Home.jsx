@@ -7,7 +7,7 @@ import {
   useReducedMotion,
 } from "motion/react";
 import DotGrid from "../components/DotGrid";
-import { Reveal, SplitWords } from "../components/Reveal";
+import { Reveal, RISEN, SplitWords, rise } from "../components/Reveal";
 import { ProjectStack, Gallery } from "../components/Work";
 import { Journey, StatsRow, VelocityMarquee } from "../components/Showcase";
 import { spotlight, useClock } from "../components/hooks";
@@ -76,8 +76,8 @@ function Hero() {
         <div className="hero-bottom">
           <motion.p
             className="hero-lede"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, transform: rise("20px") }}
+            animate={{ opacity: 1, ...RISEN }}
             transition={{ delay: d + 0.5, duration: 0.9, ease: EASE }}
           >
             Data analyst &amp; front-end developer, turning raw numbers into{" "}
@@ -87,8 +87,8 @@ function Hero() {
 
           <motion.div
             className="hero-side"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, transform: rise("20px") }}
+            animate={{ opacity: 1, ...RISEN }}
             transition={{ delay: d + 0.65, duration: 0.9, ease: EASE }}
           >
             {current && (

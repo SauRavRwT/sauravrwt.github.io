@@ -7,6 +7,7 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 import Seo from "./Seo";
 import ErrorBoundary from "./ErrorBoundary";
+import { RISEN, rise } from "./Reveal";
 import { greeting } from "../../portfolio";
 import { INTRO_ACTIVE } from "../introState";
 import { getLenis } from "./hooks";
@@ -144,10 +145,13 @@ function ScrollMemory() {
 }
 
 // A short, skippable intro, shown once per browser session.
+// Letters and the exit slide run on the compositor (`transform`), and the
+// counter writes straight to the DOM, so the page mounting underneath
+// can't make the intro stutter.
 function Intro() {
   const reduce = useReducedMotion();
   const [show, setShow] = useState(INTRO_ACTIVE);
-  const [count, setCount] = useState(0);
+  const countRef = useRef(null);
 
   useEffect(() => {
     if (!show) return undefined;
@@ -160,20 +164,29 @@ function Intro() {
       setShow(false);
       return undefined;
     }
-    const start = performance.now();
     const DURATION = 1300;
+    let start = 0;
+    let shown = -1;
     let raf;
+    let timer;
     const step = (now) => {
+      // count from the first painted frame, not from mount
+      if (!start) start = now;
       const t = Math.min(1, (now - start) / DURATION);
-      setCount(Math.round((1 - Math.pow(1 - t, 3)) * 100));
+      const n = Math.round((1 - Math.pow(1 - t, 3)) * 100);
+      if (n !== shown && countRef.current) {
+        shown = n;
+        countRef.current.textContent = String(n).padStart(3, "0");
+      }
       if (t < 1) raf = requestAnimationFrame(step);
-      else setTimeout(() => setShow(false), 250);
+      else timer = setTimeout(() => setShow(false), 250);
     };
     raf = requestAnimationFrame(step);
     const skip = () => setShow(false);
     window.addEventListener("keydown", skip);
     return () => {
       cancelAnimationFrame(raf);
+      clearTimeout(timer);
       window.removeEventListener("keydown", skip);
     };
   }, [show, reduce]);
@@ -184,15 +197,15 @@ function Intro() {
         <motion.div
           className="intro"
           onClick={() => setShow(false)}
-          exit={{ y: "-100%" }}
+          exit={{ transform: ["translateY(0%)", "translateY(-100%)"] }}
           transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
         >
           <div className="intro-name">
             {greeting.title.split("").map((c, i) => (
               <motion.span
                 key={i}
-                initial={{ y: "110%" }}
-                animate={{ y: "0%" }}
+                initial={{ transform: "translateY(110%)" }}
+                animate={{ transform: "translateY(0%)" }}
                 transition={{
                   delay: 0.05 + i * 0.035,
                   duration: 0.7,
@@ -203,8 +216,8 @@ function Intro() {
               </motion.span>
             ))}
           </div>
-          <div className="intro-count mono">
-            {String(count).padStart(3, "0")}
+          <div className="intro-count mono" ref={countRef}>
+            000
           </div>
           <div className="intro-hint mono">click to skip</div>
         </motion.div>
@@ -221,16 +234,16 @@ export default function Layout({ children }) {
       <SmoothScroll />
       <ScrollMemory />
       <Intro />
-      <a className="skip-link" href="#main">
-        {/* Skip to content */}
-      </a>
+      {/* <a className="skip-link" href="#main">
+        Skip to content
+      </a> */}
       <Nav />
       <motion.main
         id="main"
         key={pathname}
         className="site-main"
-        initial={{ opacity: 0, y: 16 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, transform: rise("16px") }}
+        animate={{ opacity: 1, ...RISEN }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       >
         <ErrorBoundary resetKey={pathname}>{children}</ErrorBoundary>
