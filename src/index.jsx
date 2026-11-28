@@ -1,5 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
+import { HelmetProvider } from "react-helmet-async";
 import App from "./App";
 
 // Mount once the web fonts are in, so they don't swap in while the intro and
@@ -11,8 +12,10 @@ const timeout = new Promise((resolve) => setTimeout(resolve, FONT_WAIT_MS));
 
 Promise.race([fontsReady, timeout]).then(() => {
   createRoot(document.getElementById("root")).render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+    <HelmetProvider>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </HelmetProvider>
   );
 });
