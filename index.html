@@ -13,6 +13,17 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap"
     rel="stylesheet" />
+  <!-- Start the font files downloading now (in parallel with the app bundle)
+       so they're in before the intro plays, instead of swapping in mid-animation. -->
+  <script>
+    window.__fontsReady = document.fonts && document.fonts.load
+      ? Promise.all([
+        document.fonts.load('600 1em "Geist"'),
+        document.fonts.load('400 1em "Geist Mono"'),
+        document.fonts.load('italic 400 1em "Instrument Serif"'),
+      ]).catch(function () { })
+      : Promise.resolve();
+  </script>
 
   <!-- Primary SEO -->
   <title>Saurav Rawat | Data Analyst &amp; Front-end Developer</title>
@@ -110,8 +121,8 @@
       }
     })(window.location);
   </script>
-  <script type="module" crossorigin src="/assets/index-DcmvnEbn.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-Dr_OvJKr.css">
+  <script type="module" crossorigin src="/assets/index-BqkvNh4z.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CZdZ4PF0.css">
 </head>
 
 <body>
